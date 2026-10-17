@@ -1,0 +1,18 @@
+{
+  "seconds": 6.57,
+  "parries": 0,
+  "hitsTaken": 0,
+  "bossHp": 418.0,
+  "audioPeak": null,
+  "audioRmsMax": null,
+  "averageFps": null,
+  "cutInFrames": 0,
+  "cutInViolations": 0,
+  "swordImpacts": 0,
+  "dodges": 0,
+  "dodgeShowcase": false,
+  "airSpins": 3,
+  "airSpinHits": 9,
+  "offscreen": true,
+  "won": false
+}

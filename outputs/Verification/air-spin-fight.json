@@ -1,0 +1,19 @@
+{
+  "seconds": 51.02,
+  "parries": 11,
+  "hitsTaken": 5,
+  "bossHp": 0.0,
+  "audioPeak": 0.724,
+  "audioRmsMax": 0.359,
+  "averageFps": null,
+  "cutInFrames": 4836,
+  "cutInViolations": 0,
+  "swordImpacts": 8,
+  "dodges": 3,
+  "dodgeShowcase": false,
+  "airSpins": 2,
+  "airSpinHits": 6,
+  "offscreen": false,
+  "won": true,
+  "performance_note": "Hidden-window run is not a performance benchmark."
+}

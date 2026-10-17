@@ -1,0 +1,228 @@
+{
+  "clips": [
+    {
+      "name": "L_Idle",
+      "frames": 39,
+      "cols": 8,
+      "width": 512,
+      "height": 288
+    },
+    {
+      "name": "L_Run",
+      "frames": 11,
+      "cols": 8,
+      "width": 512,
+      "height": 288
+    },
+    {
+      "name": "L_Block",
+      "frames": 22,
+      "cols": 8,
+      "width": 512,
+      "height": 288
+    },
+    {
+      "name": "L_Jump",
+      "frames": 13,
+      "cols": 8,
+      "width": 512,
+      "height": 288
+    },
+    {
+      "name": "L_Fall",
+      "frames": 17,
+      "cols": 8,
+      "width": 512,
+      "height": 288
+    },
+    {
+      "name": "L_Slash_1",
+      "frames": 23,
+      "cols": 8,
+      "width": 512,
+      "height": 288
+    },
+    {
+      "name": "L_Slash_2",
+      "frames": 26,
+      "cols": 8,
+      "width": 512,
+      "height": 288
+    },
+    {
+      "name": "L_Slash_3",
+      "frames": 20,
+      "cols": 8,
+      "width": 512,
+      "height": 288
+    },
+    {
+      "name": "L_Slash_4",
+      "frames": 37,
+      "cols": 8,
+      "width": 512,
+      "height": 288
+    },
+    {
+      "name": "L_Impact_Body",
+      "frames": 15,
+      "cols": 8,
+      "width": 512,
+      "height": 288
+    },
+    {
+      "name": "L_Death_Backward",
+      "frames": 35,
+      "cols": 8,
+      "width": 512,
+      "height": 288
+    },
+    {
+      "name": "L_Cast_Powerful",
+      "frames": 45,
+      "cols": 8,
+      "width": 512,
+      "height": 288
+    },
+    {
+      "name": "L_PowerUp",
+      "frames": 36,
+      "cols": 8,
+      "width": 512,
+      "height": 288
+    },
+    {
+      "name": "R_Idle",
+      "frames": 39,
+      "cols": 8,
+      "width": 512,
+      "height": 288
+    },
+    {
+      "name": "R_Run",
+      "frames": 11,
+      "cols": 8,
+      "width": 512,
+      "height": 288
+    },
+    {
+      "name": "R_Block",
+      "frames": 22,
+      "cols": 8,
+      "width": 512,
+      "height": 288
+    },
+    {
+      "name": "R_Jump",
+      "frames": 13,
+      "cols": 8,
+      "width": 512,
+      "height": 288
+    },
+    {
+      "name": "R_Fall",
+      "frames": 17,
+      "cols": 8,
+      "width": 512,
+      "height": 288
+    },
+    {
+      "name": "R_Slash_1",
+      "frames": 23,
+      "cols": 8,
+      "width": 512,
+      "height": 288
+    },
+    {
+      "name": "R_Slash_2",
+      "frames": 26,
+      "cols": 8,
+      "width": 512,
+      "height": 288
+    },
+    {
+      "name": "R_Slash_3",
+      "frames": 20,
+      "cols": 8,
+      "width": 512,
+      "height": 288
+    },
+    {
+      "name": "R_Slash_4",
+      "frames": 37,
+      "cols": 8,
+      "width": 512,
+      "height": 288
+    },
+    {
+      "name": "R_Impact_Body",
+      "frames": 15,
+      "cols": 8,
+      "width": 512,
+      "height": 288
+    },
+    {
+      "name": "R_Death_Backward",
+      "frames": 35,
+      "cols": 8,
+      "width": 512,
+      "height": 288
+    },
+    {
+      "name": "R_Cast_Powerful",
+      "frames": 45,
+      "cols": 8,
+      "width": 512,
+      "height": 288
+    },
+    {
+      "name": "R_PowerUp",
+      "frames": 36,
+      "cols": 8,
+      "width": 512,
+      "height": 288
+    },
+    {
+      "name": "R_Dodge",
+      "frames": 12,
+      "cols": 8,
+      "width": 512,
+      "height": 288
+    },
+    {
+      "name": "L_Dodge",
+      "frames": 12,
+      "cols": 8,
+      "width": 512,
+      "height": 288
+    },
+    {
+      "name": "R_AirSpin",
+      "frames": 12,
+      "cols": 8,
+      "width": 512,
+      "height": 384
+    },
+    {
+      "name": "L_AirSpin",
+      "frames": 12,
+      "cols": 8,
+      "width": 512,
+      "height": 384
+    },
+    {
+      "name": "R_BladeBind",
+      "frames": 4,
+      "cols": 4,
+      "width": 512,
+      "height": 288
+    },
+    {
+      "name": "L_BladeBind",
+      "frames": 4,
+      "cols": 4,
+      "width": 512,
+      "height": 288
+    }
+  ]
+}

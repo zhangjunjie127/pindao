@@ -1,0 +1,14 @@
+{
+  "air-spin-close": {
+    "frames": 359,
+    "seconds_at_60fps": 5.983333333333333,
+    "min_pixel_std": 27.707140074208688,
+    "max_frame_difference": 34.21951388888889
+  },
+  "air-spin-combat": {
+    "frames": 720,
+    "seconds_at_60fps": 12.0,
+    "min_pixel_std": 15.088439430113128,
+    "max_frame_difference": 55.24891203703704
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "frames": 1980,
+  "size": [
+    1280,
+    720
+  ],
+  "fps": 30,
+  "blank_frames": [],
+  "mean_frame_difference": 2.4472779466875534,
+  "audio_peak_before_gain": 0.7560785412788391,
+  "audio_gain": 1,
+  "audio_rms": 0.04311119019985199,
+  "full_duration": 62.982583618164064,
+  "preview_segments": [
+    [
+      0.0,
+      2.7
+    ],
+    [
+      5.466666666666667,
+      9.066666666666666
+    ],
+    [
+      10.933333333333334,
+      13.933333333333334
+    ],
+    [
+      18.066666666666666,
+      20.333333333333332
+    ],
+    [
+      21.8,
+      23.266666666666666
+    ],
+    [
+      24.066666666666666,
+      29.366666666666667
+    ],
+    [
+      39.86666666666667,
+      43.266666666666666
+    ],
+    [
+      50.9,
+      54.6
+    ],
+    [
+      59.06666666666667,
+      62.86666666666667
+    ]
+  ],
+  "audio_provenance": "Same engine-generated clips, cue times, pitch and pan; offline mix, not desktop capture.",
+  "video_provenance": "Unmodified game camera frames, original speed; offscreen capture excludes IMGUI HUD."
+}

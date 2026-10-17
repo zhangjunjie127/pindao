@@ -1,0 +1,174 @@
+PASS: first jump is accepted during boss entrance
+PASS: first attack is accepted during boss entrance
+PASS: one light swing damages once
+PASS: forward swing cannot hit behind player
+PASS: out of range cannot hit
+PASS: vertical hurt boxes reject air mismatch
+PASS: no stamina prevents attacks and dash
+PASS: parry opens on input
+PASS: parry window expires
+PASS: failed parry cannot restart by spam
+PASS: timed front parry protects and adds posture
+PASS: enemy strike cannot parry twice
+PASS: back-facing guard fails
+PASS: dash has invulnerability
+PASS: complete dodge moves 2.88 units and returns to ready
+PASS: dodge costs once and recovery is not invulnerable
+PASS: dodge has preparation, burst, brake and planted recovery
+PASS: no-direction dodge follows facing to the left
+PASS: dodge direction cannot flip midway
+PASS: late dodge recovery can transition into attack
+PASS: attack buffered during dodge executes after braking
+PASS: insufficient stamina cannot start dodge animation
+PASS: air dodge does not suspend gravity
+PASS: dodge uses dedicated anticipation, low travel and recovery frames
+PASS: special on the ground neither attacks nor consumes stamina
+PASS: jump and special on the ground do not auto-launch the special
+PASS: jump followed by special starts the aerial skill
+PASS: airborne normal attack remains a normal slash
+PASS: airborne heavy attack remains separate from the special
+PASS: air spin costs 32 once and grants no invulnerability
+PASS: air spin anticipation does not deal early damage
+PASS: first spin segment hits once
+PASS: second spin segment is a separate hit
+PASS: third spin segment is stronger, total damage is 34 and posture damage 24
+PASS: one spin cannot damage more than three times
+PASS: spin lands, recovers and restores the next jump's skill
+PASS: a fresh jump can use the special again
+PASS: insufficient stamina rejects the skill without consuming its air use
+PASS: special spam cannot restart the spin or spend twice
+PASS: spin cannot hit outside the visible blade radius
+PASS: rotating blade can hit behind the player
+PASS: air spin respects vertical separation
+PASS: left-facing special has the same damage and keeps its facing
+PASS: spin cannot damage phase-protected enemy
+PASS: special cannot cancel player hurt state
+PASS: active spin commits before defensive cancel
+PASS: spin recovery can cancel to dodge without restoring its air use
+PASS: canceling spin does not enable an immediate second spin
+PASS: sky sword interrupts the aerial special
+PASS: interrupted spin stops all remaining damage segments
+PASS: early ground contact immediately stops the aerial phase
+PASS: landing recovery cannot instantly restart an attack
+PASS: early landing does not leave a hidden spinning hitbox
+PASS: spin kill ends encounter and clears hazards
+PASS: retry clears aerial skill state
+PASS: aerial animation has preparation, two rotations and landing-ready finish
+PASS: leap does not hit during ascent
+PASS: stunned airborne enemy lands
+PASS: full posture triggers stagger
+PASS: heavy punish becomes critical during stagger
+PASS: visible wave has moving ground collision
+PASS: jump clears ground wave
+PASS: healing consumes one flask after commitment
+PASS: arena bounds contain movement
+PASS: grounded fighters cannot overlap
+PASS: half health starts phase transition
+PASS: zero boss health wins
+PASS: zero player health enters defeat
+PASS: retry clears transient combat state
+PASS: rush hits once even on late contact after its first 130ms
+PASS: front parry stops the entire blade rush and opens recovery
+PASS: shoulder collision cannot be parried
+PASS: jump clears shoulder hitbox
+PASS: dash can evade an unparryable shoulder
+PASS: rush locks direction and respects arena bounds
+PASS: rage shoulder follow-up has its own readable windup
+PASS: summon start cannot create an immediate hidden hit
+PASS: sky sword has a harmless visible warning
+PASS: sky sword damages at impact
+PASS: embedded sword cannot repeatedly damage and expires
+PASS: marked sword never tracks a moving player after its warning
+PASS: sky sword cannot be parried
+PASS: dash invulnerability works against falling sword
+PASS: great sword launches opposing ground waves
+PASS: jump avoids great sword shockwave outside the landing column
+PASS: reset clears falling swords and their waves
+PASS: victory cancels pending sky swords
+PASS: brief cut-in returns exactly to normal camera
+PASS: ground O launches an independent cross-slash and charges focus/stamina once
+PASS: cross-slash grants no hidden invulnerability
+PASS: cross-slash has harmless anticipation
+PASS: six cross-slash windows deal 7+7+7+7+7+20 exactly once each
+PASS: cross-slash descends and finishes grounded recovery
+PASS: insufficient focus rejects cross-slash without spending stamina
+PASS: insufficient stamina rejects cross-slash without spending focus
+PASS: held burst input cannot restart a committed skill
+PASS: left-facing cross-slash matches right-facing damage
+PASS: cross-slash cannot hit behind its locked facing
+PASS: cross-slash respects distance rather than auto-hitting
+PASS: forced early landing removes all remaining cross-slash hitboxes
+PASS: incoming sky sword interrupts burst and cancels later cuts
+PASS: ordinary contact replenishes focus
+PASS: one close ordinary sword clash immediately enters blade lock
+PASS: three close sword parries enter sustained blade lock through normal controls
+PASS: five timed beats win lock, damage once and open stagger punish
+PASS: blade-lock victory chains into the existing critical punish
+PASS: ignored lock times out with finite damage and releases controls
+PASS: button mashing cannot bypass the lock rhythm
+PASS: player can retreat from blade lock with a real stamina-costing dodge
+PASS: empty stamina cannot grant a free invulnerable escape from lock
+PASS: retry clears rhythm and skill resources
+PASS: first phase leap chain completes expected landings then exposes recovery
+PASS: first phase emits every telegraphed ground wave
+PASS: rage leap chain completes expected landings then exposes recovery
+PASS: rage emits every telegraphed ground wave
+PASS: rage waves lead to a separately telegraphed melee lunge
+PASS: skip entrance lands boss safely and leaves approach grace
+PASS: boss entrance leaves enough time for a visible push, hold and pull camera shot
+PASS: boss does not begin attacking until the entrance camera has returned to the arena
+PASS: half-health transition starts a dedicated rage cinematic
+PASS: rage cinematic freezes combat time, damage and player actions through the close-up hold
+PASS: rage cinematic returns to the arena before the next attack begins
+PASS: painted eight-frame ember slash atlas is present
+PASS: L dedicated planted blade-bind animation exists
+PASS: R dedicated planted blade-bind animation exists
+PASS: 24 deterministic random-input runs preserve state, arena, health and resource invariants
+PASS: only actual boss HP damage grants proportional charge energy
+PASS: whiffed attacks grant no charge energy
+PASS: blade clashes grant no charge energy
+PASS: successful parries grant no charge energy
+PASS: lethal hits grant charge only for the boss HP actually remaining
+PASS: full charge emits one ready cue on threshold crossing, not on every later hit
+PASS: less than a full charge meter rejects activation without spending resources
+PASS: less than full stamina rejects activation without spending charge energy
+PASS: charge activation immediately consumes both full resource bars
+PASS: charging blocks defense, attacks and stamina recovery
+PASS: manual interruption refunds neither energy nor stamina
+PASS: taking a hit interrupts charging and spends both resources permanently
+PASS: completed charge spends its resources, then its actual damage earns charge energy normally
+PASS: completed forward charge slash deals exactly 180 damage
+PASS: completed charge can miss outside its forward range without refunding resources
+PASS: first light attack keeps its original startup and duration
+PASS: too-early follow-up does not buffer or accelerate the current attack
+PASS: slightly early follow-up is buffered until the visible rhythm window
+PASS: early buffered follow-up confirms as soon as the rhythm window opens
+PASS: same forgiving input window chains the second hit into the third
+PASS: on-beat follow-up shortens recovery and cleanly enters the next combo
+PASS: late follow-up continues the light combo without cutting off the current swing
+PASS: showcase AI leaves the telegraphed boss rush visible before committing its finisher
+PASS: waiting beyond combo grace resets the next light attack to its opener
+PASS: continuous 10 Hz light taps produce all three distinct swing segments
+PASS: continuous 2 Hz light taps progress through all three swing segments
+TIMING: 24.69 Rush
+TIMING: 25.85 AirSpin
+TIMING: 26.36 SwordSummon
+TIMING: 39.63 Shoulder
+TIMING: 40.74 Shoulder
+TIMING: 42.75 SwordSummon
+TIMING: 54.62 Rush
+TIMING: 58.58 SwordSummon
+DEMO: won=True, lost=False, parries=10, bossHP=0, playerHP=84, events=Entrance,Land,Tell,Guard,BossSwing,Parry,LockStart,LockBeat,LockWin,Break,PlayerSwing,Riposte,ComboRhythm,HitBoss,BossJump,Slam,Danger,Jump,Wave,CrossStart,CrossSweep,CrossHit,RushTell,SpinLand,Rush,HitPlayer,AirSpin,AirSpinSweep,AirSpinHit,Phase,SwordSummon,SwordMark,SwordImpact,Evade,Heal,ShoulderTell,Dash,DashKick,Shoulder,DashBrake,ChargeReady,ChargeStart,ChargeHit,Win,ChargeRelease
+PASS: live input path produces repeated parries and posture break
+PASS: complete boss fight can be won through normal controls, without cheats
+PASS: normal encounter demonstrates shoulder rush and rage sky swords
+PASS: normal combat demonstrates the complete dodge
+PASS: normal combat demonstrates the aerial special
+PASS: normal combat demonstrates cross-slash and a won blade lock
+PASS: L dedicated dodge atlas contains twelve frames
+PASS: L dedicated air spin atlas contains twelve frames
+PASS: R dedicated dodge atlas contains twelve frames
+PASS: R dedicated air spin atlas contains twelve frames
+PASS: top-right controls fit without covering health HUD at width 640
+PASS: top-right controls fit without covering health HUD at width 960
+PASS: top-right controls fit without covering health HUD at width 1280
