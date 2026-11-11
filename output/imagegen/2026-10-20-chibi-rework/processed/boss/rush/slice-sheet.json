@@ -1,0 +1,137 @@
+{
+  "kind": "sprite-gen-slice-sheet",
+  "version": 1,
+  "sheet": "boss-rush-source.png",
+  "grid": [
+    2,
+    2
+  ],
+  "canvas": {
+    "w": 512,
+    "h": 512
+  },
+  "baseline_y": 486.0,
+  "target_height": 430.0,
+  "scale": "sheet",
+  "fit": "contain",
+  "factor": 0.8139904610492846,
+  "factor_from": {
+    "rule": "fit",
+    "cell": "rush-2"
+  },
+  "alpha_cleanup": "alpha-cleanup.json",
+  "cells": [
+    {
+      "name": "rush-0",
+      "file": "rush-0.png",
+      "factor": 0.8139904610492846,
+      "factor_from": "fit",
+      "subject": {
+        "sheet": {
+          "w": 547,
+          "h": 479
+        },
+        "canvas": {
+          "w": 445,
+          "h": 390
+        }
+      },
+      "box": {
+        "x": 34,
+        "y": 96,
+        "w": 445,
+        "h": 390
+      },
+      "anchor": [
+        256.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "rush-1",
+      "file": "rush-1.png",
+      "factor": 0.8139904610492846,
+      "factor_from": "fit",
+      "subject": {
+        "sheet": {
+          "w": 570,
+          "h": 367
+        },
+        "canvas": {
+          "w": 464,
+          "h": 299
+        }
+      },
+      "box": {
+        "x": 24,
+        "y": 187,
+        "w": 464,
+        "h": 299
+      },
+      "anchor": [
+        256.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "rush-2",
+      "file": "rush-2.png",
+      "factor": 0.8139904610492846,
+      "factor_from": "fit",
+      "subject": {
+        "sheet": {
+          "w": 628,
+          "h": 363
+        },
+        "canvas": {
+          "w": 511,
+          "h": 295
+        }
+      },
+      "box": {
+        "x": 1,
+        "y": 191,
+        "w": 511,
+        "h": 295
+      },
+      "anchor": [
+        256.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "rush-3",
+      "file": "rush-3.png",
+      "factor": 0.8139904610492846,
+      "factor_from": "fit",
+      "subject": {
+        "sheet": {
+          "w": 577,
+          "h": 398
+        },
+        "canvas": {
+          "w": 470,
+          "h": 324
+        }
+      },
+      "box": {
+        "x": 22,
+        "y": 162,
+        "w": 470,
+        "h": 324
+      },
+      "anchor": [
+        257.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    }
+  ]
+}

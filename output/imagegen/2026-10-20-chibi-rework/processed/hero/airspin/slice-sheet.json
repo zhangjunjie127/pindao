@@ -1,0 +1,137 @@
+{
+  "kind": "sprite-gen-slice-sheet",
+  "version": 1,
+  "sheet": "hero-airspin-source.png",
+  "grid": [
+    2,
+    2
+  ],
+  "canvas": {
+    "w": 512,
+    "h": 512
+  },
+  "baseline_y": 486.0,
+  "target_height": 430.0,
+  "scale": "sheet",
+  "fit": "contain",
+  "factor": 0.8669354838709677,
+  "factor_from": {
+    "rule": "target_height",
+    "cell": "airspin-1"
+  },
+  "alpha_cleanup": "alpha-cleanup.json",
+  "cells": [
+    {
+      "name": "airspin-0",
+      "file": "airspin-0.png",
+      "factor": 0.8669354838709677,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 539,
+          "h": 372
+        },
+        "canvas": {
+          "w": 467,
+          "h": 322
+        }
+      },
+      "box": {
+        "x": 23,
+        "y": 164,
+        "w": 467,
+        "h": 322
+      },
+      "anchor": [
+        256.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "airspin-1",
+      "file": "airspin-1.png",
+      "factor": 0.8669354838709677,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 446,
+          "h": 496
+        },
+        "canvas": {
+          "w": 387,
+          "h": 430
+        }
+      },
+      "box": {
+        "x": 63,
+        "y": 56,
+        "w": 387,
+        "h": 430
+      },
+      "anchor": [
+        256.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "airspin-2",
+      "file": "airspin-2.png",
+      "factor": 0.8669354838709677,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 405,
+          "h": 451
+        },
+        "canvas": {
+          "w": 351,
+          "h": 391
+        }
+      },
+      "box": {
+        "x": 81,
+        "y": 95,
+        "w": 351,
+        "h": 391
+      },
+      "anchor": [
+        256.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "airspin-3",
+      "file": "airspin-3.png",
+      "factor": 0.8669354838709677,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 499,
+          "h": 399
+        },
+        "canvas": {
+          "w": 433,
+          "h": 346
+        }
+      },
+      "box": {
+        "x": 40,
+        "y": 140,
+        "w": 433,
+        "h": 346
+      },
+      "anchor": [
+        256.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    }
+  ]
+}

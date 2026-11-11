@@ -1,0 +1,343 @@
+{
+  "kind": "sprite-gen-motion-report",
+  "version": 1,
+  "status": "needs-review",
+  "frame_count": 8,
+  "duration_seconds": 0.4447999999999999,
+  "size": [
+    768,
+    512
+  ],
+  "anchor_px": [
+    384.0,
+    486.0
+  ],
+  "facing": null,
+  "contacts": [],
+  "foot_box": null,
+  "duplicate_frames": {
+    "exact": 0,
+    "adjacent_exact": 0,
+    "exact_silhouette": 0,
+    "near_silhouette": 0
+  },
+  "motion": {
+    "present": true,
+    "changed_transitions": 7,
+    "silhouette_changed_transitions": 7,
+    "silhouette_change_per_second": 7.311661553587367
+  },
+  "frames": [
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "duration_seconds": 0.0556,
+      "bbox": [
+        197,
+        163,
+        572,
+        486
+      ],
+      "anchor_px": [
+        384.0,
+        486.0
+      ],
+      "bbox_from_anchor": [
+        -187.0,
+        -323.0,
+        188.0,
+        0.0
+      ],
+      "centroid_px": [
+        379.7735840253802,
+        331.2455600136854
+      ],
+      "opaque_pixels": 64302,
+      "edge_sides": []
+    },
+    {
+      "frame": 1,
+      "time_seconds": 0.0556,
+      "duration_seconds": 0.0556,
+      "bbox": [
+        199,
+        86,
+        569,
+        486
+      ],
+      "anchor_px": [
+        384.0,
+        486.0
+      ],
+      "bbox_from_anchor": [
+        -185.0,
+        -400.0,
+        185.0,
+        0.0
+      ],
+      "centroid_px": [
+        372.7390460895641,
+        306.9988843568353
+      ],
+      "opaque_pixels": 70363,
+      "edge_sides": []
+    },
+    {
+      "frame": 2,
+      "time_seconds": 0.1112,
+      "duration_seconds": 0.0556,
+      "bbox": [
+        207,
+        144,
+        563,
+        486
+      ],
+      "anchor_px": [
+        384.0,
+        486.0
+      ],
+      "bbox_from_anchor": [
+        -177.0,
+        -342.0,
+        179.0,
+        0.0
+      ],
+      "centroid_px": [
+        393.9694375813219,
+        317.07923129778806
+      ],
+      "opaque_pixels": 68401,
+      "edge_sides": []
+    },
+    {
+      "frame": 3,
+      "time_seconds": 0.1668,
+      "duration_seconds": 0.0556,
+      "bbox": [
+        149,
+        162,
+        621,
+        486
+      ],
+      "anchor_px": [
+        384.0,
+        486.0
+      ],
+      "bbox_from_anchor": [
+        -235.0,
+        -324.0,
+        237.0,
+        0.0
+      ],
+      "centroid_px": [
+        344.8669443354122,
+        331.16611423670173
+      ],
+      "opaque_pixels": 68787,
+      "edge_sides": []
+    },
+    {
+      "frame": 4,
+      "time_seconds": 0.2224,
+      "duration_seconds": 0.0556,
+      "bbox": [
+        215,
+        119,
+        554,
+        486
+      ],
+      "anchor_px": [
+        384.0,
+        486.0
+      ],
+      "bbox_from_anchor": [
+        -169.0,
+        -367.0,
+        170.0,
+        0.0
+      ],
+      "centroid_px": [
+        386.8173382548959,
+        310.15524161063996
+      ],
+      "opaque_pixels": 68271,
+      "edge_sides": []
+    },
+    {
+      "frame": 5,
+      "time_seconds": 0.27799999999999997,
+      "duration_seconds": 0.0556,
+      "bbox": [
+        182,
+        139,
+        586,
+        486
+      ],
+      "anchor_px": [
+        384.0,
+        486.0
+      ],
+      "bbox_from_anchor": [
+        -202.0,
+        -347.0,
+        202.0,
+        0.0
+      ],
+      "centroid_px": [
+        360.897022190408,
+        318.35687902648533
+      ],
+      "opaque_pixels": 69850,
+      "edge_sides": []
+    },
+    {
+      "frame": 6,
+      "time_seconds": 0.33359999999999995,
+      "duration_seconds": 0.0556,
+      "bbox": [
+        106,
+        208,
+        662,
+        486
+      ],
+      "anchor_px": [
+        384.0,
+        486.0
+      ],
+      "bbox_from_anchor": [
+        -278.0,
+        -278.0,
+        278.0,
+        0.0
+      ],
+      "centroid_px": [
+        326.8803277272204,
+        358.8853962677111
+      ],
+      "opaque_pixels": 69448,
+      "edge_sides": []
+    },
+    {
+      "frame": 7,
+      "time_seconds": 0.38919999999999993,
+      "duration_seconds": 0.0556,
+      "bbox": [
+        208,
+        129,
+        562,
+        486
+      ],
+      "anchor_px": [
+        384.0,
+        486.0
+      ],
+      "bbox_from_anchor": [
+        -176.0,
+        -357.0,
+        178.0,
+        0.0
+      ],
+      "centroid_px": [
+        381.3215210284176,
+        310.581199426027
+      ],
+      "opaque_pixels": 67599,
+      "edge_sides": []
+    }
+  ],
+  "bbox_stats": {
+    "union": [
+      106,
+      86,
+      662,
+      486
+    ],
+    "width_range": [
+      339,
+      556
+    ],
+    "height_range": [
+      278,
+      400
+    ],
+    "bottom_range": [
+      486,
+      486
+    ]
+  },
+  "edge_contact": {
+    "frames": [],
+    "sides": {
+      "left": [],
+      "top": [],
+      "right": [],
+      "bottom": []
+    }
+  },
+  "contact_candidates": [],
+  "confidence": 0.0,
+  "sequence": {
+    "source": "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed-final\\hero\\combo\\hero_combo.asset.json",
+    "state": null,
+    "fps_override": null,
+    "frame_count": 8,
+    "size": [
+      768,
+      512
+    ],
+    "anchor_px": [
+      384.0,
+      486.0
+    ],
+    "durations_seconds": [
+      0.0556,
+      0.0556,
+      0.0556,
+      0.0556,
+      0.0556,
+      0.0556,
+      0.0556,
+      0.0556
+    ]
+  },
+  "source_fingerprints": {
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed-final\\hero\\combo\\hero_combo.asset.json": "4398fae0ded78e4cfa0f15a3c627a61cc07fb8a163e2328b815f664a6602e693",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed-final\\hero\\combo\\combo-0.png": "4cb15f53796c66c8c74e747858426818e801218744c659d27ddca73afa8c0626",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed-final\\hero\\combo\\combo-1.png": "c90ae271f82b8d89822386f1f607685d9e023e068d3bb4c5eca9c1fbff8ab595",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed-final\\hero\\combo\\combo-2.png": "e56e8b94b683add1c49fc568a6043ff2667756d0b203bc348999917df9e2daef",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed-final\\hero\\combo\\combo-3.png": "aeaf52cdbe0aa05b12f98388edf5fef58928de5147634ac173ed3cb97aa966de",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed-final\\hero\\combo\\combo-4.png": "9041c290f3a8099e2e46a590f4cadcde1c5c6c03e216383451621edea0f8e65f",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed-final\\hero\\combo\\combo-5.png": "8ebc9c14cea83decb4a6ebfcb393110930c2a1be38a4478c6b6f2460040bf739",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed-final\\hero\\combo\\combo-6.png": "1294060b1efb284a7db877a891f79406af7139e48ad526bec1bec515664e26ce",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed-final\\hero\\combo\\combo-7.png": "13a3fef84e1827008554c4fbc72b183ede74b489e795858b1755d83ee4f39148"
+  },
+  "stride_verified": false,
+  "foot_velocity_px_per_second": null,
+  "stride_px_per_second": null,
+  "warnings": [
+    "Ground contact is unknown: provide both manual contacts and a single-foot ROI; silhouette bottoms do not identify a planted foot."
+  ],
+  "method": {
+    "silhouette": "alpha > 0 in source canvas coordinates; bbox right/bottom are exclusive",
+    "near_silhouette_iou": 0.98,
+    "duplicates": "Counts frames matching an earlier frame; near excludes exact silhouette matches. No time or frames are removed.",
+    "motion": "Adjacent visible pixel changes; silhouette XOR/union summed over full duration. No loop-seam assumption.",
+    "contact": "User-declared same-foot stance spans plus isolated ROI alpha centroid; no automatic contact or facing inference.",
+    "timing": "Cumulative frame-start seconds; repeated tracked poses use their first onset with all intervening durations retained. Final hold is included in duration but has no displacement endpoint.",
+    "velocity": "Endpoint horizontal displacement / pose-onset elapsed seconds; positive = image right. Stride is absolute velocity under manual ground-contact assumptions.",
+    "confidence": "0.9 = at least 3 distinct poses, stable baseline/shape, monotonic near-linear motion and consistent spans. Heuristic conditional confidence, not a calibrated contact probability.",
+    "sequence": "Identity of the analysed sequence: source, atlas state, fps override, frame count, size, anchor and effective per-frame durations. A consumer applying the stride must match all of it and source_fingerprints; another state or frame rate of the same files is a different sequence."
+  },
+  "source_files": [
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed-final\\hero\\combo\\hero_combo.asset.json",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed-final\\hero\\combo\\combo-0.png",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed-final\\hero\\combo\\combo-1.png",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed-final\\hero\\combo\\combo-2.png",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed-final\\hero\\combo\\combo-3.png",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed-final\\hero\\combo\\combo-4.png",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed-final\\hero\\combo\\combo-5.png",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed-final\\hero\\combo\\combo-6.png",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed-final\\hero\\combo\\combo-7.png"
+  ],
+  "source": "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed-final\\hero\\combo\\hero_combo.asset.json"
+}

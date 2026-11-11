@@ -1,0 +1,137 @@
+{
+  "kind": "sprite-gen-slice-sheet",
+  "version": 1,
+  "sheet": "hero-parry-source.png",
+  "grid": [
+    2,
+    2
+  ],
+  "canvas": {
+    "w": 512,
+    "h": 512
+  },
+  "baseline_y": 486.0,
+  "target_height": 430.0,
+  "scale": "sheet",
+  "fit": "contain",
+  "factor": 0.6858054226475279,
+  "factor_from": {
+    "rule": "target_height",
+    "cell": "parry-0"
+  },
+  "alpha_cleanup": "alpha-cleanup.json",
+  "cells": [
+    {
+      "name": "parry-0",
+      "file": "parry-0.png",
+      "factor": 0.6858054226475279,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 498,
+          "h": 627
+        },
+        "canvas": {
+          "w": 342,
+          "h": 430
+        }
+      },
+      "box": {
+        "x": 86,
+        "y": 56,
+        "w": 342,
+        "h": 430
+      },
+      "anchor": [
+        257.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "parry-1",
+      "file": "parry-1.png",
+      "factor": 0.6858054226475279,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 431,
+          "h": 583
+        },
+        "canvas": {
+          "w": 296,
+          "h": 400
+        }
+      },
+      "box": {
+        "x": 109,
+        "y": 86,
+        "w": 296,
+        "h": 400
+      },
+      "anchor": [
+        257.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "parry-2",
+      "file": "parry-2.png",
+      "factor": 0.6858054226475279,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 603,
+          "h": 481
+        },
+        "canvas": {
+          "w": 414,
+          "h": 330
+        }
+      },
+      "box": {
+        "x": 50,
+        "y": 156,
+        "w": 414,
+        "h": 330
+      },
+      "anchor": [
+        257.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "parry-3",
+      "file": "parry-3.png",
+      "factor": 0.6858054226475279,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 518,
+          "h": 477
+        },
+        "canvas": {
+          "w": 355,
+          "h": 327
+        }
+      },
+      "box": {
+        "x": 79,
+        "y": 159,
+        "w": 355,
+        "h": 327
+      },
+      "anchor": [
+        256.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    }
+  ]
+}

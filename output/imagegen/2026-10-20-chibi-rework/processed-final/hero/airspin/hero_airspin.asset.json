@@ -1,0 +1,26 @@
+{
+  "anchor": [
+    384,
+    486
+  ],
+  "frames": [
+    {
+      "duration": 0.0625,
+      "file": "airspin-0.png"
+    },
+    {
+      "duration": 0.0625,
+      "file": "airspin-1.png"
+    },
+    {
+      "duration": 0.0625,
+      "file": "airspin-2.png"
+    },
+    {
+      "duration": 0.0625,
+      "file": "airspin-3.png"
+    }
+  ],
+  "kind": "sprite-gen-asset",
+  "version": 1
+}

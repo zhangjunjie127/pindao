@@ -1,0 +1,137 @@
+{
+  "kind": "sprite-gen-slice-sheet",
+  "version": 1,
+  "sheet": "boss-idle-source.png",
+  "grid": [
+    2,
+    2
+  ],
+  "canvas": {
+    "w": 512,
+    "h": 512
+  },
+  "baseline_y": 486.0,
+  "target_height": 430.0,
+  "scale": "sheet",
+  "fit": "contain",
+  "factor": 0.8677966101694915,
+  "factor_from": {
+    "rule": "fit",
+    "cell": "idle-1"
+  },
+  "alpha_cleanup": "alpha-cleanup.json",
+  "cells": [
+    {
+      "name": "idle-0",
+      "file": "idle-0.png",
+      "factor": 0.8677966101694915,
+      "factor_from": "fit",
+      "subject": {
+        "sheet": {
+          "w": 578,
+          "h": 490
+        },
+        "canvas": {
+          "w": 502,
+          "h": 425
+        }
+      },
+      "box": {
+        "x": 6,
+        "y": 61,
+        "w": 502,
+        "h": 425
+      },
+      "anchor": [
+        257.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "idle-1",
+      "file": "idle-1.png",
+      "factor": 0.8677966101694915,
+      "factor_from": "fit",
+      "subject": {
+        "sheet": {
+          "w": 589,
+          "h": 489
+        },
+        "canvas": {
+          "w": 511,
+          "h": 424
+        }
+      },
+      "box": {
+        "x": 1,
+        "y": 62,
+        "w": 511,
+        "h": 424
+      },
+      "anchor": [
+        256.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "idle-2",
+      "file": "idle-2.png",
+      "factor": 0.8677966101694915,
+      "factor_from": "fit",
+      "subject": {
+        "sheet": {
+          "w": 582,
+          "h": 489
+        },
+        "canvas": {
+          "w": 505,
+          "h": 424
+        }
+      },
+      "box": {
+        "x": 4,
+        "y": 62,
+        "w": 505,
+        "h": 424
+      },
+      "anchor": [
+        256.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "idle-3",
+      "file": "idle-3.png",
+      "factor": 0.8677966101694915,
+      "factor_from": "fit",
+      "subject": {
+        "sheet": {
+          "w": 580,
+          "h": 489
+        },
+        "canvas": {
+          "w": 503,
+          "h": 424
+        }
+      },
+      "box": {
+        "x": 5,
+        "y": 62,
+        "w": 503,
+        "h": 424
+      },
+      "anchor": [
+        256.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    }
+  ]
+}

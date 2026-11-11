@@ -1,0 +1,137 @@
+{
+  "kind": "sprite-gen-slice-sheet",
+  "version": 1,
+  "sheet": "hero-jump-source.png",
+  "grid": [
+    2,
+    2
+  ],
+  "canvas": {
+    "w": 768,
+    "h": 512
+  },
+  "baseline_y": 486.0,
+  "target_height": 400.0,
+  "scale": "sheet",
+  "fit": "contain",
+  "factor": 0.8130081300813008,
+  "factor_from": {
+    "rule": "target_height",
+    "cell": "jump-1"
+  },
+  "alpha_cleanup": "alpha-cleanup.json",
+  "cells": [
+    {
+      "name": "jump-0",
+      "file": "jump-0.png",
+      "factor": 0.8130081300813008,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 502,
+          "h": 406
+        },
+        "canvas": {
+          "w": 408,
+          "h": 330
+        }
+      },
+      "box": {
+        "x": 180,
+        "y": 156,
+        "w": 408,
+        "h": 330
+      },
+      "anchor": [
+        384.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "jump-1",
+      "file": "jump-1.png",
+      "factor": 0.8130081300813008,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 481,
+          "h": 492
+        },
+        "canvas": {
+          "w": 391,
+          "h": 400
+        }
+      },
+      "box": {
+        "x": 189,
+        "y": 86,
+        "w": 391,
+        "h": 400
+      },
+      "anchor": [
+        384.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "jump-2",
+      "file": "jump-2.png",
+      "factor": 0.8130081300813008,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 494,
+          "h": 464
+        },
+        "canvas": {
+          "w": 402,
+          "h": 377
+        }
+      },
+      "box": {
+        "x": 184,
+        "y": 109,
+        "w": 402,
+        "h": 377
+      },
+      "anchor": [
+        385.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "jump-3",
+      "file": "jump-3.png",
+      "factor": 0.8130081300813008,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 524,
+          "h": 347
+        },
+        "canvas": {
+          "w": 426,
+          "h": 282
+        }
+      },
+      "box": {
+        "x": 171,
+        "y": 204,
+        "w": 426,
+        "h": 282
+      },
+      "anchor": [
+        384.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    }
+  ]
+}

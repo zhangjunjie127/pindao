@@ -19,6 +19,7 @@ prototype has been replaced with animated characters and layered environment art
 - `O`: six-cut rising cross-slash, 50 focus and 28 stamina
 - `J` / left mouse: buffered three-hit combo
 - `U`: heavy slash / stagger punish
+- `Q`: spend full charge and stamina for the high-damage charged slash; effective boss damage builds charge
 - `K` / right mouse: timed parry
 - `J` during blade bind: timed pressure beats; dodge can disengage
 - `Left Shift` / `L`: dash
@@ -61,6 +62,8 @@ atlas keeps both feet planted; generated ember animation accompanies the
 cross-slash, ground waves, and finisher. Entrance and victory have short,
 skippable camera treatments. Sound sources are pooled so overlapping steel
 hits do not change each other's pitch.
+The entrance and rage transition stage short two-character exchanges with
+cropped half-body portraits from the existing character art; Enter skips either.
 
 `--record-start 0 --record-seconds 66 --record-fps 30 --record-dir <path>`
 also exports the engine's cue samples, times, pan and pitch for reproducible

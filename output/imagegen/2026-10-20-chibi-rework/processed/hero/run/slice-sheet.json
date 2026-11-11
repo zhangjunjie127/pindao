@@ -1,0 +1,137 @@
+{
+  "kind": "sprite-gen-slice-sheet",
+  "version": 1,
+  "sheet": "hero-run-source.png",
+  "grid": [
+    2,
+    2
+  ],
+  "canvas": {
+    "w": 512,
+    "h": 512
+  },
+  "baseline_y": 486.0,
+  "target_height": 430.0,
+  "scale": "sheet",
+  "fit": "contain",
+  "factor": 0.8739837398373984,
+  "factor_from": {
+    "rule": "target_height",
+    "cell": "run-0"
+  },
+  "alpha_cleanup": "alpha-cleanup.json",
+  "cells": [
+    {
+      "name": "run-0",
+      "file": "run-0.png",
+      "factor": 0.8739837398373984,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 564,
+          "h": 492
+        },
+        "canvas": {
+          "w": 493,
+          "h": 430
+        }
+      },
+      "box": {
+        "x": 10,
+        "y": 56,
+        "w": 493,
+        "h": 430
+      },
+      "anchor": [
+        256.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "run-1",
+      "file": "run-1.png",
+      "factor": 0.8739837398373984,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 552,
+          "h": 468
+        },
+        "canvas": {
+          "w": 482,
+          "h": 409
+        }
+      },
+      "box": {
+        "x": 15,
+        "y": 77,
+        "w": 482,
+        "h": 409
+      },
+      "anchor": [
+        256.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "run-2",
+      "file": "run-2.png",
+      "factor": 0.8739837398373984,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 563,
+          "h": 480
+        },
+        "canvas": {
+          "w": 492,
+          "h": 420
+        }
+      },
+      "box": {
+        "x": 10,
+        "y": 66,
+        "w": 492,
+        "h": 420
+      },
+      "anchor": [
+        256.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "run-3",
+      "file": "run-3.png",
+      "factor": 0.8739837398373984,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 581,
+          "h": 443
+        },
+        "canvas": {
+          "w": 508,
+          "h": 387
+        }
+      },
+      "box": {
+        "x": 3,
+        "y": 99,
+        "w": 508,
+        "h": 387
+      },
+      "anchor": [
+        257.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    }
+  ]
+}

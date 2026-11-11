@@ -1,0 +1,137 @@
+{
+  "kind": "sprite-gen-slice-sheet",
+  "version": 1,
+  "sheet": "hero-idle-v3-source.png",
+  "grid": [
+    2,
+    2
+  ],
+  "canvas": {
+    "w": 512,
+    "h": 512
+  },
+  "baseline_y": 486.0,
+  "target_height": 430.0,
+  "scale": "sheet",
+  "fit": "contain",
+  "factor": 0.7918968692449355,
+  "factor_from": {
+    "rule": "target_height",
+    "cell": "idle-0"
+  },
+  "alpha_cleanup": "alpha-cleanup.json",
+  "cells": [
+    {
+      "name": "idle-0",
+      "file": "idle-0.png",
+      "factor": 0.7918968692449355,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 486,
+          "h": 543
+        },
+        "canvas": {
+          "w": 385,
+          "h": 430
+        }
+      },
+      "box": {
+        "x": 64,
+        "y": 56,
+        "w": 385,
+        "h": 430
+      },
+      "anchor": [
+        256.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "idle-1",
+      "file": "idle-1.png",
+      "factor": 0.7918968692449355,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 490,
+          "h": 513
+        },
+        "canvas": {
+          "w": 388,
+          "h": 406
+        }
+      },
+      "box": {
+        "x": 62,
+        "y": 80,
+        "w": 388,
+        "h": 406
+      },
+      "anchor": [
+        256.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 2
+    },
+    {
+      "name": "idle-2",
+      "file": "idle-2.png",
+      "factor": 0.7918968692449355,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 497,
+          "h": 516
+        },
+        "canvas": {
+          "w": 394,
+          "h": 409
+        }
+      },
+      "box": {
+        "x": 60,
+        "y": 77,
+        "w": 394,
+        "h": 409
+      },
+      "anchor": [
+        257.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "idle-3",
+      "file": "idle-3.png",
+      "factor": 0.7918968692449355,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 486,
+          "h": 528
+        },
+        "canvas": {
+          "w": 385,
+          "h": 418
+        }
+      },
+      "box": {
+        "x": 64,
+        "y": 68,
+        "w": 385,
+        "h": 418
+      },
+      "anchor": [
+        256.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    }
+  ]
+}

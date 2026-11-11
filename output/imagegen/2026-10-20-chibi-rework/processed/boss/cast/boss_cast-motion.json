@@ -1,0 +1,223 @@
+{
+  "kind": "sprite-gen-motion-report",
+  "version": 1,
+  "status": "needs-review",
+  "frame_count": 4,
+  "duration_seconds": 0.4444,
+  "size": [
+    512,
+    512
+  ],
+  "anchor_px": [
+    256.0,
+    486.0
+  ],
+  "facing": null,
+  "contacts": [],
+  "foot_box": null,
+  "duplicate_frames": {
+    "exact": 0,
+    "adjacent_exact": 0,
+    "exact_silhouette": 0,
+    "near_silhouette": 0
+  },
+  "motion": {
+    "present": true,
+    "changed_transitions": 3,
+    "silhouette_changed_transitions": 3,
+    "silhouette_change_per_second": 1.9954869753068851
+  },
+  "frames": [
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "duration_seconds": 0.1111,
+      "bbox": [
+        49,
+        56,
+        463,
+        486
+      ],
+      "anchor_px": [
+        256.0,
+        486.0
+      ],
+      "bbox_from_anchor": [
+        -207.0,
+        -430.0,
+        207.0,
+        0.0
+      ],
+      "centroid_px": [
+        242.6495383982376,
+        291.5911374176017
+      ],
+      "opaque_pixels": 116659,
+      "edge_sides": []
+    },
+    {
+      "frame": 1,
+      "time_seconds": 0.1111,
+      "duration_seconds": 0.1111,
+      "bbox": [
+        29,
+        61,
+        485,
+        486
+      ],
+      "anchor_px": [
+        256.0,
+        486.0
+      ],
+      "bbox_from_anchor": [
+        -227.0,
+        -425.0,
+        229.0,
+        0.0
+      ],
+      "centroid_px": [
+        247.6031147471132,
+        288.32681835612937
+      ],
+      "opaque_pixels": 117345,
+      "edge_sides": []
+    },
+    {
+      "frame": 2,
+      "time_seconds": 0.2222,
+      "duration_seconds": 0.1111,
+      "bbox": [
+        30,
+        90,
+        482,
+        486
+      ],
+      "anchor_px": [
+        256.0,
+        486.0
+      ],
+      "bbox_from_anchor": [
+        -226.0,
+        -396.0,
+        226.0,
+        0.0
+      ],
+      "centroid_px": [
+        231.8573535230011,
+        309.15594540157537
+      ],
+      "opaque_pixels": 111212,
+      "edge_sides": []
+    },
+    {
+      "frame": 3,
+      "time_seconds": 0.33330000000000004,
+      "duration_seconds": 0.1111,
+      "bbox": [
+        19,
+        69,
+        494,
+        486
+      ],
+      "anchor_px": [
+        256.0,
+        486.0
+      ],
+      "bbox_from_anchor": [
+        -237.0,
+        -417.0,
+        238.0,
+        0.0
+      ],
+      "centroid_px": [
+        276.245088378395,
+        302.0925091721729
+      ],
+      "opaque_pixels": 113659,
+      "edge_sides": []
+    }
+  ],
+  "bbox_stats": {
+    "union": [
+      19,
+      56,
+      494,
+      486
+    ],
+    "width_range": [
+      414,
+      475
+    ],
+    "height_range": [
+      396,
+      430
+    ],
+    "bottom_range": [
+      486,
+      486
+    ]
+  },
+  "edge_contact": {
+    "frames": [],
+    "sides": {
+      "left": [],
+      "top": [],
+      "right": [],
+      "bottom": []
+    }
+  },
+  "contact_candidates": [],
+  "confidence": 0.0,
+  "sequence": {
+    "source": "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed\\boss\\cast\\boss_cast.asset.json",
+    "state": null,
+    "fps_override": null,
+    "frame_count": 4,
+    "size": [
+      512,
+      512
+    ],
+    "anchor_px": [
+      256.0,
+      486.0
+    ],
+    "durations_seconds": [
+      0.1111,
+      0.1111,
+      0.1111,
+      0.1111
+    ]
+  },
+  "source_fingerprints": {
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed\\boss\\cast\\boss_cast.asset.json": "1991ff8931ade1c789d88880ccac3d528662718e0e1fe8a12742ff06d9f13e25",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed\\boss\\cast\\cast-0.png": "d922480fd91c1eb41ffe3fe942f2ff261e7975a85dc7080811464e3b257f8972",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed\\boss\\cast\\cast-1.png": "e9dc32a1f7b6fdc7f8a40835cbb3b3b022f1ec187639ed41c271fbcde8a3fa16",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed\\boss\\cast\\cast-2.png": "c8bfe63e486481c84f0cf9767c1b4d8df3a41b6f5d83ef98b2c92c731948c60e",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed\\boss\\cast\\cast-3.png": "e3ea30380000b7d03a7dbd3a4498dc2f22fcf1e54714d1297b8fd9a71718eb78"
+  },
+  "stride_verified": false,
+  "foot_velocity_px_per_second": null,
+  "stride_px_per_second": null,
+  "warnings": [
+    "Ground contact is unknown: provide both manual contacts and a single-foot ROI; silhouette bottoms do not identify a planted foot."
+  ],
+  "method": {
+    "silhouette": "alpha > 0 in source canvas coordinates; bbox right/bottom are exclusive",
+    "near_silhouette_iou": 0.98,
+    "duplicates": "Counts frames matching an earlier frame; near excludes exact silhouette matches. No time or frames are removed.",
+    "motion": "Adjacent visible pixel changes; silhouette XOR/union summed over full duration. No loop-seam assumption.",
+    "contact": "User-declared same-foot stance spans plus isolated ROI alpha centroid; no automatic contact or facing inference.",
+    "timing": "Cumulative frame-start seconds; repeated tracked poses use their first onset with all intervening durations retained. Final hold is included in duration but has no displacement endpoint.",
+    "velocity": "Endpoint horizontal displacement / pose-onset elapsed seconds; positive = image right. Stride is absolute velocity under manual ground-contact assumptions.",
+    "confidence": "0.9 = at least 3 distinct poses, stable baseline/shape, monotonic near-linear motion and consistent spans. Heuristic conditional confidence, not a calibrated contact probability.",
+    "sequence": "Identity of the analysed sequence: source, atlas state, fps override, frame count, size, anchor and effective per-frame durations. A consumer applying the stride must match all of it and source_fingerprints; another state or frame rate of the same files is a different sequence."
+  },
+  "source_files": [
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed\\boss\\cast\\boss_cast.asset.json",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed\\boss\\cast\\cast-0.png",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed\\boss\\cast\\cast-1.png",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed\\boss\\cast\\cast-2.png",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed\\boss\\cast\\cast-3.png"
+  ],
+  "source": "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed\\boss\\cast\\boss_cast.asset.json"
+}

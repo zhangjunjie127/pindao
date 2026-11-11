@@ -1,0 +1,26 @@
+{
+  "anchor": [
+    384,
+    486
+  ],
+  "frames": [
+    {
+      "duration": 0.0714,
+      "file": "attack-0.png"
+    },
+    {
+      "duration": 0.0714,
+      "file": "attack-1.png"
+    },
+    {
+      "duration": 0.0714,
+      "file": "attack-2.png"
+    },
+    {
+      "duration": 0.0714,
+      "file": "attack-3.png"
+    }
+  ],
+  "kind": "sprite-gen-asset",
+  "version": 1
+}

@@ -1,0 +1,923 @@
+VBCSCompilerPreWarmer: pre-warm launched (dotnet PID 52268)
+VBCSCompiler prewarm took 8.32 ms
+[Licensing::Module] Trying to connect to existing licensing client channel...
+[Licensing::IpcConnector] Channel LicenseClient-A doesn't exist
+Built from '6000.6/respin/6000.6.0f1-fa21a270ab12' branch; Version is '6000.6.0f1 (f7f8ed4d1e24) revision 16251117'; Using compiler version '194234433'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'zh' Physical Memory: 65292 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-10-19T06:55:52Z
+[Licensing::Module] Successfully launched the LicensingClient (PId: 47460)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-A" at "2026-10-19T06:55:53.2415445Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 47460, path: "C:/Program Files/Unity/Hub/Editor/6000.6.0f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              66793742577146f6af556452f25bcb4d
+  Correlation Id:          dee8df7da22aeff0a064658c5bc6cfbc
+  External correlation Id: 4613743014547662904
+  Machine Id:              RXUsL12MzXEK8h60euqN21lFMuE=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-A" (connect: 0.37s, validation: 0.04s, handshake: 0.05s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-A-notifications" at "2026-10-19T06:55:53.3269803Z"
+[Licensing::Module] Connected to LicensingClient (PId: 47460, launch time: 0.01, total connection time: 0.46s)
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: ewogICJzdWJzR3JvdXAiIDogInVuaXR5IGVkaXRvciIsCiAgIm5hbWVzcGFjZSIgOiAidW5pdHlfZWRpdG9yIiwKICAidHlwZSIgOiAiRURJVE9SIiwKICAidGFnIiA6ICJVbml0eVBlcnNvbmFsXXXX
+  Product: Unity Personal Version
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.01
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.48s
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.6.0f1\Editor\Unity.exe
+-batchmode
+-nographics
+-projectPath
+C:\Users\A\Documents\Codex\2026-10-15\new-chat
+-executeMethod
+DuelBuild.Build
+-quit
+-logFile
+C:\Users\A\Documents\Codex\2026-10-15\new-chat\outputs\Verification\dialogue-build.log
+Successfully changed project path to: C:\Users\A\Documents\Codex\2026-10-15\new-chat
+C:/Users/A/Documents/Codex/2026-10-15/new-chat
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-remapper-allocator-initial-capacity=32768"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-main-allocator-mimalloc-enabled=1"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Logging is directed to a specific file, skipping project log.
+Player connection [46404]  Target information:
+
+Player connection [46404]  * "[IP] 172.17.0.174 [Port] 55504 [Flags] 2 [Guid] 1901468156 [EditorId] 1901468156 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-4QEE03D) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [46404] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [46404] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-52072" after 0.2 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+Initialising UDS system complete:
+  - System type: Client
+  - Resource namespace: d9aba5b06c35d7427018799d5d07f806
+  - Shared memory size: 1073741824
+  - Command buffer id: 1052576
+  - Command buffer size: 8192
+  - Hashmap size: 4194304
+  - Service connected: false
+Launching Unity Data Store - C:/Program Files/Unity/Hub/Editor/6000.6.0f1/Editor/Data/Tools/Unity.DataStore.exe 
+Unity Data Store artifact dir = Library/DataStore, working dir = C:/Users/A/Documents/Codex/2026-10-15/new-chat[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Unity Data Store running and initialised
+Initialize engine version: 6000.6.0f1 (f7f8ed4d1e24)
+[EntityIdStore] init: VM path (explicit commit), pageSize=4096, blockCount=1048576, entitiesPerBlock=256, slots reserved=4294967296 bytes
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.6.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/A/Documents/Codex/2026-10-15/new-chat/Assets
+Forcing GfxDevice: Null
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+NullGfxDevice:
+    Version:  NULL 1.0 [1.0]
+    Renderer: Null Device
+    Vendor:   Unity Technologies
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.6.0f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.6.0f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
+Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/6000.6.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.6.0f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56072
+CodeReloadManager initialized
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.0f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002823 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.588 seconds
+Domain Reload Profiling: 1079ms
+	BeginReloadAssembly (125ms)
+	RebuildCommonClasses (4ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (72ms)
+	LoadAllAssembliesAndSetupDomain (276ms)
+		LoadAssemblies (115ms)
+		TypeCache.Refresh (184ms)
+			TypeCache.ScanAssembly (170ms)
+		AnalyzeDomain (1ms)
+	FinalizeReload (589ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (80ms)
+			ProcessInitializeOnLoadAttributes (97ms)
+			ProcessInitializeOnLoadMethodAttributes (213ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 42 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.ide.rider@3.0.38 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.ide.rider@1f60b3138684)
+    com.unity.ide.visualstudio@2.0.26 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.ide.visualstudio@a99d56dec63f)
+  Built-in packages:
+    com.unity.modules.accessibility@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.physicscore2d@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.physicscore2d)
+    com.unity.modules.screencapture@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.tetgen@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.tetgen)
+    com.unity.modules.tilemap@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.timelinefoundation@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.timelinefoundation)
+    com.unity.modules.ui@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.wind@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.hierarchycore)
+    com.unity.test-framework@1.8.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.test-framework@7a3849e09bd0)
+    com.unity.ext.nunit@2.1.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.ext.nunit@0198eae3b53e)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.02 seconds
+[ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.0f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/A/Documents/Codex/2026-10-15/new-chat
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 1s118ms
+[207/222    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[214/222    0s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll (+2 others)
+[216/222    0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll, with 146 defines and 302 references
+
+processors: zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+1 processor(s) skipped this assembly
+[217/222    0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp.dll, with 148 defines and 289 references
+
+processors: zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+1 processor(s) skipped this assembly
+[220/222    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.pdb
+[221/222    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp.dll
+*** Tundra build success (1.08 seconds), 6 items updated, 222 evaluated
+AssetDatabase: script compilation time: 1.485729s
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.418 seconds
+Domain Reload Profiling: 1052ms
+	BeginReloadAssembly (338ms)
+		DisableScriptedObjects (30ms)
+		CreateAndSetChildDomain (154ms)
+	RebuildCommonClasses (9ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (62ms)
+	LoadAllAssembliesAndSetupDomain (211ms)
+		LoadAssemblies (203ms)
+		TypeCache.Refresh (13ms)
+			TypeCache.ScanAssembly (7ms)
+		AnalyzeDomain (7ms)
+			BuildScriptInfoCaches (5ms)
+	FinalizeReload (419ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (79ms)
+			ProcessInitializeOnLoadAttributes (66ms)
+			ProcessInitializeOnLoadMethodAttributes (44ms)
+			AfterProcessingInitializeOnLoad (30ms)
+		AwakeInstancesAfterBackupRestoration (29ms)
+Starting new worker id: 0 with log in C:/Users/A/Documents/Codex/2026-10-15/new-chat/Logs/AssetImportWorkerHW0.log
+
+Asset Pipeline Refresh (id=c0738bfa2ef1cfc4c8c9afb912723c83): Total: 2.854 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=564 ms
+		Asset DB Callback time: managed=55 ms, native=22 ms
+		Scripting: domain reloads=1, domain reload time=703 ms, compile time=1490 ms, other=16 ms
+		Project Asset Count: scripts=174, non-scripts=158
+		Asset File Changes: new=0, changed=1, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 22.987ms
+	ApplyChangesToAssetFolders: 0.602ms
+	Scan: 32.156ms
+	Collect global state as custom dependencies: 12.465ms
+	OnSourceAssetsModified: 0.511ms
+	CategorizeScriptCompilationAssets: 4.252ms
+	ProcessAssetsWithTransientArtifactChanges: 5.495ms
+	CategorizeAssets: 1.701ms
+	CompileScripts: 1490.209ms
+	ImportOutOfDateAssets: 435.471ms (419.970ms without children)
+		UnloadImportedAssets: 0.069ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.051ms
+		ImportSchedulerStart: 15.377ms
+	PostProcessAllAssets: 57.450ms
+		VCAutoAddAssetPostprocess 1.810ms
+		PostProcessCallbackCreateDeferredMaterials 0.052ms
+		MonoPostProcessAllAssets: 55.072ms
+			AssetPostprocessor.OnPostprocessAllAssets 13.669ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 10.407ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 7.074ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 5.447ms
+			AssetChangedListener.OnPostprocessAllAssets 1.815ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 1.161ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 1.091ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.989ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 0.825ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.514ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.342ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.332ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.247ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.226ms
+			ThemePostprocessor.OnPostprocessAllAssets 0.200ms
+			AssetEvents.OnPostprocessAllAssets 0.196ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.170ms
+			SyncVS.PostprocessSyncProject 0.153ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.138ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.117ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.101ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.060ms
+	PostAssetChangesProfiler: 0.720ms
+	UnloadStreamsBegin: 1.050ms
+	Untracked: 780.403ms
+
+Application.AssetDatabase Initial Refresh End
+Scanning for USB devices : 3.648ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-Mossbound Duel
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 506 unused Assets / (0.7 MB). Loaded Objects now: 1223.
+Memory consumption went from 223.8 MB to 223.1 MB.
+Total: 4.955600 ms (FindLiveObjects: 0.168200 ms CreateObjectMapping: 0.025700 ms MarkObjects: 4.286400 ms  DeleteObjects: 0.301400 ms)
+
+DEMO: won=True, lost=False, parries=10, bossHP=0, playerHP=84, events=Entrance,Land,Tell,Guard,BossSwing,Parry,LockStart,LockBeat,LockWin,Break,PlayerSwing,Riposte,ComboRhythm,HitBoss,BossJump,Slam,Danger,Jump,Wave,CrossStart,CrossSweep,CrossHit,RushTell,SpinLand,Rush,HitPlayer,AirSpin,AirSpinSweep,AirSpinHit,Phase,SwordSummon,SwordMark,SwordImpact,Evade,Heal,ShoulderTell,Dash,DashKick,Shoulder,DashBrake,ChargeReady,ChargeStart,ChargeHit,Win,ChargeRelease, jumpInputs=129, specialInputs=37
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+DuelBuild:Test () (at Assets/Editor/DuelBuild.cs:711)
+DuelBuild:Build () (at Assets/Editor/DuelBuild.cs:743)
+
+(Filename: Assets/Editor/DuelBuild.cs Line: 711)
+
+PASS: first jump is accepted during boss entrance
+PASS: first attack is accepted during boss entrance
+PASS: story dialogue stays hidden before the entrance close-up
+PASS: entrance dialogue opens with the Warden's portrait and line
+PASS: entrance dialogue hands off to the player's portrait and reply
+PASS: rage transition uses its own Warden dialogue
+PASS: Enter skips the rage dialogue and returns control to combat
+PASS: dialogue portraits fit on-screen at width 640
+PASS: dialogue portraits fit on-screen at width 1280
+PASS: one light swing damages once
+PASS: forward swing cannot hit behind player
+PASS: out of range cannot hit
+PASS: vertical hurt boxes reject air mismatch
+PASS: no stamina prevents attacks and dash
+PASS: parry opens on input
+PASS: parry window expires
+PASS: failed parry cannot restart by spam
+PASS: timed front parry protects and adds posture
+PASS: enemy strike cannot parry twice
+PASS: back-facing guard fails
+PASS: dash has invulnerability
+PASS: complete dodge moves 2.88 units and returns to ready
+PASS: dodge costs once and recovery is not invulnerable
+PASS: dodge has preparation, burst, brake and planted recovery
+PASS: no-direction dodge follows facing to the left
+PASS: dodge direction cannot flip midway
+PASS: late dodge recovery can transition into attack
+PASS: attack buffered during dodge executes after braking
+PASS: insufficient stamina cannot start dodge animation
+PASS: air dodge does not suspend gravity
+PASS: dodge uses dedicated anticipation, low travel and recovery frames
+PASS: special on the ground neither attacks nor consumes stamina
+PASS: jump and special on the ground do not auto-launch the special
+PASS: jump followed by special starts the aerial skill
+PASS: airborne normal attack remains a normal slash
+PASS: airborne heavy attack remains separate from the special
+PASS: air spin costs 32 once and grants no invulnerability
+PASS: air spin anticipation does not deal early damage
+PASS: first spin segment hits once
+PASS: second spin segment is a separate hit
+PASS: third spin segment is stronger, total damage is 34 and posture damage 24
+PASS: one spin cannot damage more than three times
+PASS: spin lands, recovers and restores the next jump's skill
+PASS: a fresh jump can use the special again
+PASS: insufficient stamina rejects the skill without consuming its air use
+PASS: special spam cannot restart the spin or spend twice
+PASS: spin cannot hit outside the visible blade radius
+PASS: rotating blade can hit behind the player
+PASS: air spin respects vertical separation
+PASS: left-facing special has the same damage and keeps its facing
+PASS: spin cannot damage phase-protected enemy
+PASS: special cannot cancel player hurt state
+PASS: active spin commits before defensive cancel
+PASS: spin recovery can cancel to dodge without restoring its air use
+PASS: canceling spin does not enable an immediate second spin
+PASS: sky sword interrupts the aerial special
+PASS: interrupted spin stops all remaining damage segments
+PASS: early ground contact immediately stops the aerial phase
+PASS: landing recovery cannot instantly restart an attack
+PASS: early landing does not leave a hidden spinning hitbox
+PASS: spin kill ends encounter and clears hazards
+PASS: retry clears aerial skill state
+PASS: aerial animation has preparation, two rotations and landing-ready finish
+PASS: leap does not hit during ascent
+PASS: stunned airborne enemy lands
+PASS: full posture triggers stagger
+PASS: heavy punish becomes critical during stagger
+PASS: visible wave has moving ground collision
+PASS: jump clears ground wave
+PASS: healing consumes one flask after commitment
+PASS: arena bounds contain movement
+PASS: grounded fighters cannot overlap
+PASS: half health starts phase transition
+PASS: zero boss health wins
+PASS: zero player health enters defeat
+PASS: retry clears transient combat state
+PASS: rush hits once even on late contact after its first 130ms
+PASS: front parry stops the entire blade rush and opens recovery
+PASS: shoulder collision cannot be parried
+PASS: jump clears shoulder hitbox
+PASS: dash can evade an unparryable shoulder
+PASS: rush locks direction and respects arena bounds
+PASS: rage shoulder follow-up has its own readable windup
+PASS: summon start cannot create an immediate hidden hit
+PASS: sky sword has a harmless visible warning
+PASS: sky sword damages at impact
+PASS: embedded sword cannot repeatedly damage and expires
+PASS: marked sword never tracks a moving player after its warning
+PASS: sky sword cannot be parried
+PASS: dash invulnerability works against falling sword
+PASS: great sword launches opposing ground waves
+PASS: jump avoids great sword shockwave outside the landing column
+PASS: reset clears falling swords and their waves
+PASS: victory cancels pending sky swords
+PASS: brief cut-in returns exactly to normal camera
+PASS: ground O launches an independent cross-slash and charges focus/stamina once
+PASS: cross-slash grants no hidden invulnerability
+PASS: cross-slash has harmless anticipation
+PASS: six cross-slash windows deal 7+7+7+7+7+20 exactly once each
+PASS: cross-slash descends and finishes grounded recovery
+PASS: insufficient focus rejects cross-slash without spending stamina
+PASS: insufficient stamina rejects cross-slash without spending focus
+PASS: held burst input cannot restart a committed skill
+PASS: left-facing cross-slash matches right-facing damage
+PASS: cross-slash cannot hit behind its locked facing
+PASS: cross-slash respects distance rather than auto-hitting
+PASS: forced early landing removes all remaining cross-slash hitboxes
+PASS: incoming sky sword interrupts burst and cancels later cuts
+PASS: ordinary contact replenishes focus
+PASS: one close ordinary sword clash immediately enters blade lock
+PASS: three close sword parries enter sustained blade lock through normal controls
+PASS: five timed beats win lock, damage once and open stagger punish
+PASS: blade-lock victory chains into the existing critical punish
+PASS: ignored lock times out with finite damage and releases controls
+PASS: button mashing cannot bypass the lock rhythm
+PASS: player can retreat from blade lock with a real stamina-costing dodge
+PASS: empty stamina cannot grant a free invulnerable escape from lock
+PASS: retry clears rhythm and skill resources
+PASS: first phase leap chain completes expected landings then exposes recovery
+PASS: first phase emits every telegraphed ground wave
+PASS: rage leap chain completes expected landings then exposes recovery
+PASS: rage emits every telegraphed ground wave
+PASS: rage waves lead to a separately telegraphed melee lunge
+PASS: skip entrance lands boss safely and leaves approach grace
+PASS: boss entrance leaves enough time for a visible push, hold and pull camera shot
+PASS: boss does not begin attacking until the entrance camera has returned to the arena
+PASS: half-health transition starts a dedicated rage cinematic
+PASS: rage cinematic freezes combat time, damage and player actions through the close-up hold
+PASS: rage cinematic returns to the arena before the next attack begins
+PASS: painted eight-frame ember slash atlas is present
+PASS: L dedicated planted blade-bind animation exists
+PASS: R dedicated planted blade-bind animation exists
+PASS: 24 deterministic random-input runs preserve state, arena, health and resource invariants
+PASS: only actual boss HP damage grants proportional charge energy
+PASS: whiffed attacks grant no charge energy
+PASS: blade clashes grant no charge energy
+PASS: successful parries grant no charge energy
+PASS: lethal hits grant charge only for the boss HP actually remaining
+PASS: full charge emits one ready cue on threshold crossing, not on every later hit
+PASS: less than a full charge meter rejects activation without spending resources
+PASS: less than full stamina rejects activation without spending charge energy
+PASS: charge activation immediately consumes both full resource bars
+PASS: charging blocks defense, attacks and stamina recovery
+PASS: manual interruption refunds neither energy nor stamina
+PASS: taking a hit interrupts charging and spends both resources permanently
+PASS: completed charge spends its resources, then its actual damage earns charge energy normally
+PASS: completed forward charge slash deals exactly 180 damage
+PASS: completed charge can miss outside its forward range without refunding resources
+PASS: first light attack keeps its original startup and duration
+PASS: too-early follow-up does not buffer or accelerate the current attack
+PASS: slightly early follow-up is buffered until the visible rhythm window
+PASS: early buffered follow-up confirms as soon as the rhythm window opens
+PASS: same forgiving input window chains the second hit into the third
+PASS: on-beat follow-up shortens recovery and cleanly enters the next combo
+PASS: late follow-up continues the light combo without cutting off the current swing
+PASS: showcase AI leaves the telegraphed boss rush visible before committing its finisher
+PASS: waiting beyond combo grace resets the next light attack to its opener
+PASS: continuous 10 Hz light taps produce all three distinct swing segments
+PASS: continuous 2 Hz light taps progress through all three swing segments
+TIMING: 24.69 Rush
+TIMING: 25.85 AirSpin
+TIMING: 26.36 SwordSummon
+TIMING: 39.63 Shoulder
+TIMING: 40.74 Shoulder
+TIMING: 42.75 SwordSummon
+TIMING: 54.62 Rush
+TIMING: 58.58 SwordSummon
+DEMO: won=True, lost=False, parries=10, bossHP=0, playerHP=84, events=Entrance,Land,Tell,Guard,BossSwing,Parry,LockStart,LockBeat,LockWin,Break,PlayerSwing,Riposte,ComboRhythm,HitBoss,BossJump,Slam,Danger,Jump,Wave,CrossStart,CrossSweep,CrossHit,RushTell,SpinLand,Rush,HitPlayer,AirSpin,AirSpinSweep,AirSpinHit,Phase,SwordSummon,SwordMark,SwordImpact,Evade,Heal,ShoulderTell,Dash,DashKick,Shoulder,DashBrake,ChargeReady,ChargeStart,ChargeHit,Win,ChargeRelease
+PASS: live input path produces repeated parries and posture break
+PASS: complete boss fight can be won through normal controls, without cheats
+PASS: normal encounter demonstrates shoulder rush and rage sky swords
+PASS: normal combat demonstrates the complete dodge
+PASS: normal combat demonstrates the aerial special
+PASS: normal combat demonstrates cross-slash and a won blade lock
+PASS: L dedicated dodge atlas contains twelve frames
+PASS: L dedicated air spin atlas contains twelve frames
+PASS: R dedicated dodge atlas contains twelve frames
+PASS: R dedicated air spin atlas contains twelve frames
+PASS: top-right controls fit without covering health HUD at width 640
+PASS: top-right controls fit without covering health HUD at width 960
+PASS: top-right controls fit without covering health HUD at width 1280
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+DuelBuild:Test () (at Assets/Editor/DuelBuild.cs:737)
+DuelBuild:Build () (at Assets/Editor/DuelBuild.cs:743)
+
+(Filename: Assets/Editor/DuelBuild.cs Line: 737)
+
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.0f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aESkipCompile.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssembliesAndTypeDB
+WorkingDir: C:/Users/A/Documents/Codex/2026-10-15/new-chat
+ExitCode: 0 Duration: 0s198ms
+[2/3        0s] BuildPlayerDataGenerator Library/BuildPlayerData/Editor/TypeDb-All.json
+*** Tundra build success (0.17 seconds), 1 items updated, 3 evaluated
+Asset Pipeline Refresh (id=4a47668027349c140961a8159b3f344f): Total: 0.008 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+[ScriptCompilation] Requested script compilation because: Recompiling scripts for player build.
+BuildPlayer: start building target 19
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.0f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aP.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssembliesAndTypeDB
+WorkingDir: C:/Users/A/Documents/Codex/2026-10-15/new-chat
+Total cache size 259982876
+Total cache size after purge 259982876, took 00:00:00.3457977
+Worker ready: AssetImportWorkerHW0 0
+ExitCode: 0 Duration: 1s239ms
+[92/99      0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[93/99      0s] Csc Library/Bee/artifacts/1900b0aP.dag/Assembly-CSharp.dll (+2 others)
+[94/99      0s] ILPostProcess Library/Bee/artifacts/1900b0aP.dag/post-processed/Assembly-CSharp.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aP.dag/Assembly-CSharp.dll, with 135 defines and 218 references
+
+processors: zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+1 processor(s) skipped this assembly
+[95/99      0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.pdb
+[96/99      0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll
+[98/99      0s] BuildPlayerDataGenerator Library/BuildPlayerData/Player/RuntimeInitializeOnLoads.json (+1 other)
+*** Tundra build success (1.21 seconds), 6 items updated, 99 evaluated
+Not rebuilding Data files -- no changes
+
+
+Mono dependencies included in the build
+Dependency assembly - System.Windows.Forms.dll
+Dependency assembly - System.IO.dll
+Dependency assembly - System.Collections.NonGeneric.dll
+Dependency assembly - System.Net.Ping.dll
+Dependency assembly - I18N.Other.dll
+Dependency assembly - System.Net.dll
+Dependency assembly - System.Workflow.Activities.dll
+Dependency assembly - System.Buffers.dll
+Dependency assembly - System.Net.HttpListener.dll
+Dependency assembly - Microsoft.Web.Infrastructure.dll
+Dependency assembly - System.ServiceModel.NetTcp.dll
+Dependency assembly - Mono.Tasklets.dll
+Dependency assembly - System.Workflow.Runtime.dll
+Dependency assembly - System.Net.AuthenticationManager.dll
+Dependency assembly - System.Core.dll
+Dependency assembly - System.Diagnostics.Debug.dll
+Dependency assembly - cscompmgd.dll
+Dependency assembly - Mono.Security.Win32.dll
+Dependency assembly - Mono.Data.Sqlite.dll
+Dependency assembly - System.Data.DataSetExtensions.dll
+Dependency assembly - System.Net.NameResolution.dll
+Dependency assembly - Mono.WebBrowser.dll
+Dependency assembly - System.Drawing.Design.dll
+Dependency assembly - System.Net.Http.Formatting.dll
+Dependency assembly - System.IO.FileSystem.DriveInfo.dll
+Dependency assembly - System.Dynamic.Runtime.dll
+Dependency assembly - System.IO.Pipes.dll
+Dependency assembly - System.Web.DynamicData.dll
+Dependency assembly - System.Web.Mvc.dll
+Dependency assembly - System.Reflection.Extensions.dll
+Dependency assembly - System.Dynamic.dll
+Dependency assembly - System.Security.AccessControl.dll
+Dependency assembly - System.Threading.AccessControl.dll
+Dependency assembly - Microsoft.Extensions.Logging.Abstractions.dll
+Dependency assembly - I18N.Rare.dll
+Dependency assembly - System.Web.Extensions.dll
+Dependency assembly - System.ObjectModel.dll
+Dependency assembly - System.Transactions.dll
+Dependency assembly - Mono.Messaging.RabbitMQ.dll
+Dependency assembly - WebMatrix.Data.dll
+Dependency assembly - System.Reactive.Runtime.Remoting.dll
+Dependency assembly - System.Xml.Serialization.dll
+Dependency assembly - System.IO.FileSystem.Watcher.dll
+Dependency assembly - Microsoft.Win32.Registry.AccessControl.dll
+Dependency assembly - System.Reactive.Windows.Forms.dll
+Dependency assembly - System.IO.FileSystem.Primitives.dll
+Dependency assembly - System.IO.MemoryMappedFiles.dll
+Dependency assembly - System.IO.FileSystem.dll
+Dependency assembly - Assembly-CSharp.dll
+Dependency assembly - System.Data.Services.dll
+Dependency assembly - System.IO.FileSystem.AccessControl.dll
+Dependency assembly - System.Resources.ResourceManager.dll
+Dependency assembly - System.Text.Encoding.dll
+Dependency assembly - System.Security.Cryptography.Primitives.dll
+Dependency assembly - System.Web.Routing.dll
+Dependency assembly - System.Messaging.dll
+Dependency assembly - System.Reflection.Emit.Lightweight.dll
+Dependency assembly - System.ServiceModel.Discovery.dll
+Dependency assembly - System.Web.Abstractions.dll
+Dependency assembly - SystemWebTestShim.dll
+Dependency assembly - System.Reflection.Primitives.dll
+Dependency assembly - Mono.Data.Tds.dll
+Dependency assembly - Microsoft.Win32.Primitives.dll
+Dependency assembly - PEAPI.dll
+Dependency assembly - Mono.Messaging.dll
+Dependency assembly - System.Runtime.Serialization.Primitives.dll
+Dependency assembly - System.Xml.XPath.XDocument.dll
+Dependency assembly - System.Drawing.dll
+Dependency assembly - System.Security.Cryptography.Encryption.dll
+Dependency assembly - System.Resources.Reader.dll
+Dependency assembly - System.Runtime.DurableInstancing.dll
+Dependency assembly - System.ValueTuple.dll
+Dependency assembly - System.DirectoryServices.Protocols.dll
+Dependency assembly - Microsoft.Win32.Registry.dll
+Dependency assembly - System.Security.Cryptography.DeriveBytes.dll
+Dependency assembly - System.Security.Cryptography.Hashing.dll
+Dependency assembly - System.Security.Cryptography.X509Certificates.dll
+Dependency assembly - System.Security.dll
+Dependency assembly - System.Json.dll
+Dependency assembly - System.Reactive.Observable.Aliases.dll
+Dependency assembly - System.Diagnostics.Tracing.dll
+Dependency assembly - System.IO.Compression.dll
+Dependency assembly - System.Resources.Writer.dll
+Dependency assembly - System.Data.Common.dll
+Dependency assembly - System.Threading.Tasks.dll
+Dependency assembly - System.Security.Cryptography.Pkcs.dll
+Dependency assembly - System.Numerics.Vectors.dll
+Dependency assembly - System.Xml.XmlDocument.dll
+Dependency assembly - System.Console.dll
+Dependency assembly - System.Net.ServicePoint.dll
+Dependency assembly - Mono.XBuild.Tasks.dll
+Dependency assembly - I18N.West.dll
+Dependency assembly - System.Reactive.Debugger.dll
+Dependency assembly - System.ComponentModel.TypeConverter.dll
+Dependency assembly - System.ServiceModel.Primitives.dll
+Dependency assembly - System.Security.Cryptography.Encryption.Aes.dll
+Dependency assembly - System.Reactive.Interfaces.dll
+Dependency assembly - System.Runtime.Caching.dll
+Dependency assembly - System.IO.UnmanagedMemoryStream.dll
+Dependency assembly - System.Security.Cryptography.Csp.dll
+Dependency assembly - System.Web.dll
+Dependency assembly - System.Web.Mobile.dll
+Dependency assembly - System.Runtime.Serialization.Xml.dll
+Dependency assembly - System.Diagnostics.Contracts.dll
+Dependency assembly - System.Diagnostics.TextWriterTraceListener.dll
+Dependency assembly - System.Runtime.Numerics.dll
+Dependency assembly - Mono.C5.dll
+Dependency assembly - System.Xml.ReaderWriter.dll
+Dependency assembly - Microsoft.Build.Utilities.v4.0.dll
+Dependency assembly - Microsoft.Build.Tasks.v4.0.dll
+Dependency assembly - System.ServiceModel.Internals.dll
+Dependency assembly - System.ServiceProcess.ServiceController.dll
+Dependency assembly - System.Reactive.Experimental.dll
+Dependency assembly - Microsoft.Build.Engine.dll
+Dependency assembly - System.Linq.Expressions.dll
+Dependency assembly - System.Security.Cryptography.OpenSsl.dll
+Dependency assembly - System.Reactive.Core.dll
+Dependency assembly - System.Security.Principal.dll
+Dependency assembly - System.Security.Principal.Windows.dll
+Dependency assembly - System.Memory.dll
+Dependency assembly - System.Diagnostics.StackTrace.dll
+Dependency assembly - System.Design.dll
+Dependency assembly - ICSharpCode.SharpZipLib.dll
+Dependency assembly - System.Security.Cryptography.Cng.dll
+Dependency assembly - System.Collections.dll
+Dependency assembly - System.ServiceModel.Http.dll
+Dependency assembly - System.Security.Cryptography.ProtectedData.dll
+Dependency assembly - System.ComponentModel.Annotations.dll
+Dependency assembly - System.Net.Mail.dll
+Dependency assembly - Mono.Btls.Interface.dll
+Dependency assembly - System.Numerics.dll
+Dependency assembly - System.Data.OracleClient.dll
+Dependency assembly - I18N.MidEast.dll
+Dependency assembly - System.ServiceModel.Activation.dll
+Dependency assembly - System.Text.Json.dll
+Dependency assembly - System.ComponentModel.dll
+Dependency assembly - CustomMarshalers.dll
+Dependency assembly - System.Data.Entity.dll
+Dependency assembly - System.Diagnostics.Tools.dll
+Dependency assembly - System.Net.WebSockets.dll
+Dependency assembly - System.Runtime.dll
+Dependency assembly - System.ServiceModel.Web.dll
+Dependency assembly - System.Text.Encodings.Web.dll
+Dependency assembly - System.Runtime.InteropServices.WindowsRuntime.dll
+Dependency assembly - System.Net.Primitives.dll
+Dependency assembly - System.Reflection.TypeExtensions.dll
+Dependency assembly - System.Text.Encoding.CodePages.dll
+Dependency assembly - System.Collections.Immutable.dll
+Dependency assembly - Mono.Posix.dll
+Dependency assembly - Mono.Security.dll
+Dependency assembly - System.Web.Services.dll
+Dependency assembly - System.Net.Cache.dll
+Dependency assembly - System.Web.WebPages.dll
+Dependency assembly - System.Reactive.Linq.dll
+Dependency assembly - System.Net.NetworkInformation.dll
+Dependency assembly - System.Diagnostics.Process.dll
+Dependency assembly - System.Security.Cryptography.RSA.dll
+Dependency assembly - Microsoft.Extensions.DependencyInjection.Abstractions.dll
+Dependency assembly - System.Threading.ThreadPool.dll
+Dependency assembly - System.Drawing.Primitives.dll
+Dependency assembly - Accessibility.dll
+Dependency assembly - System.Data.Linq.dll
+Dependency assembly - System.Deployment.dll
+Dependency assembly - System.Reflection.Emit.dll
+Dependency assembly - System.Threading.Tasks.Extensions.dll
+Dependency assembly - System.Workflow.ComponentModel.dll
+Dependency assembly - System.Runtime.Extensions.dll
+Dependency assembly - System.Reactive.PlatformServices.dll
+Dependency assembly - Mono.Cairo.dll
+Dependency assembly - System.Linq.dll
+Dependency assembly - System.IO.IsolatedStorage.dll
+Dependency assembly - Mono.Management.dll
+Dependency assembly - System.Runtime.CompilerServices.Unsafe.dll
+Dependency assembly - System.Web.Http.dll
+Dependency assembly - System.Runtime.Loader.dll
+Dependency assembly - System.Text.Encoding.Extensions.dll
+Dependency assembly - Microsoft.Build.Framework.dll
+Dependency assembly - System.Net.Http.Rtc.dll
+Dependency assembly - System.Xml.Linq.dll
+Dependency assembly - Mono.Simd.dll
+Dependency assembly - System.Security.Cryptography.Encoding.dll
+Dependency assembly - System.Security.Cryptography.Encryption.ECDsa.dll
+Dependency assembly - System.IO.Compression.FileSystem.dll
+Dependency assembly - System.ServiceModel.Routing.dll
+Dependency assembly - System.Web.WebPages.Razor.dll
+Dependency assembly - System.Resources.ReaderWriter.dll
+Dependency assembly - System.Reflection.DispatchProxy.dll
+Dependency assembly - Mono.CompilerServices.SymbolWriter.dll
+Dependency assembly - System.ServiceModel.dll
+Dependency assembly - Mono.CSharp.dll
+Dependency assembly - System.Xml.XDocument.dll
+Dependency assembly - System.Windows.Forms.DataVisualization.dll
+Dependency assembly - System.Reflection.Metadata.dll
+Dependency assembly - System.ServiceProcess.dll
+Dependency assembly - I18N.dll
+Dependency assembly - System.Collections.Concurrent.dll
+Dependency assembly - System.Web.Extensions.Design.dll
+Dependency assembly - System.Runtime.InteropServices.RuntimeInformation.dll
+Dependency assembly - System.Threading.Tasks.Dataflow.dll
+Dependency assembly - Mono.Options.dll
+Dependency assembly - System.Web.ApplicationServices.dll
+Dependency assembly - System.Globalization.Calendars.dll
+Dependency assembly - System.Web.WebPages.Deployment.dll
+Dependency assembly - System.Diagnostics.FileVersionInfo.dll
+Dependency assembly - System.Xml.XPath.dll
+Dependency assembly - RabbitMQ.Client.dll
+Dependency assembly - Microsoft.Bcl.AsyncInterfaces.dll
+Dependency assembly - System.Net.Utilities.dll
+Dependency assembly - System.Collections.Specialized.dll
+Dependency assembly - System.Net.WebHeaderCollection.dll
+Dependency assembly - System.Security.SecureString.dll
+Dependency assembly - System.dll
+Dependency assembly - System.Xml.XPath.XmlDocument.dll
+Dependency assembly - System.Management.dll
+Dependency assembly - System.Runtime.Remoting.dll
+Dependency assembly - System.Configuration.dll
+Dependency assembly - System.Diagnostics.TraceEvent.dll
+Dependency assembly - System.Runtime.Serialization.Json.dll
+Dependency assembly - System.Reflection.Emit.ILGeneration.dll
+Dependency assembly - System.Xaml.dll
+Dependency assembly - System.Net.Http.dll
+Dependency assembly - System.Xml.Xsl.Primitives.dll
+Dependency assembly - System.Web.Http.SelfHost.dll
+Dependency assembly - System.Security.Claims.dll
+Dependency assembly - System.Security.Cryptography.Hashing.Algorithms.dll
+Dependency assembly - System.ComponentModel.Composition.dll
+Dependency assembly - System.ComponentModel.EventBasedAsync.dll
+Dependency assembly - System.Diagnostics.TraceSource.dll
+Dependency assembly - System.IO.Compression.ZipFile.dll
+Dependency assembly - System.Data.Services.Client.dll
+Dependency assembly - Mono.Http.dll
+Dependency assembly - System.Web.Http.WebHost.dll
+Dependency assembly - System.Threading.Overlapped.dll
+Dependency assembly - Mono.Profiler.Log.dll
+Dependency assembly - System.Reflection.dll
+Dependency assembly - Commons.Xml.Relaxng.dll
+Dependency assembly - System.Xml.dll
+Dependency assembly - System.Linq.Parallel.dll
+Dependency assembly - mscorlib.dll
+Dependency assembly - I18N.CJK.dll
+Dependency assembly - System.Threading.dll
+Dependency assembly - System.Runtime.Serialization.Formatters.Soap.dll
+Dependency assembly - System.Reactive.Windows.Threading.dll
+Dependency assembly - System.ServiceModel.Duplex.dll
+Dependency assembly - System.Data.dll
+Dependency assembly - System.Threading.Timer.dll
+Dependency assembly - System.AppContext.dll
+Dependency assembly - System.ServiceModel.Security.dll
+Dependency assembly - System.Globalization.Extensions.dll
+Dependency assembly - Microsoft.VisualC.dll
+Dependency assembly - System.Text.RegularExpressions.dll
+Dependency assembly - System.Runtime.InteropServices.dll
+Dependency assembly - System.Configuration.Install.dll
+Dependency assembly - monodoc.dll
+Dependency assembly - System.Security.Cryptography.Algorithms.dll
+Dependency assembly - Mono.Parallel.dll
+Dependency assembly - System.Threading.Thread.dll
+Dependency assembly - System.IdentityModel.dll
+Dependency assembly - Microsoft.Build.dll
+Dependency assembly - System.Windows.dll
+Dependency assembly - IBM.Data.DB2.dll
+Dependency assembly - System.Threading.Tasks.Parallel.dll
+Dependency assembly - System.Net.Http.WebRequest.dll
+Dependency assembly - System.IO.Hashing.dll
+Dependency assembly - System.Net.Sockets.dll
+Dependency assembly - System.Runtime.CompilerServices.VisualC.dll
+Dependency assembly - System.Data.SqlClient.dll
+Dependency assembly - System.Diagnostics.DiagnosticSource.dll
+Dependency assembly - System.Net.Security.dll
+Dependency assembly - System.Linq.Queryable.dll
+Dependency assembly - System.Security.Cryptography.Encryption.ECDiffieHellman.dll
+Dependency assembly - Microsoft.CSharp.dll
+Dependency assembly - System.EnterpriseServices.dll
+Dependency assembly - System.Web.RegularExpressions.dll
+Dependency assembly - System.ComponentModel.Primitives.dll
+Dependency assembly - netstandard.dll
+Dependency assembly - SMDiagnostics.dll
+Dependency assembly - System.Net.WebSockets.Client.dll
+Dependency assembly - System.IdentityModel.Selectors.dll
+Dependency assembly - System.ComponentModel.DataAnnotations.dll
+Dependency assembly - WindowsBase.dll
+Dependency assembly - System.Runtime.Serialization.dll
+Dependency assembly - System.Web.Razor.dll
+Dependency assembly - System.Json.Microsoft.dll
+Dependency assembly - System.Runtime.Handles.dll
+Dependency assembly - Novell.Directory.Ldap.dll
+Dependency assembly - System.Reflection.Context.dll
+Dependency assembly - System.Globalization.dll
+Dependency assembly - System.Runtime.Serialization.Formatters.dll
+Dependency assembly - System.Net.Requests.dll
+Dependency assembly - System.Security.Cryptography.RandomNumberGenerator.dll
+Dependency assembly - System.Xml.XmlSerializer.dll
+Dependency assembly - System.Reactive.Providers.dll
+Dependency assembly - System.DirectoryServices.dll
+
+Total cache size 259982876
+Total cache size after purge 259982876, took 00:00:00.3011797
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.0f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --dagfile="Library/Bee/Playerd06d2922.dag" --profile="Library/Bee/backend1.traceevents" Player
+WorkingDir: C:/Users/A/Documents/Codex/2026-10-15/new-chat
+DisplayProgressbar: Incremental Player Build
+ExitCode: 4 Duration: 0s691ms
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.0f1\Editor\Data\DotNetSdk\dotnet.exe "C:\Program Files\Unity\Hub\Editor\6000.6.0f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\WinPlayerBuildProgram.exe" "C:/Program Files/Unity/Hub/Editor/6000.6.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Bee;C:/Program Files/Unity/Hub/Editor/6000.6.0f1/Editor/Data/Tools/BuildPipeline" "Library/Bee/Playerd06d2922.dag.json" "Library/Bee/Playerd06d2922-inputdata.json" "Library\Bee\buildprogram0.traceevents"
+WorkingDir: C:/Users/A/Documents/Codex/2026-10-15/new-chat
+ExitCode: 0 Duration: 0s297ms
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.0f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --dagfile="Library/Bee/Playerd06d2922.dag" --dagfilejson="Library\Bee\Playerd06d2922.dag.json" --profile="Library/Bee/backend2.traceevents" Player
+WorkingDir: C:/Users/A/Documents/Codex/2026-10-15/new-chat
+ExitCode: 0 Duration: 0s166ms
+
+-------------------------------------------------------------------------------
+Build Report
+Information on used Assets is not available, since player data was not rebuilt.
+Do a clean build to view the Asset build report information.
+-------------------------------------------------------------------------------
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 34 unused Assets / (1.2 MB). Loaded Objects now: 1242.
+Memory consumption went from 234.3 MB to 233.0 MB.
+Total: 5.109000 ms (FindLiveObjects: 0.131100 ms CreateObjectMapping: 0.013800 ms MarkObjects: 4.409900 ms  DeleteObjects: 0.440300 ms)
+
+DisplayProgressNotification: Build Successful
+Build Finished, Result: Success.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            0.591 ms
+	Integration:            3.522 ms
+	Integration of assets:  0.002 ms
+	Thread Wait Time:       0.010 ms
+	Total Operation Time:   4.125 ms
+Unloading 0 unused Assets / (1.2 KB). Loaded Objects now: 1241.
+Memory consumption went from 230.3 MB to 230.3 MB.
+Total: 4.002400 ms (FindLiveObjects: 0.122400 ms CreateObjectMapping: 0.008900 ms MarkObjects: 3.736600 ms  DeleteObjects: 0.021600 ms)
+
+##utp:{"success":true,"type":"PlayerBuildInfo","version":2,"phase":"Immediate","time":1792392961642,"processId":52072,"steps":[{"description":"Call PrepareForBuild callbacks","duration":1},{"description":"Call internal build started callbacks","duration":0},{"description":"Preprocess Player","duration":9},{"description":"Save scenes before build","duration":0},{"description":"Prepare For Build","duration":9},{"description":"ProducePlayerScriptAssemblies","duration":1691},{"description":"Verify Build setup","duration":67},{"description":"Prepare assets for target platform","duration":1},{"description":"Prepare splash screen","duration":1},{"description":"Run script only build","duration":14},{"description":"Build scripts DLLs","duration":63},{"description":"Postprocess built player","duration":1379},{"description":"Call Post-Process callbacks","duration":18}],"duration":3253}
+DUEL_BUILD_OK 325693324
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+DuelBuild:Build () (at Assets/Editor/DuelBuild.cs:757)
+
+(Filename: Assets/Editor/DuelBuild.cs Line: 757)
+
+Total cache size 259982876
+Total cache size after purge 259982876, took 00:00:00.3028738
+Batchmode quit successfully invoked - shutting down!
+Curl error 23: Failure writing output to destination, passed 13 returned 0
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-A-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-A channel disconnected successfully.
+Lingering sessions upon destruction of worker manager
+Unity Data Store service was successfully shut down
+UDS shutting down local client system
+Shut down UDS service system complete
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+Exiting batchmode successfully now!
+[ExitDontLaunchBugReporter] Exiting without the bug reporter. Application will exit with return code 0

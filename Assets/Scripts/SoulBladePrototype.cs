@@ -17,12 +17,16 @@ public sealed class SoulBladePrototype : MonoBehaviour
     Material spriteMaterial, heroMaterial, enemyMaterial, lineMaterial;
     readonly Dictionary<string, Sprite[]> animation = new Dictionary<string, Sprite[]>();
     readonly Dictionary<string, Sprite> art = new Dictionary<string, Sprite>();
+    readonly List<Sprite> chibiFrames = new List<Sprite>();
+    readonly Dictionary<string, ChibiClip> chibiAnimations = new Dictionary<string, ChibiClip>();
     readonly List<VisualEffect> effects = new List<VisualEffect>();
     readonly List<Scenery> scenery = new List<Scenery>();
+    readonly List<Sprite> sceneryFrames = new List<Sprite>();
     readonly List<GameObject> waveVisuals = new List<GameObject>();
     readonly List<Material> materials = new List<Material>();
     Texture2D white, soft;
     Sprite softSprite;
+    Sprite heroPortrait, enemyPortrait;
     Font font;
     float accumulator, freeze, slow, shake, flash, hurt, heroFlash, enemyFlash, pulse, trailTimer;
     float uiHealth = 1, uiBoss = 1, cueLife, cueMax, realClock;
@@ -62,7 +66,36 @@ public sealed class SoulBladePrototype : MonoBehaviour
     };
     [Serializable] class ClipFile { public ClipInfo[] clips; }
     [Serializable] class ClipInfo { public string name; public int frames, cols, width, height; }
-    sealed class Scenery { public Transform transform; public Vector3 origin; public float parallax, sway, phase; }
+    [Serializable] class ChibiAtlasFile { public ChibiAtlasPage[] pages; public ChibiClipInfo[] clips; }
+    [Serializable] class ChibiAtlasPage { public string name; }
+    [Serializable] class ChibiClipInfo
+    {
+        public string name;
+        public bool loop, holdLast;
+        public float[] size, pivot;
+        public ChibiFrameInfo[] frames;
+    }
+    [Serializable] class ChibiFrameInfo
+    {
+        public int page, x, y, width, height;
+        public float durationMs;
+    }
+    sealed class ChibiClip
+    {
+        public Sprite[] frames;
+        public float[] durations;
+    }
+    sealed class Scenery
+    {
+        public Transform transform;
+        public Vector3 origin, scale;
+        public float parallax, sway, phase;
+        public bool ambientDrift;
+        public bool edgeAnchored;
+        public int edgeX, edgeY;
+        public float edgeScaleX, edgeScaleY;
+        public Vector2 edgeSpriteSize;
+    }
     sealed class VisualEffect
     {
         public GameObject go;
@@ -81,7 +114,7 @@ public sealed class SoulBladePrototype : MonoBehaviour
         font = Font.CreateDynamicFontFromOSFont(new[] { "Microsoft YaHei", "SimHei", "Arial" }, 22);
         spriteMaterial = Own(new Material(Resources.Load<Shader>("DuelSprite")));
         lineMaterial = Own(new Material(Shader.Find("Sprites/Default")));
-        MakeSoftTexture(); LoadAnimation(); BuildArena(); BuildActors();
+        MakeSoftTexture(); LoadAnimation(); BuildChibiCharacters(); BuildStoryPortraits(); BuildArena(); BuildActors();
         bossVisuals = new DuelBossVisuals(spriteMaterial, lineMaterial, Ground);
         sound = gameObject.AddComponent<DuelSound>();
         ParseArguments();
@@ -150,6 +183,60 @@ public sealed class SoulBladePrototype : MonoBehaviour
             animation.Add(clip.name, frames);
         }
     }
+    void BuildStoryPortraits()
+    {
+        heroPortrait = MakeStoryPortrait(chibiAnimations["hero_idle"].frames[0]);
+        enemyPortrait = MakeStoryPortrait(chibiAnimations["boss_idle"].frames[0]);
+    }
+    void BuildChibiCharacters()
+    {
+        var manifest = Resources.Load<TextAsset>("Art/ChibiAtlas");
+        if (!manifest) throw new InvalidOperationException("Missing character animation manifest.");
+        var atlas = JsonUtility.FromJson<ChibiAtlasFile>(manifest.text);
+        if (atlas == null || atlas.pages == null || atlas.clips == null)
+            throw new InvalidOperationException("Invalid character animation manifest.");
+        var pages = new Texture2D[atlas.pages.Length];
+        for (int i = 0; i < pages.Length; i++)
+        {
+            pages[i] = Resources.Load<Texture2D>("Art/" + atlas.pages[i].name);
+            if (!pages[i]) throw new InvalidOperationException("Missing character atlas page: " + atlas.pages[i].name);
+        }
+        foreach (var clipInfo in atlas.clips)
+        {
+            if (clipInfo.frames == null || clipInfo.frames.Length == 0 ||
+                clipInfo.pivot == null || clipInfo.pivot.Length != 2)
+                throw new InvalidOperationException("Invalid character clip: " + clipInfo.name);
+            var clip = new ChibiClip
+            {
+                frames = new Sprite[clipInfo.frames.Length],
+                durations = new float[clipInfo.frames.Length]
+            };
+            for (int i = 0; i < clipInfo.frames.Length; i++)
+            {
+                var frame = clipInfo.frames[i];
+                if (frame.page < 0 || frame.page >= pages.Length)
+                    throw new InvalidOperationException("Invalid atlas page in clip: " + clipInfo.name);
+                var texture = pages[frame.page];
+                if (frame.x < 0 || frame.y < 0 || frame.width <= 0 || frame.height <= 0 ||
+                    frame.x + frame.width > texture.width || frame.y + frame.height > texture.height)
+                    throw new InvalidOperationException("Frame exceeds atlas bounds: " + clipInfo.name);
+                var rect = new Rect(frame.x, texture.height - frame.y - frame.height, frame.width, frame.height);
+                clip.frames[i] = Sprite.Create(texture, rect, new Vector2(clipInfo.pivot[0], clipInfo.pivot[1]),
+                    100, 0, SpriteMeshType.FullRect);
+                clip.durations[i] = Mathf.Max(.001f, frame.durationMs / 1000f);
+                chibiFrames.Add(clip.frames[i]);
+            }
+            chibiAnimations.Add(clipInfo.name, clip);
+        }
+    }
+    static Sprite MakeStoryPortrait(Sprite frame)
+    {
+        Rect source = frame.textureRect;
+        var bust = new Rect(source.x + source.width * .27f, source.y + source.height * .42f,
+            source.width * .46f, source.height * .56f);
+        return Sprite.Create(frame.texture, bust, new Vector2(.5f, .1f), frame.pixelsPerUnit,
+            0, SpriteMeshType.FullRect);
+    }
     Sprite Art(string name)
     {
         if (art.TryGetValue(name, out var result)) return result;
@@ -187,7 +274,8 @@ public sealed class SoulBladePrototype : MonoBehaviour
         sr.color = tint; sr.transform.position = new Vector3(x, y, 0);
         sr.transform.localScale = new Vector3(width / sr.sprite.bounds.size.x, height / sr.sprite.bounds.size.y, 1);
         scenery.Add(new Scenery { transform = sr.transform, origin = sr.transform.position,
-            parallax = parallax, sway = sway, phase = UnityEngine.Random.value * 6 });
+            scale = sr.transform.localScale, parallax = parallax, sway = sway,
+            phase = UnityEngine.Random.value * 6 });
     }
     void BuildArena()
     {
@@ -199,47 +287,69 @@ public sealed class SoulBladePrototype : MonoBehaviour
         }
         cam.orthographic = true; cam.orthographicSize = 5;
         cam.clearFlags = CameraClearFlags.SolidColor;
-        cam.backgroundColor = new Color(.085f, .13f, .15f);
+        cam.backgroundColor = new Color(.012f, .025f, .026f);
         cam.transform.position = cameraRest;
         post = cam.gameObject.AddComponent<DuelPost>();
-        var pale = new Color(.51f, .69f, .6f);
-        // Independent silhouettes, platforms and plants, not a baked arena image.
-        for (int i = 0; i < 7; i++)
-            Decor("column" + (i % 2), -12 + i * 4.1f, 2.7f + i % 3 * .3f, 2.4f, 12, -70, pale, .83f, .06f);
-        Decor("column3", -6.7f, -1.3f, 13, 5.5f, -65, pale, .65f, .12f);
-        Decor("column4", 8.8f, -.3f, 7, 8, -65, pale, .62f, .12f);
-        Decor("column2", -.6f, -2.1f, 7.5f, 5.1f, -66, pale, .73f, .1f);
-        float[] rootX = { -10, -7.1f, -3.8f, 3.6f, 7.4f, 10.3f };
-        for (int i = 0; i < rootX.Length; i++)
-            Decor("prop" + (9 + i % 4), rootX[i], 1.1f, .65f + i % 2 * .3f, 8.4f, -48,
-                new Color(.48f, .72f, .57f), .28f, .22f, .4f);
-        for (int i = 0; i < 11; i++)
-            Decor("hanging" + (i % 5), -10.8f + i * 2.2f, 4.1f + (i % 3) * .24f,
-                1.2f + (i % 2) * .6f, 3 + (i % 3) * .7f, -30,
-                new Color(.42f, .64f, .46f), .06f, .38f, .7f);
-        Decor("prop0", -6.9f, -1.38f, 3.8f, 1.7f, -15, new Color(.69f, .79f, .68f));
-        Decor("prop1", 6.8f, -.6f, 3.8f, 3.7f, -15, new Color(.61f, .71f, .63f));
-        Decor("hill5", -.5f, -1.95f, 10.5f, 1.1f, -20, new Color(.5f, .75f, .6f), .16f);
-        for (int i = 0; i < 10; i++)
-            Decor("prop" + (i % 2 == 0 ? 22 : 24), -9 + i * 2.1f, -1.65f, .18f, 1.15f,
-                -12, new Color(.53f, .95f, .78f), 0, .1f, 2);
+        AddArenaPlate("MosswoodFar", -80);
+        AddArenaPlate("MosswoodMid", -55);
+        AddArenaPlate("MosswoodNear", 11);
+        AddArenaPlate("MosswoodClose", 35);
         var floor = new GameObject("Arena collision");
         floor.transform.position = new Vector3(0, Ground - .6f, 0);
         floor.AddComponent<BoxCollider2D>().size = new Vector2(18, 1.2f);
-        for (int i = 0; i < 16; i++)
-            Decor("floor", -11.25f + i * 1.5f, Ground - .18f, 1.505f, .54f,
-                0, new Color(.59f, .68f, .51f), 0, 1);
-        Decor("platform7", 0, Ground - .47f, 19, .8f, -1, new Color(.43f, .64f, .49f), 0, 1);
-        Decor("hill6", -8.8f, -3.9f, 4.8f, 3, 60, new Color(.12f, .22f, .19f), 0, 1.1f);
-        Decor("hill2", 8.7f, -3.9f, 4.6f, 3.2f, 60, new Color(.13f, .23f, .19f), 0, 1.1f);
-        Decor("hanging6", -9.3f, 2, 3.2f, 7.5f, 65, new Color(.13f, .23f, .19f), 0, 1.1f, .6f);
-        Decor("hanging7", 9.3f, 2.7f, 3.1f, 7.5f, 65, new Color(.13f, .23f, .19f), 0, 1.1f, .6f);
-        var water = NewSprite("Water", Sprite.Create(Texture2D.whiteTexture,
-            new Rect(0, 0, 1, 1), new Vector2(.5f, .5f), 1), -8,
-            Own(new Material(Resources.Load<Shader>("DuelWater"))));
-        water.transform.position = new Vector3(0, -3.9f, 0);
-        water.transform.localScale = new Vector3(24, 2.6f, 1);
         BuildAtmosphere();
+    }
+    void AddArenaPlate(string name, int order)
+    {
+        if (name == "MosswoodNear" || name == "MosswoodClose")
+        {
+            bool near = name == "MosswoodNear";
+            AddEdgeAnchoredPlate(name, order, near ? .82f : .86f, near ? .82f : 1f, near);
+            return;
+        }
+        var sprite = Art(name);
+        var layer = NewSprite(name + " depth layer", sprite, order);
+        layer.transform.position = new Vector3(0, .35f, 0);
+        float scale = name == "MosswoodFar" ? 1.08f : 1f;
+        layer.transform.localScale = new Vector3(
+            17.8f * scale / sprite.bounds.size.x, 10f * scale / sprite.bounds.size.y, 1);
+        if (name == "MosswoodFar")
+            scenery.Add(new Scenery
+            {
+                transform = layer.transform,
+                origin = layer.transform.position,
+                scale = layer.transform.localScale,
+                parallax = .08f,
+                phase = UnityEngine.Random.value * Mathf.PI * 2,
+                ambientDrift = true
+            });
+    }
+    void AddEdgeAnchoredPlate(string name, int order, float scaleX, float scaleY, bool bottomAnchor)
+    {
+        var source = Art(name);
+        var texture = source.texture;
+        int halfWidth = texture.width / 2;
+        for (int x = 0; x < 2; x++)
+        {
+            int edgeX = x == 0 ? -1 : 1;
+            float pivotY = bottomAnchor ? 0 : .5f;
+            var sprite = Sprite.Create(texture,
+                new Rect(x * halfWidth, 0, halfWidth, texture.height),
+                new Vector2(x, pivotY), source.pixelsPerUnit, 0, SpriteMeshType.FullRect);
+            sceneryFrames.Add(sprite);
+            var renderer = NewSprite(name + " edge " + edgeX, sprite, order);
+            var size = sprite.bounds.size;
+            scenery.Add(new Scenery
+            {
+                transform = renderer.transform,
+                edgeAnchored = true,
+                edgeX = edgeX,
+                edgeY = bottomAnchor ? -1 : 0,
+                edgeScaleX = scaleX,
+                edgeScaleY = scaleY,
+                edgeSpriteSize = size
+            });
+        }
     }
     void BuildAtmosphere()
     {
@@ -267,9 +377,9 @@ public sealed class SoulBladePrototype : MonoBehaviour
         heroMaterial = Own(new Material(spriteMaterial)); enemyMaterial = Own(new Material(spriteMaterial));
         heroMaterial.SetColor("_Accent", new Color(.22f, .78f, .77f));
         enemyMaterial.SetColor("_Accent", new Color(.98f, .48f, .22f));
-        heroMaterial.SetFloat("_Recolor", 1); enemyMaterial.SetFloat("_Recolor", 1);
-        hero = NewSprite("Wanderer", animation["R_Idle"][0], 15, heroMaterial);
-        enemy = NewSprite("Ash Warden", animation["L_Idle"][0], 14, enemyMaterial);
+        heroMaterial.SetFloat("_Recolor", 0); enemyMaterial.SetFloat("_Recolor", 0);
+        hero = NewSprite("Wanderer", chibiAnimations["hero_idle"].frames[0], 15, heroMaterial);
+        enemy = NewSprite("Ash Warden", chibiAnimations["boss_idle"].frames[0], 14, enemyMaterial);
         heroShadow = NewSprite("Player shadow", softSprite, 2); enemyShadow = NewSprite("Warden shadow", softSprite, 2);
         heroShadow.color = enemyShadow.color = new Color(0, 0, 0, .8f);
         spinTrail = MakeLine("Aerial rotating blade", 20, new Color(.32f, .88f, .93f), .2f);
@@ -450,8 +560,10 @@ public sealed class SoulBladePrototype : MonoBehaviour
         enemyShadow.enabled = enemy.enabled && b.y < 3;
         hero.transform.position = new Vector3(p.x, Ground + p.y, 0);
         enemy.transform.position = new Vector3(b.x, Ground + b.y, 0);
-        hero.transform.localScale = Vector3.one * 1.07f; enemy.transform.localScale = Vector3.one * 1.7f;
-        string action = "Idle"; float progress = (engaged ? Fight.clock : realClock) * .8f % 1; bool loop = true;
+        hero.transform.localScale = Vector3.one;
+        enemy.transform.localScale = Vector3.one * 1.32f;
+        float animationTime = engaged ? Fight.clock : realClock;
+        string action = "Idle"; float progress = animationTime / ChibiClipDuration("hero_idle"); bool loop = true;
         switch (Fight.playerMode)
         {
             case DuelCombat.PlayerMode.Attack:
@@ -487,19 +599,20 @@ public sealed class SoulBladePrototype : MonoBehaviour
             default:
                 if (p.y > .03f) { action = p.vy > 0 ? "Jump" : "Fall"; progress = Mathf.Clamp01(1 - p.y / 2); loop = false; }
                 else if (Mathf.Abs(pending.move) > 0 || demo && Mathf.Abs(p.x - b.x) > 1.8f)
-                { action = "Run"; progress = Fight.clock * 1.8f % 1; }
+                { action = "Run"; progress = animationTime / ChibiClipDuration("hero_run"); }
                 break;
         }
         Pose(hero, p.facing, action, progress, loop);
         UpdateSpinTrail();
-        action = "Idle"; progress = (engaged ? Fight.clock : realClock) * .6f % 1; loop = true;
+        action = "Idle"; progress = animationTime / ChibiClipDuration("boss_idle"); loop = true;
         switch (Fight.enemyMode)
         {
             case DuelCombat.EnemyMode.Intro:
                 action = b.y > .01f ? "Fall" : b.time > .55f && b.time < 1.5f ? "Slash_2" : "Idle";
                 progress = b.y > .01f ? .5f : .8f; loop = false; break;
             case DuelCombat.EnemyMode.Approach:
-                if (Mathf.Abs(p.x - b.x) > 2.1f) { action = "Run"; progress = Fight.clock % 1; } break;
+                if (Mathf.Abs(p.x - b.x) > 2.1f)
+                { action = "Run"; progress = animationTime / ChibiClipDuration("boss_run"); } break;
             case DuelCombat.EnemyMode.Windup:
                 action = Fight.pattern == DuelCombat.SkySwords || Fight.pattern == 3 ? "Cast_Powerful" :
                     Fight.pattern == DuelCombat.ShoulderRush ? "Block" : Fight.pattern == DuelCombat.BladeRush ? "Slash_3" :
@@ -572,9 +685,87 @@ public sealed class SoulBladePrototype : MonoBehaviour
     }
     void Pose(SpriteRenderer sr, int facing, string action, float progress, bool loop)
     {
+        if (sr == hero || sr == enemy)
+        {
+            bool isHero = sr == hero;
+            string clipName;
+            int first = 0, count = -1;
+            if (isHero)
+            {
+                switch (action)
+                {
+                    case "Run": clipName = "hero_run"; break;
+                    case "Jump": clipName = "hero_jump"; first = 0; count = 2; break;
+                    case "Fall": clipName = "hero_jump"; first = 2; count = 2; break;
+                    case "SpinLand": clipName = "hero_jump"; first = 3; count = 1; break;
+                    case "AirSpin": clipName = "hero_airspin"; break;
+                    case "Dodge": clipName = "hero_dodge"; break;
+                    case "PowerUp":
+                    case "Cast_Powerful": clipName = "hero_charge"; break;
+                    case "Death_Backward": clipName = "hero_hurt"; first = 2; count = 2; break;
+                    case "Impact_Body": clipName = "hero_hurt"; first = 0; count = 3; break;
+                    case "BladeBind": clipName = "hero_parry"; first = 1; count = 2; break;
+                    case "Block": clipName = "hero_parry"; break;
+                    case "Slash_1":
+                    case "Slash_2":
+                    case "Slash_3":
+                    case "Slash_4":
+                        clipName = "hero_combo";
+                        first = (action[action.Length - 1] - '1') * 2;
+                        count = 2;
+                        break;
+                    default: clipName = "hero_idle"; break;
+                }
+            }
+            else
+            {
+                switch (action)
+                {
+                    case "Run": clipName = "boss_run"; break;
+                    case "Jump": clipName = "boss_leap"; first = 0; count = 2; break;
+                    case "Fall": clipName = "boss_leap"; first = 1; count = 2; break;
+                    case "Dodge":
+                    case "Block" when Fight.pattern == DuelCombat.ShoulderRush:
+                        clipName = "boss_rush"; break;
+                    case "PowerUp": clipName = "boss_rage"; break;
+                    case "Cast_Powerful": clipName = "boss_cast"; break;
+                    case "Death_Backward": clipName = "boss_hurt"; first = 3; count = 1; break;
+                    case "Impact_Body": clipName = "boss_hurt"; first = 0; count = 3; break;
+                    case "BladeBind": clipName = "boss_attack"; first = 0; count = 2; break;
+                    case "Slash_1":
+                    case "Slash_2":
+                    case "Slash_3":
+                    case "Slash_4":
+                    case "Block": clipName = "boss_attack"; break;
+                    default: clipName = "boss_idle"; break;
+                }
+            }
+            var clip = chibiAnimations[clipName];
+            if (count < 0) count = clip.frames.Length - first;
+            count = Mathf.Clamp(count, 1, clip.frames.Length - first);
+            float duration = 0;
+            for (int i = first; i < first + count; i++) duration += clip.durations[i];
+            float sample = (loop ? Mathf.Repeat(progress, 1) : Mathf.Clamp01(progress)) * duration;
+            int frameIndex = first + count - 1;
+            for (int i = first; i < first + count; i++)
+            {
+                frameIndex = i;
+                if (sample < clip.durations[i]) break;
+                sample -= clip.durations[i];
+            }
+            sr.sprite = clip.frames[frameIndex];
+            sr.flipX = isHero ? facing < 0 : facing > 0;
+            return;
+        }
         var frames = animation[(facing > 0 ? "R_" : "L_") + action];
         int index = loop ? (int)(Mathf.Repeat(progress, 1) * frames.Length) : Mathf.FloorToInt(Mathf.Clamp01(progress) * (frames.Length - 1));
         sr.sprite = frames[Mathf.Clamp(index, 0, frames.Length - 1)];
+    }
+    float ChibiClipDuration(string name)
+    {
+        float duration = 0;
+        foreach (float frameDuration in chibiAnimations[name].durations) duration += frameDuration;
+        return Mathf.Max(.001f, duration);
     }
     void Handle(DuelCombat.Cue cue)
     {
@@ -587,7 +778,7 @@ public sealed class SoulBladePrototype : MonoBehaviour
         switch (cue.kind)
         {
             case "Entrance":
-                Notify("灰 烬 守 卫", "此处，不容无誓之刃。", gold, 1.9f); break;
+                cueLife = 0; break;
             case "ChargeStart":
                 Ring(at, .7f, gold, .5f); Spark(at, gold, 20, .6f);
                 Notify("烈 魂 蓄 势", "蓄力中不可防御 · 再按 Q 中断", gold, DuelCombat.ChargeDuration); break;
@@ -727,7 +918,7 @@ public sealed class SoulBladePrototype : MonoBehaviour
                 Spark(new Vector3(at.x, Ground + .08f, 0), new Color(.58f, .75f, .63f, .5f), 7, .35f); break;
             case "Phase":
                 Ring(at, 2.3f, new Color(1, .3f, .17f), 1.1f); slow = .25f; shake = .65f;
-                Notify("余 烬 再 燃", "灰烬守卫进入暴走", gold, 5.8f); break;
+                cueLife = 0; break;
             case "Heal": Ring(at, .8f, new Color(.5f, 1, .64f), .6f); Spark(at, new Color(.56f, 1, .77f), 20, .7f); break;
             case "Win":
                 Impact(at, Color.white, 65, .18f, .8f); slow = .65f; cueLife = 0;
@@ -861,8 +1052,35 @@ public sealed class SoulBladePrototype : MonoBehaviour
     {
         foreach (var item in scenery)
         {
-            item.transform.position = item.origin + new Vector3(cam.transform.position.x * (1 - item.parallax), 0, 0);
-            if (item.sway > 0) item.transform.localRotation = Quaternion.Euler(0, 0, Mathf.Sin(realClock * .7f + item.phase) * item.sway);
+            if (item.edgeAnchored)
+            {
+                float halfHeight = cam.orthographicSize;
+                float halfWidth = halfHeight * cam.aspect;
+                item.transform.position = new Vector3(
+                    cam.transform.position.x + item.edgeX * halfWidth,
+                    cam.transform.position.y + (item.edgeY < 0 ? -halfHeight : 0), 0);
+                item.transform.localScale = new Vector3(
+                    halfWidth * item.edgeScaleX / item.edgeSpriteSize.x,
+                    2f * halfHeight * item.edgeScaleY / item.edgeSpriteSize.y, 1);
+                continue;
+            }
+            float x = 0, y = 0, rotation = 0, zoom = 1;
+            if (item.ambientDrift)
+            {
+                float t = realClock;
+                x = Mathf.Sin(t * .23f + item.phase) * .035f +
+                    Mathf.Sin(t * .11f + item.phase * 1.7f) * .022f;
+                y = Mathf.Sin(t * .17f + item.phase * .6f) * .018f +
+                    Mathf.Sin(t * .07f + item.phase * 2.3f) * .012f;
+                rotation = Mathf.Sin(t * .13f + item.phase) * .12f +
+                    Mathf.Sin(t * .19f + item.phase * .8f) * .055f;
+                zoom += Mathf.Sin(t * .09f + item.phase * 1.2f) * .002f;
+            }
+            item.transform.position = item.origin +
+                new Vector3(cam.transform.position.x * (1 - item.parallax) + x, y, 0);
+            item.transform.localScale = item.scale * zoom;
+            item.transform.localRotation = Quaternion.Euler(0, 0,
+                rotation + (item.sway > 0 ? Mathf.Sin(realClock * .7f + item.phase) * item.sway : 0));
         }
     }
     void UpdateWaves()
@@ -966,6 +1184,37 @@ public sealed class SoulBladePrototype : MonoBehaviour
         float elapsed = CutInDuration - remaining;
         return Mathf.SmoothStep(0, 1, Mathf.Min(elapsed / .065f, remaining / .13f));
     }
+    public static bool TryGetStoryDialogue(float time, bool phase, out bool bossSpeaker,
+        out string line, out float elapsed)
+    {
+        float start;
+        if (time >= 1.05f && time < 3.55f)
+        {
+            bossSpeaker = true; start = 1.05f;
+            line = phase ? "余烬未尽，便再燃一次。" : "此处，不容无誓之刃。";
+        }
+        else if (time >= 3.8f && time < 6.35f)
+        {
+            bossSpeaker = false; start = 3.8f;
+            line = phase ? "那我就斩开这片余烬。" : "那便以剑，回答你。";
+        }
+        else
+        {
+            bossSpeaker = false; line = ""; elapsed = 0;
+            return false;
+        }
+        elapsed = time - start;
+        return true;
+    }
+    public static Rect StoryPortraitBounds(float width, float height, bool bossSpeaker)
+    {
+        float portraitWidth = Mathf.Min(width * .29f, Mathf.Clamp(height * .43f, 235, 330));
+        float portraitHeight = portraitWidth * 1.22f;
+        float panelHeight = Mathf.Clamp(height * .19f, 118, 164);
+        float portraitY = height - panelHeight - 38 - portraitHeight;
+        return new Rect(bossSpeaker ? width - portraitWidth : 0,
+            portraitY, portraitWidth, portraitHeight);
+    }
     void Notify(string text, string sub, Color color, float duration)
     { cueText = text; cueSub = sub; cueColor = color; cueLife = cueMax = duration; }
     void Capture(string name = "arena")
@@ -1031,6 +1280,19 @@ public sealed class SoulBladePrototype : MonoBehaviour
         s.normal.textColor = color; return s;
     }
     void Box(Rect r, Color color) { GUI.color = color; GUI.DrawTexture(r, white); GUI.color = Color.white; }
+    void Frame(Rect r, Color fill)
+    {
+        Box(r, fill);
+        var gold = new Color(.69f, .57f, .34f, .56f);
+        Box(new Rect(r.x, r.y, r.width, 1), gold);
+        Box(new Rect(r.x, r.yMax - 1, r.width, 1), gold);
+        Box(new Rect(r.x, r.y, 1, r.height), gold);
+        Box(new Rect(r.xMax - 1, r.y, 1, r.height), gold);
+        float corner = Mathf.Min(9, r.width * .04f);
+        foreach (float x in new[] { r.x + 3, r.xMax - corner - 3 })
+        foreach (float y in new[] { r.y + 3, r.yMax - 4 })
+            Box(new Rect(x, y, corner, 2), new Color(.88f, .72f, .42f, .82f));
+    }
     void Bar(Rect r, float value, float delayed, Color color)
     {
         Box(new Rect(r.x - 2, r.y - 2, r.width + 4, r.height + 4), new Color(.06f, .07f, .07f, .9f));
@@ -1044,6 +1306,14 @@ public sealed class SoulBladePrototype : MonoBehaviour
         if (Fight == null) return;
         float w = Screen.width, h = Screen.height;
         Color ivory = new Color(.86f, .87f, .78f), gold = new Color(.85f, .7f, .4f);
+        bool phaseDialogue = Fight.enemyMode == DuelCombat.EnemyMode.Phase;
+        bool bossSpeaker = false;
+        string dialogueLine = "";
+        float dialogueElapsed = 0;
+        bool drawDialogue = !paused && engaged &&
+            (Fight.enemyMode == DuelCombat.EnemyMode.Intro || phaseDialogue) &&
+            TryGetStoryDialogue(Fight.boss.time, phaseDialogue, out bossSpeaker, out dialogueLine, out dialogueElapsed);
+        Frame(new Rect(20, 16, 326, 178), new Color(.025f, .043f, .039f, .83f));
         GUI.Label(new Rect(30, 20, 55, 55), "刃", Text(33, ivory, TextAnchor.MiddleCenter));
         GUI.Label(new Rect(95, 23, 240, 26), "无 名 行 者", Text(15, ivory));
         Bar(new Rect(97, 53, 230, 10), Fight.player.hp / 100, uiHealth, new Color(.69f, .17f, .16f));
@@ -1081,9 +1351,13 @@ public sealed class SoulBladePrototype : MonoBehaviour
         }
         if (Fight.chain > 1) GUI.Label(new Rect(97, 151, 190, 36), Fight.chain.ToString("00") + " 连", Text(24, gold));
         float barWidth = Mathf.Min(720, w - 140), bx = (w - barWidth) * .5f;
-        GUI.Label(new Rect(bx, h - 104, barWidth, 29), "灰 烬 守 卫", Text(20, ivory, TextAnchor.MiddleCenter));
-        Bar(new Rect(bx, h - 64, barWidth, 8), Fight.boss.hp / DuelCombat.BossMaxHp, uiBoss, new Color(.58f, .22f, .16f));
-        Bar(new Rect(w * .5f - barWidth * .26f, h - 43, barWidth * .52f, 3), Fight.boss.posture / 100, Fight.boss.posture / 100, gold);
+        if (!drawDialogue)
+        {
+            Frame(new Rect(bx - 12, h - 120, barWidth + 24, 89), new Color(.025f, .043f, .039f, .78f));
+            GUI.Label(new Rect(bx, h - 104, barWidth, 29), "灰 烬 守 卫", Text(20, ivory, TextAnchor.MiddleCenter));
+            Bar(new Rect(bx, h - 64, barWidth, 8), Fight.boss.hp / DuelCombat.BossMaxHp, uiBoss, new Color(.58f, .22f, .16f));
+            Bar(new Rect(w * .5f - barWidth * .26f, h - 43, barWidth * .52f, 3), Fight.boss.posture / 100, Fight.boss.posture / 100, gold);
+        }
         if (cueLife > 0 && !Fight.won && !Fight.lost)
         {
             float alpha = Mathf.Min(1, cueLife * 4) * Mathf.Min(1, (cueMax - cueLife) * 12);
@@ -1116,6 +1390,8 @@ public sealed class SoulBladePrototype : MonoBehaviour
         if (Fight.won && finishTime >= 2.1f || Fight.lost || paused)
         {
             Box(new Rect(0, 0, w, h), new Color(.015f, .025f, .025f, paused ? .83f : .63f));
+            Frame(new Rect(w * .5f - 250, h * .18f, 500, h * .65f),
+                new Color(.018f, .032f, .03f, .96f));
             GUI.Label(new Rect(0, h * .26f, w, 74), paused ? "暂 停" : Fight.won ? "守 誓 已 破" : "身 陨",
                 Text(38, !paused && Fight.lost ? new Color(.77f, .2f, .17f) : gold, TextAnchor.MiddleCenter));
             if (!paused) GUI.Label(new Rect(0, h * .26f + 83, w, 32), "弹反  " + Fight.parries +
@@ -1130,7 +1406,8 @@ public sealed class SoulBladePrototype : MonoBehaviour
             }
             else if (MenuButton("再次挑战", y)) ResetFight();
         }
-        DrawControlHints(w);
+        if (!drawDialogue) DrawControlHints(w);
+        if (drawDialogue) DrawStoryDialogue(w, h, phaseDialogue, bossSpeaker, dialogueLine, dialogueElapsed);
     }
     static readonly Color cyanColor = new Color(.5f, .88f, .94f);
     public static Rect ControlHintsBounds(float width)
@@ -1144,8 +1421,7 @@ public sealed class SoulBladePrototype : MonoBehaviour
         Rect panel = ControlHintsBounds(width);
         int rows = width >= 900 ? (ControlHints.GetLength(0) + 1) / 2 : ControlHints.GetLength(0);
         float columnWidth = (panel.width - 24) / (width >= 900 ? 2 : 1);
-        Box(panel, new Color(.025f, .04f, .04f, .72f));
-        Box(new Rect(panel.x, panel.y, 2, panel.height), new Color(.65f, .57f, .35f, .65f));
+        Frame(panel, new Color(.025f, .04f, .04f, .72f));
         GUI.Label(new Rect(panel.x + 12, panel.y + 5, panel.width - 24, 22), "操作", Text(13, new Color(.84f, .73f, .48f)));
         var keyStyle = Text(12, new Color(.9f, .92f, .88f), TextAnchor.MiddleRight);
         var actionStyle = Text(13, new Color(.73f, .79f, .75f), TextAnchor.MiddleLeft);
@@ -1164,18 +1440,62 @@ public sealed class SoulBladePrototype : MonoBehaviour
     {
         var rect = new Rect(Screen.width * .5f - 110, y, 220, 37);
         bool hover = rect.Contains(Event.current.mousePosition);
-        if (hover) Box(rect, new Color(.67f, .58f, .35f, .12f));
+        Frame(rect, hover ? new Color(.11f, .105f, .07f, .93f) : new Color(.025f, .04f, .04f, .9f));
         Box(new Rect(rect.x, rect.yMax - 1, rect.width, 1), new Color(.67f, .58f, .35f, hover ? .8f : .25f));
         var style = Text(17, new Color(.87f, .85f, .75f), TextAnchor.MiddleCenter);
         return GUI.Button(rect, text, style);
     }
+    void DrawStoryDialogue(float width, float height, bool phase, bool bossSpeaker, string line, float elapsed)
+    {
+        float panelHeight = Mathf.Clamp(height * .19f, 118, 164);
+        float portraitWidth = Mathf.Min(width * .29f, Mathf.Clamp(height * .43f, 235, 330));
+        float portraitHeight = portraitWidth * 1.22f;
+        Rect portraitRect = StoryPortraitBounds(width, height, bossSpeaker);
+        float panelX = bossSpeaker ? 24 : portraitWidth + 38;
+        float panelWidth = width - portraitWidth - 62;
+        float panelY = height - panelHeight - 38;
+        float enter = Mathf.SmoothStep(0, 1, Mathf.Clamp01(elapsed / .24f));
+        float slide = (1 - enter) * 36 * (bossSpeaker ? 1 : -1);
+        portraitRect.x += slide;
+        Rect panelRect = new Rect(panelX + slide * .35f, panelY, panelWidth, panelHeight);
+        Sprite portrait = bossSpeaker ? enemyPortrait : heroPortrait;
+        Color tint = bossSpeaker ? new Color(1, .77f, .61f, enter) : new Color(.9f, .95f, .91f, enter);
+        Color speakerColor = bossSpeaker ? new Color(1, .68f, .37f, enter) : new Color(.53f, .88f, .87f, enter);
+
+        GUI.color = tint;
+        Rect texRect = portrait.textureRect;
+        GUI.DrawTextureWithTexCoords(portraitRect, portrait.texture,
+            new Rect(texRect.x / portrait.texture.width, texRect.y / portrait.texture.height,
+                texRect.width / portrait.texture.width, texRect.height / portrait.texture.height), true);
+        GUI.color = Color.white;
+
+        Frame(panelRect, new Color(.025f, .038f, .04f, .92f * enter));
+        Box(new Rect(panelRect.x, panelRect.y, panelRect.width, 2),
+            new Color(bossSpeaker ? .84f : .42f, bossSpeaker ? .38f : .78f,
+                bossSpeaker ? .19f : .78f, .86f * enter));
+        float inset = Mathf.Clamp(panelWidth * .06f, 22, 54);
+        string speaker = bossSpeaker ? "灰 烬 守 卫" : "无 名 行 者";
+        GUI.Label(new Rect(panelRect.x + inset, panelRect.y + 17, panelRect.width - inset * 2, 26),
+            (phase ? "暴 走 · " : "初 遇 · ") + speaker,
+            Text(15, speakerColor, bossSpeaker ? TextAnchor.MiddleRight : TextAnchor.MiddleLeft));
+        int visible = Mathf.Clamp(Mathf.FloorToInt(Mathf.Max(0, elapsed - .22f) * 26), 0, line.Length);
+        GUI.Label(new Rect(panelRect.x + inset, panelRect.y + 48, panelRect.width - inset * 2,
+                panelHeight - 58), line.Substring(0, visible),
+            Text(Mathf.Clamp(Mathf.RoundToInt(height * .032f), 18, 25), new Color(.93f, .91f, .82f, enter)));
+        GUI.Label(new Rect(panelRect.xMax - 94, panelRect.yMax - 26, 76, 17), "ENTER  跳过",
+            Text(10, new Color(.67f, .68f, .62f, .74f * enter), TextAnchor.MiddleRight));
+    }
     void OnDestroy()
     {
         bossVisuals?.Dispose();
+        if (heroPortrait) Destroy(heroPortrait);
+        if (enemyPortrait) Destroy(enemyPortrait);
         foreach (var mat in materials) if (mat) Destroy(mat);
         foreach (var frames in animation.Values) foreach (var sprite in frames) Destroy(sprite);
         foreach (var sprite in art.Values) Destroy(sprite);
         if (soft) Destroy(soft); if (softSprite) Destroy(softSprite); if (font) Destroy(font);
         if (emberFrames != null) foreach (var sprite in emberFrames) Destroy(sprite);
+        foreach (var sprite in chibiFrames) if (sprite) Destroy(sprite);
+        foreach (var sprite in sceneryFrames) if (sprite) Destroy(sprite);
     }
 }

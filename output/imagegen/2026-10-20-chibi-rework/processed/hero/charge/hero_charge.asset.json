@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "anchor": [
+    256,
+    486
+  ],
+  "kind": "sprite-gen-asset",
+  "frames": [
+    {
+      "file": "charge-0.png",
+      "duration": 0.125
+    },
+    {
+      "file": "charge-1.png",
+      "duration": 0.125
+    },
+    {
+      "file": "charge-2.png",
+      "duration": 0.125
+    },
+    {
+      "file": "charge-3.png",
+      "duration": 0.125
+    }
+  ]
+}

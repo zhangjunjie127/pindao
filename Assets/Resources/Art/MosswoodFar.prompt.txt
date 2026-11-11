@@ -1,0 +1,8 @@
+Use case: stylized-concept
+Asset type: fixed-screen 2D boss-arena far background plate for a Unity game
+Primary request: Paint a dark fairytale forest at night as the farthest visual layer of a side-view sword-duel arena.
+Input images: Image 1 is a style and mood reference only. Borrow its deep forest greens, painterly shapes, restrained antique-gold details, and storybook atmosphere. Do not copy its logo, characters, interface, exact composition, or text.
+Composition: Wide 16:9 landscape plate. A distant ancient forest recedes into layered teal-green haze, with tall shadowed trunks framing the far edges and a warm golden-green clearing glowing behind the center. Keep the central horizontal fighting lane visually quiet and open for two small full-body game characters. Trees and terrain in this plate must read as distant silhouettes, not foreground props.
+Style: Hand-painted dark fantasy game illustration, richly shaped brushwork, clear silhouettes, cinematic controlled lighting, deep black-green shadows, emerald and teal foliage, small warm amber firefly lights, subtle muted burgundy accents.
+Constraints: This is the far background only. No foreground leaves, near plants, platforms, floor, waterline, rocks, ruins, signs, characters, creatures, weapons, interface, frames, labels, letters, or watermark. Full-bleed image, no border.
+Avoid: photorealism, pixel art, flat vector art, uniform green wash, high-detail clutter in the center, text, logos, UI.

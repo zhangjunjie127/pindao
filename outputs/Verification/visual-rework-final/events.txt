@@ -1,0 +1,7 @@
+0.567 Entrance 1
+1.150 Land 2
+7.917 Tell 1
+8.450 Guard 1
+8.500 BossSwing 1
+8.500 Parry 1
+8.934 Tell 2

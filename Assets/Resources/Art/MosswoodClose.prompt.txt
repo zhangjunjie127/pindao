@@ -1,0 +1,7 @@
+Use case: stylized-concept
+Asset type: transparent close-up foreground overlay for a Unity boss arena
+Primary request: Frame the outer corners with oversized close leaves, hanging ivy, and shadowed branches.
+Input images: Image 1 is the accepted transparent near-ground overlay; use it as the exact art-style and 16:9 framing reference.
+Composition: A few softly edged, oversized dark leaves and branches intrude only from the extreme top and lower outer corners. The full center 72%, combat silhouettes, feet, and lower-center HUD remain unobstructed.
+Style: Hand-painted dark fairytale forest, nearly-black teal shadows, restrained emerald rim light, tiny amber details, consistent with the other Mosswood layers.
+Constraints: Genuine alpha transparency; only close foreground silhouettes. No opaque background, characters, creatures, weapons, UI, text, border, platform, water, or watermark. Preserve camera and perspective.

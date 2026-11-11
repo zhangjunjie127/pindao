@@ -1,0 +1,249 @@
+{
+  "kind": "sprite-gen-slice-sheet",
+  "version": 1,
+  "sheet": "hero-combo-source.png",
+  "grid": [
+    4,
+    2
+  ],
+  "canvas": {
+    "w": 512,
+    "h": 512
+  },
+  "baseline_y": 486.0,
+  "target_height": 430.0,
+  "scale": "sheet",
+  "fit": "contain",
+  "factor": 0.9446494464944649,
+  "factor_from": {
+    "rule": "fit",
+    "cell": "combo-6"
+  },
+  "alpha_cleanup": "alpha-cleanup.json",
+  "cells": [
+    {
+      "name": "combo-0",
+      "file": "combo-0.png",
+      "factor": 0.9446494464944649,
+      "factor_from": "fit",
+      "subject": {
+        "sheet": {
+          "w": 365,
+          "h": 314
+        },
+        "canvas": {
+          "w": 345,
+          "h": 297
+        }
+      },
+      "box": {
+        "x": 84,
+        "y": 189,
+        "w": 345,
+        "h": 297
+      },
+      "anchor": [
+        256.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "combo-1",
+      "file": "combo-1.png",
+      "factor": 0.9446494464944649,
+      "factor_from": "fit",
+      "subject": {
+        "sheet": {
+          "w": 360,
+          "h": 389
+        },
+        "canvas": {
+          "w": 340,
+          "h": 367
+        }
+      },
+      "box": {
+        "x": 86,
+        "y": 119,
+        "w": 340,
+        "h": 367
+      },
+      "anchor": [
+        256.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "combo-2",
+      "file": "combo-2.png",
+      "factor": 0.9446494464944649,
+      "factor_from": "fit",
+      "subject": {
+        "sheet": {
+          "w": 346,
+          "h": 333
+        },
+        "canvas": {
+          "w": 327,
+          "h": 315
+        }
+      },
+      "box": {
+        "x": 93,
+        "y": 171,
+        "w": 327,
+        "h": 315
+      },
+      "anchor": [
+        256.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "combo-3",
+      "file": "combo-3.png",
+      "factor": 0.9446494464944649,
+      "factor_from": "fit",
+      "subject": {
+        "sheet": {
+          "w": 459,
+          "h": 315
+        },
+        "canvas": {
+          "w": 434,
+          "h": 298
+        }
+      },
+      "box": {
+        "x": 40,
+        "y": 188,
+        "w": 434,
+        "h": 298
+      },
+      "anchor": [
+        257.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "combo-4",
+      "file": "combo-4.png",
+      "factor": 0.9446494464944649,
+      "factor_from": "fit",
+      "subject": {
+        "sheet": {
+          "w": 330,
+          "h": 357
+        },
+        "canvas": {
+          "w": 312,
+          "h": 337
+        }
+      },
+      "box": {
+        "x": 101,
+        "y": 149,
+        "w": 312,
+        "h": 337
+      },
+      "anchor": [
+        257.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "combo-5",
+      "file": "combo-5.png",
+      "factor": 0.9446494464944649,
+      "factor_from": "fit",
+      "subject": {
+        "sheet": {
+          "w": 393,
+          "h": 337
+        },
+        "canvas": {
+          "w": 371,
+          "h": 318
+        }
+      },
+      "box": {
+        "x": 71,
+        "y": 168,
+        "w": 371,
+        "h": 318
+      },
+      "anchor": [
+        256.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "combo-6",
+      "file": "combo-6.png",
+      "factor": 0.9446494464944649,
+      "factor_from": "fit",
+      "subject": {
+        "sheet": {
+          "w": 541,
+          "h": 270
+        },
+        "canvas": {
+          "w": 511,
+          "h": 255
+        }
+      },
+      "box": {
+        "x": 1,
+        "y": 231,
+        "w": 511,
+        "h": 255
+      },
+      "anchor": [
+        256.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "combo-7",
+      "file": "combo-7.png",
+      "factor": 0.9446494464944649,
+      "factor_from": "fit",
+      "subject": {
+        "sheet": {
+          "w": 344,
+          "h": 347
+        },
+        "canvas": {
+          "w": 325,
+          "h": 328
+        }
+      },
+      "box": {
+        "x": 94,
+        "y": 158,
+        "w": 325,
+        "h": 328
+      },
+      "anchor": [
+        256.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    }
+  ]
+}

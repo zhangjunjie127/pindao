@@ -1,0 +1,223 @@
+{
+  "kind": "sprite-gen-motion-report",
+  "version": 1,
+  "status": "needs-review",
+  "frame_count": 4,
+  "duration_seconds": 0.3332,
+  "size": [
+    768,
+    512
+  ],
+  "anchor_px": [
+    384.0,
+    486.0
+  ],
+  "facing": null,
+  "contacts": [],
+  "foot_box": null,
+  "duplicate_frames": {
+    "exact": 0,
+    "adjacent_exact": 0,
+    "exact_silhouette": 0,
+    "near_silhouette": 0
+  },
+  "motion": {
+    "present": true,
+    "changed_transitions": 3,
+    "silhouette_changed_transitions": 3,
+    "silhouette_change_per_second": 5.255060226438574
+  },
+  "frames": [
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "duration_seconds": 0.0833,
+      "bbox": [
+        131,
+        232,
+        638,
+        486
+      ],
+      "anchor_px": [
+        384.0,
+        486.0
+      ],
+      "bbox_from_anchor": [
+        -253.0,
+        -254.0,
+        254.0,
+        0.0
+      ],
+      "centroid_px": [
+        414.9837521498912,
+        384.8477724844371
+      ],
+      "opaque_pixels": 65701,
+      "edge_sides": []
+    },
+    {
+      "frame": 1,
+      "time_seconds": 0.0833,
+      "duration_seconds": 0.0833,
+      "bbox": [
+        196,
+        86,
+        572,
+        486
+      ],
+      "anchor_px": [
+        384.0,
+        486.0
+      ],
+      "bbox_from_anchor": [
+        -188.0,
+        -400.0,
+        188.0,
+        0.0
+      ],
+      "centroid_px": [
+        367.9434235566492,
+        284.08951017588095
+      ],
+      "opaque_pixels": 82499,
+      "edge_sides": []
+    },
+    {
+      "frame": 2,
+      "time_seconds": 0.1666,
+      "duration_seconds": 0.0833,
+      "bbox": [
+        127,
+        185,
+        643,
+        486
+      ],
+      "anchor_px": [
+        384.0,
+        486.0
+      ],
+      "bbox_from_anchor": [
+        -257.0,
+        -301.0,
+        259.0,
+        0.0
+      ],
+      "centroid_px": [
+        410.85793013791545,
+        338.2344421207325
+      ],
+      "opaque_pixels": 70768,
+      "edge_sides": []
+    },
+    {
+      "frame": 3,
+      "time_seconds": 0.2499,
+      "duration_seconds": 0.0833,
+      "bbox": [
+        184,
+        154,
+        584,
+        486
+      ],
+      "anchor_px": [
+        384.0,
+        486.0
+      ],
+      "bbox_from_anchor": [
+        -200.0,
+        -332.0,
+        200.0,
+        0.0
+      ],
+      "centroid_px": [
+        410.04804214250737,
+        333.0048255382331
+      ],
+      "opaque_pixels": 63309,
+      "edge_sides": []
+    }
+  ],
+  "bbox_stats": {
+    "union": [
+      127,
+      86,
+      643,
+      486
+    ],
+    "width_range": [
+      376,
+      516
+    ],
+    "height_range": [
+      254,
+      400
+    ],
+    "bottom_range": [
+      486,
+      486
+    ]
+  },
+  "edge_contact": {
+    "frames": [],
+    "sides": {
+      "left": [],
+      "top": [],
+      "right": [],
+      "bottom": []
+    }
+  },
+  "contact_candidates": [],
+  "confidence": 0.0,
+  "sequence": {
+    "source": "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed-final\\boss\\leap\\boss_leap.asset.json",
+    "state": null,
+    "fps_override": null,
+    "frame_count": 4,
+    "size": [
+      768,
+      512
+    ],
+    "anchor_px": [
+      384.0,
+      486.0
+    ],
+    "durations_seconds": [
+      0.0833,
+      0.0833,
+      0.0833,
+      0.0833
+    ]
+  },
+  "source_fingerprints": {
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed-final\\boss\\leap\\boss_leap.asset.json": "d900aea215ce02c7912c6ef205e77a8ed8d7c367121933d8c825f3cedb3917dc",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed-final\\boss\\leap\\leap-0.png": "e02710188e0df8149e0ef05dc1501451294615d989d6137dad69587260c3feeb",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed-final\\boss\\leap\\leap-1.png": "5bb34d944866bf0aec071de692c3bc61abc489a4a11097a89e17cf2364de4d28",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed-final\\boss\\leap\\leap-2.png": "d38c52cd0dea93d82586096221832c0dd23cc7034ff3e637c4617bc3aae95b49",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed-final\\boss\\leap\\leap-3.png": "6e3204e499b24150eee53c5317c86502ace51f1aea4a0edb5140b924d144ca7e"
+  },
+  "stride_verified": false,
+  "foot_velocity_px_per_second": null,
+  "stride_px_per_second": null,
+  "warnings": [
+    "Ground contact is unknown: provide both manual contacts and a single-foot ROI; silhouette bottoms do not identify a planted foot."
+  ],
+  "method": {
+    "silhouette": "alpha > 0 in source canvas coordinates; bbox right/bottom are exclusive",
+    "near_silhouette_iou": 0.98,
+    "duplicates": "Counts frames matching an earlier frame; near excludes exact silhouette matches. No time or frames are removed.",
+    "motion": "Adjacent visible pixel changes; silhouette XOR/union summed over full duration. No loop-seam assumption.",
+    "contact": "User-declared same-foot stance spans plus isolated ROI alpha centroid; no automatic contact or facing inference.",
+    "timing": "Cumulative frame-start seconds; repeated tracked poses use their first onset with all intervening durations retained. Final hold is included in duration but has no displacement endpoint.",
+    "velocity": "Endpoint horizontal displacement / pose-onset elapsed seconds; positive = image right. Stride is absolute velocity under manual ground-contact assumptions.",
+    "confidence": "0.9 = at least 3 distinct poses, stable baseline/shape, monotonic near-linear motion and consistent spans. Heuristic conditional confidence, not a calibrated contact probability.",
+    "sequence": "Identity of the analysed sequence: source, atlas state, fps override, frame count, size, anchor and effective per-frame durations. A consumer applying the stride must match all of it and source_fingerprints; another state or frame rate of the same files is a different sequence."
+  },
+  "source_files": [
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed-final\\boss\\leap\\boss_leap.asset.json",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed-final\\boss\\leap\\leap-0.png",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed-final\\boss\\leap\\leap-1.png",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed-final\\boss\\leap\\leap-2.png",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed-final\\boss\\leap\\leap-3.png"
+  ],
+  "source": "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed-final\\boss\\leap\\boss_leap.asset.json"
+}

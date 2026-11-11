@@ -1,0 +1,137 @@
+{
+  "kind": "sprite-gen-slice-sheet",
+  "version": 1,
+  "sheet": "boss-sky-swords-source.png",
+  "grid": [
+    2,
+    2
+  ],
+  "canvas": {
+    "w": 512,
+    "h": 512
+  },
+  "baseline_y": 486.0,
+  "target_height": 430.0,
+  "scale": "sheet",
+  "fit": "contain",
+  "factor": 0.9148936170212766,
+  "factor_from": {
+    "rule": "target_height",
+    "cell": "cast-0"
+  },
+  "alpha_cleanup": "alpha-cleanup.json",
+  "cells": [
+    {
+      "name": "cast-0",
+      "file": "cast-0.png",
+      "factor": 0.9148936170212766,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 453,
+          "h": 470
+        },
+        "canvas": {
+          "w": 414,
+          "h": 430
+        }
+      },
+      "box": {
+        "x": 49,
+        "y": 56,
+        "w": 414,
+        "h": 430
+      },
+      "anchor": [
+        256.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "cast-1",
+      "file": "cast-1.png",
+      "factor": 0.9148936170212766,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 498,
+          "h": 464
+        },
+        "canvas": {
+          "w": 456,
+          "h": 425
+        }
+      },
+      "box": {
+        "x": 29,
+        "y": 61,
+        "w": 456,
+        "h": 425
+      },
+      "anchor": [
+        257.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "cast-2",
+      "file": "cast-2.png",
+      "factor": 0.9148936170212766,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 494,
+          "h": 433
+        },
+        "canvas": {
+          "w": 452,
+          "h": 396
+        }
+      },
+      "box": {
+        "x": 30,
+        "y": 90,
+        "w": 452,
+        "h": 396
+      },
+      "anchor": [
+        256.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "cast-3",
+      "file": "cast-3.png",
+      "factor": 0.9148936170212766,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 519,
+          "h": 456
+        },
+        "canvas": {
+          "w": 475,
+          "h": 417
+        }
+      },
+      "box": {
+        "x": 19,
+        "y": 69,
+        "w": 475,
+        "h": 417
+      },
+      "anchor": [
+        256.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    }
+  ]
+}

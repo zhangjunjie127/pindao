@@ -1,0 +1,137 @@
+{
+  "kind": "sprite-gen-slice-sheet",
+  "version": 1,
+  "sheet": "hero-charge-source.png",
+  "grid": [
+    2,
+    2
+  ],
+  "canvas": {
+    "w": 512,
+    "h": 512
+  },
+  "baseline_y": 486.0,
+  "target_height": 430.0,
+  "scale": "sheet",
+  "fit": "contain",
+  "factor": 0.7875457875457875,
+  "factor_from": {
+    "rule": "target_height",
+    "cell": "charge-3"
+  },
+  "alpha_cleanup": "alpha-cleanup.json",
+  "cells": [
+    {
+      "name": "charge-0",
+      "file": "charge-0.png",
+      "factor": 0.7875457875457875,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 543,
+          "h": 502
+        },
+        "canvas": {
+          "w": 428,
+          "h": 395
+        }
+      },
+      "box": {
+        "x": 43,
+        "y": 91,
+        "w": 428,
+        "h": 395
+      },
+      "anchor": [
+        257.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "charge-1",
+      "file": "charge-1.png",
+      "factor": 0.7875457875457875,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 449,
+          "h": 518
+        },
+        "canvas": {
+          "w": 354,
+          "h": 408
+        }
+      },
+      "box": {
+        "x": 80,
+        "y": 78,
+        "w": 354,
+        "h": 408
+      },
+      "anchor": [
+        257.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "charge-2",
+      "file": "charge-2.png",
+      "factor": 0.7875457875457875,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 464,
+          "h": 456
+        },
+        "canvas": {
+          "w": 365,
+          "h": 359
+        }
+      },
+      "box": {
+        "x": 74,
+        "y": 127,
+        "w": 365,
+        "h": 359
+      },
+      "anchor": [
+        256.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "charge-3",
+      "file": "charge-3.png",
+      "factor": 0.7875457875457875,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 458,
+          "h": 546
+        },
+        "canvas": {
+          "w": 361,
+          "h": 430
+        }
+      },
+      "box": {
+        "x": 76,
+        "y": 56,
+        "w": 361,
+        "h": 430
+      },
+      "anchor": [
+        256.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+[
+  {
+    "asset": "hero-run",
+    "call_id": "ig_0038bcf25fdaa5cf016ad71448ed7487d08f595dbc94f354b2",
+    "timestamp": "2026/10/20 7:13:00",
+    "status": "completed",
+    "model": "unknown",
+    "png": "hero-run-source.png",
+    "prompt": "hero-run-prompt.txt"
+  },
+  {
+    "asset": "hero-combo",
+    "call_id": "ig_0038bcf25fdaa5cf016ad7147c544087d083bc4ec708c523ab",
+    "timestamp": "2026/10/20 7:13:59",
+    "status": "completed",
+    "model": "unknown",
+    "png": "hero-combo-source.png",
+    "prompt": "hero-combo-prompt.txt"
+  },
+  {
+    "asset": "hero-airspin",
+    "call_id": "ig_0038bcf25fdaa5cf016ad714b85dd887d091685eaffbf8df2d",
+    "timestamp": "2026/10/20 7:15:10",
+    "status": "completed",
+    "model": "unknown",
+    "png": "hero-airspin-source.png",
+    "prompt": "hero-airspin-prompt.txt"
+  },
+  {
+    "asset": "hero-dodge",
+    "call_id": "ig_0038bcf25fdaa5cf016ad714f9f6c087d0892e58dadd18533e",
+    "timestamp": "2026/10/20 7:16:10",
+    "status": "completed",
+    "model": "unknown",
+    "png": "hero-dodge-source.png",
+    "prompt": "hero-dodge-prompt.txt"
+  },
+  {
+    "asset": "hero-parry",
+    "call_id": "ig_0038bcf25fdaa5cf016ad71538b01487d0a556315f73a52f50",
+    "timestamp": "2026/10/20 7:17:17",
+    "status": "completed",
+    "model": "unknown",
+    "png": "hero-parry-source.png",
+    "prompt": "hero-parry-prompt.txt"
+  },
+  {
+    "asset": "hero-hurt",
+    "call_id": "ig_0038bcf25fdaa5cf016ad7157b861487d0a97809f1aa487336",
+    "timestamp": "2026/10/20 7:18:25",
+    "status": "completed",
+    "model": "unknown",
+    "png": "hero-hurt-source.png",
+    "prompt": "hero-hurt-prompt.txt"
+  },
+  {
+    "asset": "boss-idle",
+    "call_id": "ig_0038bcf25fdaa5cf016ad715c80b8887d09ec6a13cbd9bfda0",
+    "timestamp": "2026/10/20 7:19:26",
+    "status": "completed",
+    "model": "unknown",
+    "png": "boss-idle-source.png",
+    "prompt": "boss-idle-prompt.txt"
+  },
+  {
+    "asset": "boss-run",
+    "call_id": "ig_0038bcf25fdaa5cf016ad71601f7e887d0ba5818fcd32f022d",
+    "timestamp": "2026/10/20 7:20:34",
+    "status": "completed",
+    "model": "unknown",
+    "png": "boss-run-source.png",
+    "prompt": "boss-run-prompt.txt"
+  },
+  {
+    "asset": "boss-rush",
+    "call_id": "ig_0038bcf25fdaa5cf016ad716403cd887d089c468194b1ea754",
+    "timestamp": "2026/10/20 7:21:40",
+    "status": "completed",
+    "model": "unknown",
+    "png": "boss-rush-source.png",
+    "prompt": "boss-rush-prompt.txt"
+  },
+  {
+    "asset": "boss-attack",
+    "call_id": "ig_0038bcf25fdaa5cf016ad71682edfc87d08b828f6fff27eb87",
+    "timestamp": "2026/10/20 7:22:50",
+    "status": "completed",
+    "model": "unknown",
+    "png": "boss-attack-source.png",
+    "prompt": "boss-attack-prompt.txt"
+  },
+  {
+    "asset": "boss-leap",
+    "call_id": "ig_0038bcf25fdaa5cf016ad716ca19ec87d08df4fdabf705c4be",
+    "timestamp": "2026/10/20 7:23:56",
+    "status": "completed",
+    "model": "unknown",
+    "png": "boss-leap-source.png",
+    "prompt": "boss-leap-prompt.txt"
+  },
+  {
+    "asset": "boss-sky-swords",
+    "call_id": "ig_0038bcf25fdaa5cf016ad71748314087d09f547c3799d708d9",
+    "timestamp": "2026/10/20 7:26:03",
+    "status": "completed",
+    "model": "unknown",
+    "png": "boss-sky-swords-source.png",
+    "prompt": "boss-sky-swords-prompt.txt"
+  },
+  {
+    "asset": "boss-rage",
+    "call_id": "ig_0038bcf25fdaa5cf016ad717d7605887d0afdd11c15b3ecdbf",
+    "timestamp": "2026/10/20 7:28:27",
+    "status": "completed",
+    "model": "unknown",
+    "png": "boss-rage-source.png",
+    "prompt": "boss-rage-prompt.txt"
+  },
+  {
+    "asset": "boss-hurt",
+    "call_id": "ig_0038bcf25fdaa5cf016ad71819947487d0b1eb618450bfffc7",
+    "timestamp": "2026/10/20 7:29:36",
+    "status": "completed",
+    "model": "unknown",
+    "png": "boss-hurt-source.png",
+    "prompt": "boss-hurt-prompt.txt"
+  },
+  {
+    "asset": "hero-charge",
+    "call_id": "ig_0038bcf25fdaa5cf016ad7189a64c887d0b28e12189df08149",
+    "timestamp": "2026/10/20 7:31:49",
+    "status": "completed",
+    "model": "unknown",
+    "png": "hero-charge-source.png",
+    "prompt": "hero-charge-prompt.txt"
+  }
+]

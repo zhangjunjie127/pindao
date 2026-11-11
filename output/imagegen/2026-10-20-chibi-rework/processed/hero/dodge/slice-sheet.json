@@ -1,0 +1,137 @@
+{
+  "kind": "sprite-gen-slice-sheet",
+  "version": 1,
+  "sheet": "hero-dodge-source.png",
+  "grid": [
+    2,
+    2
+  ],
+  "canvas": {
+    "w": 512,
+    "h": 512
+  },
+  "baseline_y": 486.0,
+  "target_height": 430.0,
+  "scale": "sheet",
+  "fit": "contain",
+  "factor": 0.9061946902654867,
+  "factor_from": {
+    "rule": "fit",
+    "cell": "dodge-2"
+  },
+  "alpha_cleanup": "alpha-cleanup.json",
+  "cells": [
+    {
+      "name": "dodge-0",
+      "file": "dodge-0.png",
+      "factor": 0.9061946902654867,
+      "factor_from": "fit",
+      "subject": {
+        "sheet": {
+          "w": 536,
+          "h": 410
+        },
+        "canvas": {
+          "w": 486,
+          "h": 372
+        }
+      },
+      "box": {
+        "x": 14,
+        "y": 114,
+        "w": 486,
+        "h": 372
+      },
+      "anchor": [
+        257.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "dodge-1",
+      "file": "dodge-1.png",
+      "factor": 0.9061946902654867,
+      "factor_from": "fit",
+      "subject": {
+        "sheet": {
+          "w": 440,
+          "h": 297
+        },
+        "canvas": {
+          "w": 399,
+          "h": 269
+        }
+      },
+      "box": {
+        "x": 57,
+        "y": 217,
+        "w": 399,
+        "h": 269
+      },
+      "anchor": [
+        256.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "dodge-2",
+      "file": "dodge-2.png",
+      "factor": 0.9061946902654867,
+      "factor_from": "fit",
+      "subject": {
+        "sheet": {
+          "w": 564,
+          "h": 350
+        },
+        "canvas": {
+          "w": 511,
+          "h": 317
+        }
+      },
+      "box": {
+        "x": 1,
+        "y": 169,
+        "w": 511,
+        "h": 317
+      },
+      "anchor": [
+        256.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "dodge-3",
+      "file": "dodge-3.png",
+      "factor": 0.9061946902654867,
+      "factor_from": "fit",
+      "subject": {
+        "sheet": {
+          "w": 467,
+          "h": 460
+        },
+        "canvas": {
+          "w": 423,
+          "h": 417
+        }
+      },
+      "box": {
+        "x": 45,
+        "y": 69,
+        "w": 423,
+        "h": 417
+      },
+      "anchor": [
+        256.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    }
+  ]
+}

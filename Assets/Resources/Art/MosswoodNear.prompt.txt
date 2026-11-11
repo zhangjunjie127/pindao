@@ -1,0 +1,7 @@
+Use case: stylized-concept
+Asset type: transparent 2D near-ground scenery overlay for a Unity boss arena
+Primary request: Add close-to-play-lane shrubs and roots as a separate visual depth layer.
+Input images: Image 1 is the accepted transparent middle-ground overlay; preserve its fixed 16:9 framing, painterly style, and lighting.
+Composition: Put mossy rocks, broad-leaf shrubs, roots, and a few luminous mushrooms only along the bottom corners and outer 20% of the frame. These forms are larger than the middle-ground trees. Keep the center 60% and lower center clear for fighter feet and HUD.
+Style: Dark fairytale hand-painted game art matching the forest's deep teal/emerald shadows, amber glows, and restrained burgundy notes.
+Constraints: Genuine alpha transparency; only near-ground painted forms. No opaque background, platform, water, characters, creatures, weapons, UI, frame, labels, or watermark. Do not change camera or perspective.

@@ -1,0 +1,42 @@
+{
+  "anchor": [
+    384,
+    486
+  ],
+  "frames": [
+    {
+      "duration": 0.0556,
+      "file": "combo-0.png"
+    },
+    {
+      "duration": 0.0556,
+      "file": "combo-1.png"
+    },
+    {
+      "duration": 0.0556,
+      "file": "combo-2.png"
+    },
+    {
+      "duration": 0.0556,
+      "file": "combo-3.png"
+    },
+    {
+      "duration": 0.0556,
+      "file": "combo-4.png"
+    },
+    {
+      "duration": 0.0556,
+      "file": "combo-5.png"
+    },
+    {
+      "duration": 0.0556,
+      "file": "combo-6.png"
+    },
+    {
+      "duration": 0.0556,
+      "file": "combo-7.png"
+    }
+  ],
+  "kind": "sprite-gen-asset",
+  "version": 1
+}

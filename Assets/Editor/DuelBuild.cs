@@ -386,6 +386,34 @@ public static class DuelBuild
         opening.Reset();
         opening.Step(Dt, new DuelCombat.Controls { attack = true });
         Check(opening.playerMode == DuelCombat.PlayerMode.Attack, "first attack is accepted during boss entrance");
+        Check(!SoulBladePrototype.TryGetStoryDialogue(.9f, false, out _, out _, out _),
+            "story dialogue stays hidden before the entrance close-up");
+        Check(SoulBladePrototype.TryGetStoryDialogue(1.5f, false, out var bossSpeaker, out var openingLine, out _) &&
+            bossSpeaker && openingLine == "此处，不容无誓之刃。",
+            "entrance dialogue opens with the Warden's portrait and line");
+        Check(SoulBladePrototype.TryGetStoryDialogue(4.2f, false, out bossSpeaker, out var reply, out _) &&
+            !bossSpeaker && reply == "那便以剑，回答你。",
+            "entrance dialogue hands off to the player's portrait and reply");
+        Check(SoulBladePrototype.TryGetStoryDialogue(1.5f, true, out bossSpeaker, out var phaseLine, out _) &&
+            bossSpeaker && phaseLine == "余烬未尽，便再燃一次。",
+            "rage transition uses its own Warden dialogue");
+        var phaseSkip = Ready(); phaseSkip.secondPhase = true; phaseSkip.enemyMode = DuelCombat.EnemyMode.Phase;
+        phaseSkip.Step(Dt, new DuelCombat.Controls { skip = true });
+        Check(phaseSkip.enemyMode == DuelCombat.EnemyMode.Approach,
+            "Enter skips the rage dialogue and returns control to combat");
+        foreach (float width in new[] { 640f, 1280f })
+        {
+            Rect heroPortrait = SoulBladePrototype.StoryPortraitBounds(width, 720, false);
+            Rect bossPortrait = SoulBladePrototype.StoryPortraitBounds(width, 720, true);
+            Check(heroPortrait.xMin >= 0 && heroPortrait.xMax <= width &&
+                heroPortrait.yMin >= 0 && heroPortrait.yMax <= 720 &&
+                bossPortrait.xMin >= 0 && bossPortrait.xMax <= width &&
+                bossPortrait.yMin >= 0 && bossPortrait.yMax <= 720,
+                "dialogue portraits fit on-screen at width " + width);
+            Check(Mathf.Approximately(heroPortrait.xMin, 0) &&
+                Mathf.Approximately(bossPortrait.xMax, width),
+                "dialogue portraits align flush with their speaker's screen edge at width " + width);
+        }
         var c = Ready();
         Advance(c, .35f, new DuelCombat.Controls { attack = true });
         Check(c.boss.hp == DuelCombat.BossMaxHp - 9, "one light swing damages once");
@@ -701,6 +729,47 @@ public static class DuelBuild
             Check(clip != null && clip.frames == 12 && File.Exists("Assets/Resources/Art/" + side + "_AirSpin.png"),
                 side + " dedicated air spin atlas contains twelve frames");
         }
+        var chibi = JsonUtility.FromJson<ChibiAtlasManifest>(
+            File.ReadAllText("Assets/Resources/Art/ChibiAtlas.json"));
+        Check(chibi != null && chibi.pages != null && chibi.pages.Length == 3 &&
+            chibi.clips != null && chibi.clips.Length == 17,
+            "Q-character atlas manifest contains three texture pages and seventeen action clips");
+        int chibiFrameWidth = 0, chibiFrameHeight = 0;
+        foreach (var required in new[] {
+            "hero_idle:4", "hero_run:4", "hero_combo:8", "hero_jump:4", "hero_airspin:4",
+            "hero_dodge:4", "hero_parry:4", "hero_charge:4", "hero_hurt:4",
+            "boss_idle:4", "boss_run:4", "boss_rush:4", "boss_attack:4", "boss_leap:4",
+            "boss_cast:4", "boss_rage:4", "boss_hurt:4"
+        })
+        {
+            var parts = required.Split(':');
+            var clip = Array.Find(chibi.clips, item => item.name == parts[0]);
+            int expected = int.Parse(parts[1]);
+            Check(clip != null && clip.frames != null && clip.frames.Length == expected,
+                parts[0] + " has its dedicated " + expected + "-frame animation");
+            Check(clip.size != null && clip.size.Length == 2 &&
+                clip.pivot != null && clip.pivot.Length == 2,
+                parts[0] + " declares a shared canvas size and pivot");
+            foreach (var frame in clip.frames)
+            {
+                Check(frame.page >= 0 && frame.page < chibi.pages.Length &&
+                    frame.x >= 0 && frame.y >= 0 && frame.width > 0 && frame.height > 0 &&
+                    frame.durationMs > 0,
+                    parts[0] + " atlas frames have valid pages, rectangles and timing");
+                if (chibiFrameWidth == 0)
+                {
+                    chibiFrameWidth = frame.width;
+                    chibiFrameHeight = frame.height;
+                }
+                Check(frame.width == chibiFrameWidth && frame.height == chibiFrameHeight &&
+                    Mathf.Approximately(clip.size[0], chibiFrameWidth) &&
+                    Mathf.Approximately(clip.size[1], chibiFrameHeight),
+                    parts[0] + " keeps the shared character canvas size");
+                Check(Mathf.Approximately(clip.pivot[0], .5f) &&
+                    Mathf.Approximately(clip.pivot[1], 0.05078125f),
+                    parts[0] + " keeps the shared foot anchor");
+            }
+        }
         foreach (float width in new[] { 640f, 960f, 1280f })
         {
             Rect panel = SoulBladePrototype.ControlHintsBounds(width);
@@ -713,6 +782,19 @@ public static class DuelBuild
     }
     [Serializable] sealed class ClipManifest { public ClipEntry[] clips; }
     [Serializable] sealed class ClipEntry { public string name; public int frames; }
+    [Serializable] sealed class ChibiAtlasManifest { public ChibiAtlasPage[] pages; public ChibiAtlasClip[] clips; }
+    [Serializable] sealed class ChibiAtlasPage { public string name; }
+    [Serializable] sealed class ChibiAtlasClip
+    {
+        public string name;
+        public float[] size, pivot;
+        public ChibiAtlasFrame[] frames;
+    }
+    [Serializable] sealed class ChibiAtlasFrame
+    {
+        public int page, x, y, width, height;
+        public float durationMs;
+    }
     public static void Build()
     {
         Test();

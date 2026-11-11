@@ -1,0 +1,1159 @@
+VBCSCompilerPreWarmer: pre-warm launched (dotnet PID 8536)
+VBCSCompiler prewarm took 9.12 ms
+[Licensing::Module] Trying to connect to existing licensing client channel...
+Built from '6000.6/respin/6000.6.0f1-fa21a270ab12' branch; Version is '6000.6.0f1 (f7f8ed4d1e24) revision 16251117'; Using compiler version '194234433'; Build Type 'Release'
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-A" at "2026-10-20T08:45:48.5583596Z"
+OS: 'Windows 11  (10.0.26200) Professional' Language: 'zh' Physical Memory: 65292 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+System  architecture: x64
+Process architecture: x64
+Date: 2026-10-20T08:45:48Z
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 11864, path: "E:/Unity/Hub/Editor/6000.3.24f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::Module] LicensingClient has failed validation; ignoring
+[Licensing::Client] Handshaking with LicensingClient:
+  Version:                 1.18.3+d7ffd15
+  Session Id:              21ff50a46249439ebd6b7a6a505b687c
+  Correlation Id:          faffe82caabadc133edfdde3cee76799
+  External correlation Id: 7019911623722920639
+  Machine Id:              RXUsL12MzXEK8h60euqN21lFMuE=
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-A" (connect: 0.00s, validation: 0.00s, handshake: 0.05s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-A-notifications" at "2026-10-20T08:45:48.6061613Z"
+[Licensing::Module] Error: Access token is unavailable; failed to update
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] License group:
+  Id: ewogICJzdWJzR3JvdXAiIDogInVuaXR5IGVkaXRvciIsCiAgIm5hbWVzcGFjZSIgOiAidW5pdHlfZWRpdG9yIiwKICAidHlwZSIgOiAiRURJVE9SIiwKICAidGFnIiA6ICJVbml0eVBlcnNvbmFsXXXX
+  Product: Unity Personal Version
+  Type: Assigned
+  Expiration: Unlimited
+[Licensing::Client] Successfully updated license, isAsync: True, time: 0.00
+[Licensing::Client] Successfully resolved entitlement details
+[Licensing::Module] Licensing Background thread has ended after 0.06s
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\6000.6.0f1\Editor\Unity.exe
+-batchmode
+-quit
+-projectPath
+C:\Users\A\Documents\Codex\2026-10-15\new-chat
+-executeMethod
+DuelBuild.Build
+-logFile
+C:\Users\A\Documents\Codex\2026-10-15\new-chat\outputs\Verification\ground-motion-build.log
+Successfully changed project path to: C:\Users\A\Documents\Codex\2026-10-15\new-chat
+C:/Users/A/Documents/Codex/2026-10-15/new-chat
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gfx=262144"
+    "memorysetup-remapper-allocator-initial-capacity=32768"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-main-allocator-mimalloc-enabled=1"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+Logging is directed to a specific file, skipping project log.
+Player connection [12620]  Target information:
+
+Player connection [12620]  * "[IP] 172.17.0.174 [Port] 55505 [Flags] 2 [Guid] 1499779068 [EditorId] 1499779068 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-4QEE03D) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [12620] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [12620] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Input System module state changed to: Initialized.
+[Physics::Module] Initialized fallback backend.
+[Physics::Module] Id: 0xdecafbad
+[Package Manager] Connected to IPC stream "Upm-57516" after 0.2 seconds.
+[Licensing::Client] Successfully resolved entitlement details
+Library Redirect Path: Library/
+Launching Unity Data Store - C:/Program Files/Unity/Hub/Editor/6000.6.0f1/Editor/Data/Tools/Unity.DataStore.exe 
+Unity Data Store artifact dir = Library/DataStore, working dir = C:/Users/A/Documents/Codex/2026-10-15/new-chat[Physics::Module] Selected backend.
+[Physics::Module] Name: PhysX
+[Physics::Module] Id: 0xf2b8ea05
+[Physics::Module] SDK Version: 4.1.2
+[Physics::Module] Integration Version: 1.0.0
+[Physics::Module] Threading Mode: Multi-Threaded
+Unity Data Store running and initialised
+Initialize engine version: 6000.6.0f1 (f7f8ed4d1e24)
+[EntityIdStore] init: VM path (explicit commit), pageSize=4096, blockCount=1048576, entitiesPerBlock=256, slots reserved=4294967296 bytes
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.6.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/A/Documents/Codex/2026-10-15/new-chat/Assets
+GfxDevice: creating device client; kGfxThreadingModeNonThreaded
+d3d12: failed to query info queue interface (0x80004002).
+Direct3D:
+    Version:         Direct3D 12 [level 12.2]
+    Renderer:        NVIDIA GeForce RTX 4080 (ID=0x2704)
+    Vendor:          NVIDIA
+    VRAM:            16048 MB
+    App VRAM Budget: 15280 MB
+    Driver:          32.0.16.1742
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.6.0f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.6.0f1/Editor/Data/BCLExtensions/runtime/netstandard2.1'
+Mono path[2] = 'C:/Program Files/Unity/Hub/Editor/6000.6.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.6.0f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56516
+CodeReloadManager initialized
+ImportWorker Server TCP listen port: 0
+AcceleratorClientConnectionCallback - disconnected - :0
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.0f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.6.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002451 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.791 seconds
+Domain Reload Profiling: 1328ms
+	BeginReloadAssembly (134ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (4ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (70ms)
+	LoadAllAssembliesAndSetupDomain (314ms)
+		LoadAssemblies (113ms)
+		TypeCache.Refresh (210ms)
+			TypeCache.ScanAssembly (195ms)
+		AnalyzeDomain (1ms)
+	FinalizeReload (793ms)
+		SetupLoadedEditorAssemblies (0ms)
+			BeforeProcessingInitializeOnLoad (86ms)
+			ProcessInitializeOnLoadAttributes (134ms)
+			ProcessInitializeOnLoadMethodAttributes (349ms)
+[Licensing::Client] Successfully resolved entitlement details
+Application.AssetDatabase Initial Refresh Start
+[Package Manager] Restoring resolved packages state from cache
+[Licensing::Client] Successfully resolved entitlement details
+[Package Manager] Registered 42 packages:
+  Packages from [https://packages.unity.com]:
+    com.unity.ide.rider@3.0.38 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.ide.rider@1f60b3138684)
+    com.unity.ide.visualstudio@2.0.26 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.ide.visualstudio@a99d56dec63f)
+  Built-in packages:
+    com.unity.modules.accessibility@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.accessibility)
+    com.unity.modules.adaptiveperformance@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.adaptiveperformance)
+    com.unity.modules.ai@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.ai)
+    com.unity.modules.androidjni@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.androidjni)
+    com.unity.modules.animation@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.animation)
+    com.unity.modules.assetbundle@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.assetbundle)
+    com.unity.modules.audio@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.audio)
+    com.unity.modules.cloth@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.cloth)
+    com.unity.modules.director@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.director)
+    com.unity.modules.imageconversion@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.imageconversion)
+    com.unity.modules.imgui@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.imgui)
+    com.unity.modules.jsonserialize@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.jsonserialize)
+    com.unity.modules.particlesystem@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.particlesystem)
+    com.unity.modules.physics@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.physics)
+    com.unity.modules.physics2d@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.physics2d)
+    com.unity.modules.physicscore2d@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.physicscore2d)
+    com.unity.modules.screencapture@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.screencapture)
+    com.unity.modules.terrain@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.terrain)
+    com.unity.modules.terrainphysics@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.terrainphysics)
+    com.unity.modules.tetgen@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.tetgen)
+    com.unity.modules.tilemap@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.tilemap)
+    com.unity.modules.timelinefoundation@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.timelinefoundation)
+    com.unity.modules.ui@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.ui)
+    com.unity.modules.uielements@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.uielements)
+    com.unity.modules.umbra@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.umbra)
+    com.unity.modules.unityanalytics@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.unityanalytics)
+    com.unity.modules.unitywebrequest@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.unitywebrequest)
+    com.unity.modules.unitywebrequestassetbundle@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.unitywebrequestassetbundle)
+    com.unity.modules.unitywebrequestaudio@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.unitywebrequestaudio)
+    com.unity.modules.unitywebrequesttexture@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.unitywebrequesttexture)
+    com.unity.modules.unitywebrequestwww@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.unitywebrequestwww)
+    com.unity.modules.vectorgraphics@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.vectorgraphics)
+    com.unity.modules.vehicles@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.vehicles)
+    com.unity.modules.video@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.video)
+    com.unity.modules.wind@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.wind)
+    com.unity.modules.xr@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.xr)
+    com.unity.modules.subsystems@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.subsystems)
+    com.unity.modules.hierarchycore@1.0.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.modules.hierarchycore)
+    com.unity.test-framework@1.8.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.test-framework@7a3849e09bd0)
+    com.unity.ext.nunit@2.1.0 (location: C:\Users\A\Documents\Codex\2026-10-15\new-chat\Library\PackageCache\com.unity.ext.nunit@0198eae3b53e)
+[Subsystems] No new subsystems found in resolved package list.
+[Package Manager] Done registering packages in 0.03 seconds
+[ScriptCompilation] Requested script compilation because: AssetDatabase observed changes in script compilation related files
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.0f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aE.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssemblies
+WorkingDir: C:/Users/A/Documents/Codex/2026-10-15/new-chat
+DisplayProgressbar: Compiling Scripts
+ExitCode: 0 Duration: 1s705ms
+[208/222    0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[218/222    1s] Csc Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll (+2 others)
+[219/222    0s] ILPostProcess Library/Bee/artifacts/1900b0aE.dag/post-processed/Assembly-CSharp-Editor.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-Editor.dll, with 146 defines and 302 references
+
+processors: zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+1 processor(s) skipped this assembly
+[220/222    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.pdb
+[221/222    0s] CopyFiles Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+*** Tundra build success (1.67 seconds), 5 items updated, 222 evaluated
+AssetDatabase: script compilation time: 2.104941s
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+ScheduleIndexationOnStartup MainProcess:True IndexOnStartup:True
+Scripting: successfully reloaded assembly
+- Finished resetting the current domain, in  0.420 seconds
+Domain Reload Profiling: 1059ms
+	BeginReloadAssembly (336ms)
+		DisableScriptedObjects (30ms)
+		CreateAndSetChildDomain (142ms)
+	RebuildCommonClasses (8ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (61ms)
+	LoadAllAssembliesAndSetupDomain (219ms)
+		LoadAssemblies (212ms)
+		TypeCache.Refresh (13ms)
+			TypeCache.ScanAssembly (8ms)
+		AnalyzeDomain (7ms)
+			BuildScriptInfoCaches (5ms)
+	FinalizeReload (421ms)
+		SetupLoadedEditorAssemblies (0ms)
+			InitializePlatformSupportModulesInManaged (3ms)
+			BeforeProcessingInitializeOnLoad (88ms)
+			ProcessInitializeOnLoadAttributes (70ms)
+			ProcessInitializeOnLoadMethodAttributes (45ms)
+			AfterProcessingInitializeOnLoad (10ms)
+		AwakeInstancesAfterBackupRestoration (32ms)
+Starting new worker id: 0 with log in C:/Users/A/Documents/Codex/2026-10-15/new-chat/Logs/AssetImportWorkerHW0.log
+
+Asset Pipeline Refresh (id=f2e4274560e7f9e448e9a9075d770340): Total: 3.491 seconds - Initiated by InitialRefreshV2(ForceSynchronousImport)
+	(Values over 0.05ms)
+	Summary:
+		Imports: total=0 (actual=0, local cache=0, cache server=0)
+		Asset DB Process Time: managed=0 ms, native=578 ms
+		Asset DB Callback time: managed=52 ms, native=39 ms
+		Scripting: domain reloads=1, domain reload time=699 ms, compile time=2109 ms, other=12 ms
+		Project Asset Count: scripts=174, non-scripts=172
+		Asset File Changes: new=0, changed=1, moved=0, deleted=0
+		Scan Filter Count: 0
+	InvokePackagesCallback: 37.551ms
+	ApplyChangesToAssetFolders: 0.698ms
+	Scan: 51.328ms
+	Collect global state as custom dependencies: 14.618ms
+	OnSourceAssetsModified: 0.959ms
+	CategorizeScriptCompilationAssets: 5.830ms
+	ProcessAssetsWithTransientArtifactChanges: 5.479ms
+	CategorizeAssets: 1.722ms
+	CompileScripts: 2108.530ms
+	ImportOutOfDateAssets: 432.519ms (422.225ms without children)
+		UnloadImportedAssets: 0.077ms
+		EnsureUptoDateAssetsAreRegisteredWithGuidPM: 0.051ms
+		ImportSchedulerStart: 10.162ms
+	PostProcessAllAssets: 53.247ms
+		VCAutoAddAssetPostprocess 1.032ms
+		MonoPostProcessAllAssets: 51.785ms
+			AssetPostprocessor.OnPostprocessAllAssets 16.914ms
+			StyleCatalogPostProcessor.OnPostprocessAllAssets 7.165ms
+			WindowAssetPostprocessingWatcher.OnPostprocessAllAssets 6.796ms
+			BuilderAssetPostprocessor.OnPostprocessAllAssets 4.994ms
+			AssetChangedListener.OnPostprocessAllAssets 1.704ms
+			RetainedModeAssetPostprocessor.OnPostprocessAllAssets 1.364ms
+			SpeedTree9Postprocessor.OnPostprocessAllAssets 0.883ms
+			EditModeScopePostprocessor.OnPostprocessAllAssets 0.763ms
+			ArtifactBrowserPostProcessor.OnPostprocessAllAssets 0.710ms
+			TextAssetPostProcessor.OnPostprocessAllAssets 0.561ms
+			AudioMixerPostprocessor.OnPostprocessAllAssets 0.363ms
+			ReferencedClipsPostProcessor.OnPostprocessAllAssets 0.317ms
+			TerrainToolbarOverlayPostProcessor.OnPostprocessAllAssets 0.220ms
+			AssetEvents.OnPostprocessAllAssets 0.200ms
+			SpeedTreePostProcessor.OnPostprocessAllAssets 0.183ms
+			AssetDatabaseCallbacks.OnPostprocessAllAssets 0.128ms
+			ConfigAssetsTracker.OnPostprocessAllAssets 0.116ms
+			SyncVS.PostprocessSyncProject 0.115ms
+			ThemePostprocessor.OnPostprocessAllAssets 0.111ms
+			RenderPipelineGlobalSettingsPostprocessor.OnPostprocessAllAssets 0.108ms
+			AudioContainerPostProcessor.OnPostprocessAllAssets 0.098ms
+			ScenarioDriftAssetsTracker.OnPostprocessAllAssets 0.097ms
+	PostAssetChangesProfiler: 3.296ms
+	UnloadStreamsBegin: 1.289ms
+	Untracked: 765.241ms
+
+Application.AssetDatabase Initial Refresh End
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
+Scanning for USB devices : 3.230ms
+Initializing Unity extensions:
+[MODES] ModeService[none].Initialize
+[MODES] ModeService[none].LoadModes
+[MODES] Loading mode Default (0) for mode-current-id-Mossbound Duel
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 506 unused Assets / (0.7 MB). Loaded Objects now: 1232.
+Memory consumption went from 227.8 MB to 227.1 MB.
+Total: 5.784200 ms (FindLiveObjects: 0.407800 ms CreateObjectMapping: 0.079500 ms MarkObjects: 4.751300 ms  DeleteObjects: 0.418400 ms)
+
+DEMO: won=True, lost=False, parries=10, bossHP=0, playerHP=84, events=Entrance,Land,Tell,Guard,BossSwing,Parry,LockStart,LockBeat,LockWin,Break,PlayerSwing,Riposte,ComboRhythm,HitBoss,BossJump,Slam,Danger,Jump,Wave,CrossStart,CrossSweep,CrossHit,RushTell,SpinLand,Rush,HitPlayer,AirSpin,AirSpinSweep,AirSpinHit,Phase,SwordSummon,SwordMark,SwordImpact,Evade,Heal,ShoulderTell,Dash,DashKick,Shoulder,DashBrake,ChargeReady,ChargeStart,ChargeHit,Win,ChargeRelease, jumpInputs=129, specialInputs=37
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+DuelBuild:Test () (at Assets/Editor/DuelBuild.cs:714)
+DuelBuild:Build () (at Assets/Editor/DuelBuild.cs:800)
+
+(Filename: Assets/Editor/DuelBuild.cs Line: 714)
+
+PASS: first jump is accepted during boss entrance
+PASS: first attack is accepted during boss entrance
+PASS: story dialogue stays hidden before the entrance close-up
+PASS: entrance dialogue opens with the Warden's portrait and line
+PASS: entrance dialogue hands off to the player's portrait and reply
+PASS: rage transition uses its own Warden dialogue
+PASS: Enter skips the rage dialogue and returns control to combat
+PASS: dialogue portraits fit on-screen at width 640
+PASS: dialogue portraits align flush with their speaker's screen edge at width 640
+PASS: dialogue portraits fit on-screen at width 1280
+PASS: dialogue portraits align flush with their speaker's screen edge at width 1280
+PASS: one light swing damages once
+PASS: forward swing cannot hit behind player
+PASS: out of range cannot hit
+PASS: vertical hurt boxes reject air mismatch
+PASS: no stamina prevents attacks and dash
+PASS: parry opens on input
+PASS: parry window expires
+PASS: failed parry cannot restart by spam
+PASS: timed front parry protects and adds posture
+PASS: enemy strike cannot parry twice
+PASS: back-facing guard fails
+PASS: dash has invulnerability
+PASS: complete dodge moves 2.88 units and returns to ready
+PASS: dodge costs once and recovery is not invulnerable
+PASS: dodge has preparation, burst, brake and planted recovery
+PASS: no-direction dodge follows facing to the left
+PASS: dodge direction cannot flip midway
+PASS: late dodge recovery can transition into attack
+PASS: attack buffered during dodge executes after braking
+PASS: insufficient stamina cannot start dodge animation
+PASS: air dodge does not suspend gravity
+PASS: dodge uses dedicated anticipation, low travel and recovery frames
+PASS: special on the ground neither attacks nor consumes stamina
+PASS: jump and special on the ground do not auto-launch the special
+PASS: jump followed by special starts the aerial skill
+PASS: airborne normal attack remains a normal slash
+PASS: airborne heavy attack remains separate from the special
+PASS: air spin costs 32 once and grants no invulnerability
+PASS: air spin anticipation does not deal early damage
+PASS: first spin segment hits once
+PASS: second spin segment is a separate hit
+PASS: third spin segment is stronger, total damage is 34 and posture damage 24
+PASS: one spin cannot damage more than three times
+PASS: spin lands, recovers and restores the next jump's skill
+PASS: a fresh jump can use the special again
+PASS: insufficient stamina rejects the skill without consuming its air use
+PASS: special spam cannot restart the spin or spend twice
+PASS: spin cannot hit outside the visible blade radius
+PASS: rotating blade can hit behind the player
+PASS: air spin respects vertical separation
+PASS: left-facing special has the same damage and keeps its facing
+PASS: spin cannot damage phase-protected enemy
+PASS: special cannot cancel player hurt state
+PASS: active spin commits before defensive cancel
+PASS: spin recovery can cancel to dodge without restoring its air use
+PASS: canceling spin does not enable an immediate second spin
+PASS: sky sword interrupts the aerial special
+PASS: interrupted spin stops all remaining damage segments
+PASS: early ground contact immediately stops the aerial phase
+PASS: landing recovery cannot instantly restart an attack
+PASS: early landing does not leave a hidden spinning hitbox
+PASS: spin kill ends encounter and clears hazards
+PASS: retry clears aerial skill state
+PASS: aerial animation has preparation, two rotations and landing-ready finish
+PASS: leap does not hit during ascent
+PASS: stunned airborne enemy lands
+PASS: full posture triggers stagger
+PASS: heavy punish becomes critical during stagger
+PASS: visible wave has moving ground collision
+PASS: jump clears ground wave
+PASS: healing consumes one flask after commitment
+PASS: arena bounds contain movement
+PASS: grounded fighters cannot overlap
+PASS: half health starts phase transition
+PASS: zero boss health wins
+PASS: zero player health enters defeat
+PASS: retry clears transient combat state
+PASS: rush hits once even on late contact after its first 130ms
+PASS: front parry stops the entire blade rush and opens recovery
+PASS: shoulder collision cannot be parried
+PASS: jump clears shoulder hitbox
+PASS: dash can evade an unparryable shoulder
+PASS: rush locks direction and respects arena bounds
+PASS: rage shoulder follow-up has its own readable windup
+PASS: summon start cannot create an immediate hidden hit
+PASS: sky sword has a harmless visible warning
+PASS: sky sword damages at impact
+PASS: embedded sword cannot repeatedly damage and expires
+PASS: marked sword never tracks a moving player after its warning
+PASS: sky sword cannot be parried
+PASS: dash invulnerability works against falling sword
+PASS: great sword launches opposing ground waves
+PASS: jump avoids great sword shockwave outside the landing column
+PASS: reset clears falling swords and their waves
+PASS: victory cancels pending sky swords
+PASS: brief cut-in returns exactly to normal camera
+PASS: ground O launches an independent cross-slash and charges focus/stamina once
+PASS: cross-slash grants no hidden invulnerability
+PASS: cross-slash has harmless anticipation
+PASS: six cross-slash windows deal 7+7+7+7+7+20 exactly once each
+PASS: cross-slash descends and finishes grounded recovery
+PASS: insufficient focus rejects cross-slash without spending stamina
+PASS: insufficient stamina rejects cross-slash without spending focus
+PASS: held burst input cannot restart a committed skill
+PASS: left-facing cross-slash matches right-facing damage
+PASS: cross-slash cannot hit behind its locked facing
+PASS: cross-slash respects distance rather than auto-hitting
+PASS: forced early landing removes all remaining cross-slash hitboxes
+PASS: incoming sky sword interrupts burst and cancels later cuts
+PASS: ordinary contact replenishes focus
+PASS: one close ordinary sword clash immediately enters blade lock
+PASS: three close sword parries enter sustained blade lock through normal controls
+PASS: five timed beats win lock, damage once and open stagger punish
+PASS: blade-lock victory chains into the existing critical punish
+PASS: ignored lock times out with finite damage and releases controls
+PASS: button mashing cannot bypass the lock rhythm
+PASS: player can retreat from blade lock with a real stamina-costing dodge
+PASS: empty stamina cannot grant a free invulnerable escape from lock
+PASS: retry clears rhythm and skill resources
+PASS: first phase leap chain completes expected landings then exposes recovery
+PASS: first phase emits every telegraphed ground wave
+PASS: rage leap chain completes expected landings then exposes recovery
+PASS: rage emits every telegraphed ground wave
+PASS: rage waves lead to a separately telegraphed melee lunge
+PASS: skip entrance lands boss safely and leaves approach grace
+PASS: boss entrance leaves enough time for a visible push, hold and pull camera shot
+PASS: boss does not begin attacking until the entrance camera has returned to the arena
+PASS: half-health transition starts a dedicated rage cinematic
+PASS: rage cinematic freezes combat time, damage and player actions through the close-up hold
+PASS: rage cinematic returns to the arena before the next attack begins
+PASS: painted eight-frame ember slash atlas is present
+PASS: L dedicated planted blade-bind animation exists
+PASS: R dedicated planted blade-bind animation exists
+PASS: 24 deterministic random-input runs preserve state, arena, health and resource invariants
+PASS: only actual boss HP damage grants proportional charge energy
+PASS: whiffed attacks grant no charge energy
+PASS: blade clashes grant no charge energy
+PASS: successful parries grant no charge energy
+PASS: lethal hits grant charge only for the boss HP actually remaining
+PASS: full charge emits one ready cue on threshold crossing, not on every later hit
+PASS: less than a full charge meter rejects activation without spending resources
+PASS: less than full stamina rejects activation without spending charge energy
+PASS: charge activation immediately consumes both full resource bars
+PASS: charging blocks defense, attacks and stamina recovery
+PASS: manual interruption refunds neither energy nor stamina
+PASS: taking a hit interrupts charging and spends both resources permanently
+PASS: completed charge spends its resources, then its actual damage earns charge energy normally
+PASS: completed forward charge slash deals exactly 180 damage
+PASS: completed charge can miss outside its forward range without refunding resources
+PASS: first light attack keeps its original startup and duration
+PASS: too-early follow-up does not buffer or accelerate the current attack
+PASS: slightly early follow-up is buffered until the visible rhythm window
+PASS: early buffered follow-up confirms as soon as the rhythm window opens
+PASS: same forgiving input window chains the second hit into the third
+PASS: on-beat follow-up shortens recovery and cleanly enters the next combo
+PASS: late follow-up continues the light combo without cutting off the current swing
+PASS: showcase AI leaves the telegraphed boss rush visible before committing its finisher
+PASS: waiting beyond combo grace resets the next light attack to its opener
+PASS: continuous 10 Hz light taps produce all three distinct swing segments
+PASS: continuous 2 Hz light taps progress through all three swing segments
+TIMING: 24.69 Rush
+TIMING: 25.85 AirSpin
+TIMING: 26.36 SwordSummon
+TIMING: 39.63 Shoulder
+TIMING: 40.74 Shoulder
+TIMING: 42.75 SwordSummon
+TIMING: 54.62 Rush
+TIMING: 58.58 SwordSummon
+DEMO: won=True, lost=False, parries=10, bossHP=0, playerHP=84, events=Entrance,Land,Tell,Guard,BossSwing,Parry,LockStart,LockBeat,LockWin,Break,PlayerSwing,Riposte,ComboRhythm,HitBoss,BossJump,Slam,Danger,Jump,Wave,CrossStart,CrossSweep,CrossHit,RushTell,SpinLand,Rush,HitPlayer,AirSpin,AirSpinSweep,AirSpinHit,Phase,SwordSummon,SwordMark,SwordImpact,Evade,Heal,ShoulderTell,Dash,DashKick,Shoulder,DashBrake,ChargeReady,ChargeStart,ChargeHit,Win,ChargeRelease
+PASS: live input path produces repeated parries and posture break
+PASS: complete boss fight can be won through normal controls, without cheats
+PASS: normal encounter demonstrates shoulder rush and rage sky swords
+PASS: normal combat demonstrates the complete dodge
+PASS: normal combat demonstrates the aerial special
+PASS: normal combat demonstrates cross-slash and a won blade lock
+PASS: L dedicated dodge atlas contains twelve frames
+PASS: L dedicated air spin atlas contains twelve frames
+PASS: R dedicated dodge atlas contains twelve frames
+PASS: R dedicated air spin atlas contains twelve frames
+PASS: Q-character atlas manifest contains three texture pages and seventeen action clips
+PASS: hero_idle has its dedicated 4-frame animation
+PASS: hero_idle declares a shared canvas size and pivot
+PASS: hero_idle atlas frames have valid pages, rectangles and timing
+PASS: hero_idle keeps the shared character canvas size
+PASS: hero_idle keeps the shared foot anchor
+PASS: hero_idle atlas frames have valid pages, rectangles and timing
+PASS: hero_idle keeps the shared character canvas size
+PASS: hero_idle keeps the shared foot anchor
+PASS: hero_idle atlas frames have valid pages, rectangles and timing
+PASS: hero_idle keeps the shared character canvas size
+PASS: hero_idle keeps the shared foot anchor
+PASS: hero_idle atlas frames have valid pages, rectangles and timing
+PASS: hero_idle keeps the shared character canvas size
+PASS: hero_idle keeps the shared foot anchor
+PASS: hero_run has its dedicated 4-frame animation
+PASS: hero_run declares a shared canvas size and pivot
+PASS: hero_run atlas frames have valid pages, rectangles and timing
+PASS: hero_run keeps the shared character canvas size
+PASS: hero_run keeps the shared foot anchor
+PASS: hero_run atlas frames have valid pages, rectangles and timing
+PASS: hero_run keeps the shared character canvas size
+PASS: hero_run keeps the shared foot anchor
+PASS: hero_run atlas frames have valid pages, rectangles and timing
+PASS: hero_run keeps the shared character canvas size
+PASS: hero_run keeps the shared foot anchor
+PASS: hero_run atlas frames have valid pages, rectangles and timing
+PASS: hero_run keeps the shared character canvas size
+PASS: hero_run keeps the shared foot anchor
+PASS: hero_combo has its dedicated 8-frame animation
+PASS: hero_combo declares a shared canvas size and pivot
+PASS: hero_combo atlas frames have valid pages, rectangles and timing
+PASS: hero_combo keeps the shared character canvas size
+PASS: hero_combo keeps the shared foot anchor
+PASS: hero_combo atlas frames have valid pages, rectangles and timing
+PASS: hero_combo keeps the shared character canvas size
+PASS: hero_combo keeps the shared foot anchor
+PASS: hero_combo atlas frames have valid pages, rectangles and timing
+PASS: hero_combo keeps the shared character canvas size
+PASS: hero_combo keeps the shared foot anchor
+PASS: hero_combo atlas frames have valid pages, rectangles and timing
+PASS: hero_combo keeps the shared character canvas size
+PASS: hero_combo keeps the shared foot anchor
+PASS: hero_combo atlas frames have valid pages, rectangles and timing
+PASS: hero_combo keeps the shared character canvas size
+PASS: hero_combo keeps the shared foot anchor
+PASS: hero_combo atlas frames have valid pages, rectangles and timing
+PASS: hero_combo keeps the shared character canvas size
+PASS: hero_combo keeps the shared foot anchor
+PASS: hero_combo atlas frames have valid pages, rectangles and timing
+PASS: hero_combo keeps the shared character canvas size
+PASS: hero_combo keeps the shared foot anchor
+PASS: hero_combo atlas frames have valid pages, rectangles and timing
+PASS: hero_combo keeps the shared character canvas size
+PASS: hero_combo keeps the shared foot anchor
+PASS: hero_jump has its dedicated 4-frame animation
+PASS: hero_jump declares a shared canvas size and pivot
+PASS: hero_jump atlas frames have valid pages, rectangles and timing
+PASS: hero_jump keeps the shared character canvas size
+PASS: hero_jump keeps the shared foot anchor
+PASS: hero_jump atlas frames have valid pages, rectangles and timing
+PASS: hero_jump keeps the shared character canvas size
+PASS: hero_jump keeps the shared foot anchor
+PASS: hero_jump atlas frames have valid pages, rectangles and timing
+PASS: hero_jump keeps the shared character canvas size
+PASS: hero_jump keeps the shared foot anchor
+PASS: hero_jump atlas frames have valid pages, rectangles and timing
+PASS: hero_jump keeps the shared character canvas size
+PASS: hero_jump keeps the shared foot anchor
+PASS: hero_airspin has its dedicated 4-frame animation
+PASS: hero_airspin declares a shared canvas size and pivot
+PASS: hero_airspin atlas frames have valid pages, rectangles and timing
+PASS: hero_airspin keeps the shared character canvas size
+PASS: hero_airspin keeps the shared foot anchor
+PASS: hero_airspin atlas frames have valid pages, rectangles and timing
+PASS: hero_airspin keeps the shared character canvas size
+PASS: hero_airspin keeps the shared foot anchor
+PASS: hero_airspin atlas frames have valid pages, rectangles and timing
+PASS: hero_airspin keeps the shared character canvas size
+PASS: hero_airspin keeps the shared foot anchor
+PASS: hero_airspin atlas frames have valid pages, rectangles and timing
+PASS: hero_airspin keeps the shared character canvas size
+PASS: hero_airspin keeps the shared foot anchor
+PASS: hero_dodge has its dedicated 4-frame animation
+PASS: hero_dodge declares a shared canvas size and pivot
+PASS: hero_dodge atlas frames have valid pages, rectangles and timing
+PASS: hero_dodge keeps the shared character canvas size
+PASS: hero_dodge keeps the shared foot anchor
+PASS: hero_dodge atlas frames have valid pages, rectangles and timing
+PASS: hero_dodge keeps the shared character canvas size
+PASS: hero_dodge keeps the shared foot anchor
+PASS: hero_dodge atlas frames have valid pages, rectangles and timing
+PASS: hero_dodge keeps the shared character canvas size
+PASS: hero_dodge keeps the shared foot anchor
+PASS: hero_dodge atlas frames have valid pages, rectangles and timing
+PASS: hero_dodge keeps the shared character canvas size
+PASS: hero_dodge keeps the shared foot anchor
+PASS: hero_parry has its dedicated 4-frame animation
+PASS: hero_parry declares a shared canvas size and pivot
+PASS: hero_parry atlas frames have valid pages, rectangles and timing
+PASS: hero_parry keeps the shared character canvas size
+PASS: hero_parry keeps the shared foot anchor
+PASS: hero_parry atlas frames have valid pages, rectangles and timing
+PASS: hero_parry keeps the shared character canvas size
+PASS: hero_parry keeps the shared foot anchor
+PASS: hero_parry atlas frames have valid pages, rectangles and timing
+PASS: hero_parry keeps the shared character canvas size
+PASS: hero_parry keeps the shared foot anchor
+PASS: hero_parry atlas frames have valid pages, rectangles and timing
+PASS: hero_parry keeps the shared character canvas size
+PASS: hero_parry keeps the shared foot anchor
+PASS: hero_charge has its dedicated 4-frame animation
+PASS: hero_charge declares a shared canvas size and pivot
+PASS: hero_charge atlas frames have valid pages, rectangles and timing
+PASS: hero_charge keeps the shared character canvas size
+PASS: hero_charge keeps the shared foot anchor
+PASS: hero_charge atlas frames have valid pages, rectangles and timing
+PASS: hero_charge keeps the shared character canvas size
+PASS: hero_charge keeps the shared foot anchor
+PASS: hero_charge atlas frames have valid pages, rectangles and timing
+PASS: hero_charge keeps the shared character canvas size
+PASS: hero_charge keeps the shared foot anchor
+PASS: hero_charge atlas frames have valid pages, rectangles and timing
+PASS: hero_charge keeps the shared character canvas size
+PASS: hero_charge keeps the shared foot anchor
+PASS: hero_hurt has its dedicated 4-frame animation
+PASS: hero_hurt declares a shared canvas size and pivot
+PASS: hero_hurt atlas frames have valid pages, rectangles and timing
+PASS: hero_hurt keeps the shared character canvas size
+PASS: hero_hurt keeps the shared foot anchor
+PASS: hero_hurt atlas frames have valid pages, rectangles and timing
+PASS: hero_hurt keeps the shared character canvas size
+PASS: hero_hurt keeps the shared foot anchor
+PASS: hero_hurt atlas frames have valid pages, rectangles and timing
+PASS: hero_hurt keeps the shared character canvas size
+PASS: hero_hurt keeps the shared foot anchor
+PASS: hero_hurt atlas frames have valid pages, rectangles and timing
+PASS: hero_hurt keeps the shared character canvas size
+PASS: hero_hurt keeps the shared foot anchor
+PASS: boss_idle has its dedicated 4-frame animation
+PASS: boss_idle declares a shared canvas size and pivot
+PASS: boss_idle atlas frames have valid pages, rectangles and timing
+PASS: boss_idle keeps the shared character canvas size
+PASS: boss_idle keeps the shared foot anchor
+PASS: boss_idle atlas frames have valid pages, rectangles and timing
+PASS: boss_idle keeps the shared character canvas size
+PASS: boss_idle keeps the shared foot anchor
+PASS: boss_idle atlas frames have valid pages, rectangles and timing
+PASS: boss_idle keeps the shared character canvas size
+PASS: boss_idle keeps the shared foot anchor
+PASS: boss_idle atlas frames have valid pages, rectangles and timing
+PASS: boss_idle keeps the shared character canvas size
+PASS: boss_idle keeps the shared foot anchor
+PASS: boss_run has its dedicated 4-frame animation
+PASS: boss_run declares a shared canvas size and pivot
+PASS: boss_run atlas frames have valid pages, rectangles and timing
+PASS: boss_run keeps the shared character canvas size
+PASS: boss_run keeps the shared foot anchor
+PASS: boss_run atlas frames have valid pages, rectangles and timing
+PASS: boss_run keeps the shared character canvas size
+PASS: boss_run keeps the shared foot anchor
+PASS: boss_run atlas frames have valid pages, rectangles and timing
+PASS: boss_run keeps the shared character canvas size
+PASS: boss_run keeps the shared foot anchor
+PASS: boss_run atlas frames have valid pages, rectangles and timing
+PASS: boss_run keeps the shared character canvas size
+PASS: boss_run keeps the shared foot anchor
+PASS: boss_rush has its dedicated 4-frame animation
+PASS: boss_rush declares a shared canvas size and pivot
+PASS: boss_rush atlas frames have valid pages, rectangles and timing
+PASS: boss_rush keeps the shared character canvas size
+PASS: boss_rush keeps the shared foot anchor
+PASS: boss_rush atlas frames have valid pages, rectangles and timing
+PASS: boss_rush keeps the shared character canvas size
+PASS: boss_rush keeps the shared foot anchor
+PASS: boss_rush atlas frames have valid pages, rectangles and timing
+PASS: boss_rush keeps the shared character canvas size
+PASS: boss_rush keeps the shared foot anchor
+PASS: boss_rush atlas frames have valid pages, rectangles and timing
+PASS: boss_rush keeps the shared character canvas size
+PASS: boss_rush keeps the shared foot anchor
+PASS: boss_attack has its dedicated 4-frame animation
+PASS: boss_attack declares a shared canvas size and pivot
+PASS: boss_attack atlas frames have valid pages, rectangles and timing
+PASS: boss_attack keeps the shared character canvas size
+PASS: boss_attack keeps the shared foot anchor
+PASS: boss_attack atlas frames have valid pages, rectangles and timing
+PASS: boss_attack keeps the shared character canvas size
+PASS: boss_attack keeps the shared foot anchor
+PASS: boss_attack atlas frames have valid pages, rectangles and timing
+PASS: boss_attack keeps the shared character canvas size
+PASS: boss_attack keeps the shared foot anchor
+PASS: boss_attack atlas frames have valid pages, rectangles and timing
+PASS: boss_attack keeps the shared character canvas size
+PASS: boss_attack keeps the shared foot anchor
+PASS: boss_leap has its dedicated 4-frame animation
+PASS: boss_leap declares a shared canvas size and pivot
+PASS: boss_leap atlas frames have valid pages, rectangles and timing
+PASS: boss_leap keeps the shared character canvas size
+PASS: boss_leap keeps the shared foot anchor
+PASS: boss_leap atlas frames have valid pages, rectangles and timing
+PASS: boss_leap keeps the shared character canvas size
+PASS: boss_leap keeps the shared foot anchor
+PASS: boss_leap atlas frames have valid pages, rectangles and timing
+PASS: boss_leap keeps the shared character canvas size
+PASS: boss_leap keeps the shared foot anchor
+PASS: boss_leap atlas frames have valid pages, rectangles and timing
+PASS: boss_leap keeps the shared character canvas size
+PASS: boss_leap keeps the shared foot anchor
+PASS: boss_cast has its dedicated 4-frame animation
+PASS: boss_cast declares a shared canvas size and pivot
+PASS: boss_cast atlas frames have valid pages, rectangles and timing
+PASS: boss_cast keeps the shared character canvas size
+PASS: boss_cast keeps the shared foot anchor
+PASS: boss_cast atlas frames have valid pages, rectangles and timing
+PASS: boss_cast keeps the shared character canvas size
+PASS: boss_cast keeps the shared foot anchor
+PASS: boss_cast atlas frames have valid pages, rectangles and timing
+PASS: boss_cast keeps the shared character canvas size
+PASS: boss_cast keeps the shared foot anchor
+PASS: boss_cast atlas frames have valid pages, rectangles and timing
+PASS: boss_cast keeps the shared character canvas size
+PASS: boss_cast keeps the shared foot anchor
+PASS: boss_rage has its dedicated 4-frame animation
+PASS: boss_rage declares a shared canvas size and pivot
+PASS: boss_rage atlas frames have valid pages, rectangles and timing
+PASS: boss_rage keeps the shared character canvas size
+PASS: boss_rage keeps the shared foot anchor
+PASS: boss_rage atlas frames have valid pages, rectangles and timing
+PASS: boss_rage keeps the shared character canvas size
+PASS: boss_rage keeps the shared foot anchor
+PASS: boss_rage atlas frames have valid pages, rectangles and timing
+PASS: boss_rage keeps the shared character canvas size
+PASS: boss_rage keeps the shared foot anchor
+PASS: boss_rage atlas frames have valid pages, rectangles and timing
+PASS: boss_rage keeps the shared character canvas size
+PASS: boss_rage keeps the shared foot anchor
+PASS: boss_hurt has its dedicated 4-frame animation
+PASS: boss_hurt declares a shared canvas size and pivot
+PASS: boss_hurt atlas frames have valid pages, rectangles and timing
+PASS: boss_hurt keeps the shared character canvas size
+PASS: boss_hurt keeps the shared foot anchor
+PASS: boss_hurt atlas frames have valid pages, rectangles and timing
+PASS: boss_hurt keeps the shared character canvas size
+PASS: boss_hurt keeps the shared foot anchor
+PASS: boss_hurt atlas frames have valid pages, rectangles and timing
+PASS: boss_hurt keeps the shared character canvas size
+PASS: boss_hurt keeps the shared foot anchor
+PASS: boss_hurt atlas frames have valid pages, rectangles and timing
+PASS: boss_hurt keeps the shared character canvas size
+PASS: boss_hurt keeps the shared foot anchor
+PASS: top-right controls fit without covering health HUD at width 640
+PASS: top-right controls fit without covering health HUD at width 960
+PASS: top-right controls fit without covering health HUD at width 1280
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+DuelBuild:Test () (at Assets/Editor/DuelBuild.cs:781)
+DuelBuild:Build () (at Assets/Editor/DuelBuild.cs:800)
+
+(Filename: Assets/Editor/DuelBuild.cs Line: 781)
+
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.0f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aESkipCompile.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssembliesAndTypeDB
+WorkingDir: C:/Users/A/Documents/Codex/2026-10-15/new-chat
+ExitCode: 0 Duration: 0s209ms
+[2/3        0s] BuildPlayerDataGenerator Library/BuildPlayerData/Editor/TypeDb-All.json
+*** Tundra build success (0.17 seconds), 1 items updated, 3 evaluated
+Asset Pipeline Refresh (id=222ac1c498eccf94581f664f9bcf53c6): Total: 0.005 seconds - Initiated by RefreshV2(NoUpdateAssetOptions)
+[ScriptCompilation] Requested script compilation because: Recompiling scripts for player build.
+BuildPlayer: start building target 19
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.0f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --defer-dag-verification --dagfile="Library/Bee/1900b0aP.dag" --continue-on-failure --profile="Library/Bee/backend1.traceevents" ScriptAssembliesAndTypeDB
+WorkingDir: C:/Users/A/Documents/Codex/2026-10-15/new-chat
+Total cache size 259982876
+Total cache size after purge 259982876, took 00:00:00.2377552
+Worker ready: AssetImportWorkerHW0 0
+ExitCode: 0 Duration: 2s28ms
+[92/99      0s] ILPP-Configuration Library/ilpp-configuration.nevergeneratedoutput
+[93/99      1s] Csc Library/Bee/artifacts/1900b0aP.dag/Assembly-CSharp.dll (+2 others)
+[94/99      0s] ILPostProcess Library/Bee/artifacts/1900b0aP.dag/post-processed/Assembly-CSharp.dll (+pdb)
+Processing assembly Library/Bee/artifacts/1900b0aP.dag/Assembly-CSharp.dll, with 135 defines and 218 references
+
+processors: zzzUnity.Burst.CodeGen.BurstILPostProcessor
+
+1 processor(s) skipped this assembly
+[95/99      0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.pdb
+[96/99      0s] CopyFiles Library/Bee/PlayerScriptAssemblies/Assembly-CSharp.dll
+[98/99      0s] BuildPlayerDataGenerator Library/BuildPlayerData/Player/RuntimeInitializeOnLoads.json (+1 other)
+*** Tundra build success (1.99 seconds), 6 items updated, 99 evaluated
+Not rebuilding Data files -- no changes
+
+
+Mono dependencies included in the build
+Dependency assembly - System.Windows.Forms.dll
+Dependency assembly - System.IO.dll
+Dependency assembly - System.Collections.NonGeneric.dll
+Dependency assembly - System.Net.Ping.dll
+Dependency assembly - I18N.Other.dll
+Dependency assembly - System.Net.dll
+Dependency assembly - System.Workflow.Activities.dll
+Dependency assembly - System.Buffers.dll
+Dependency assembly - System.Net.HttpListener.dll
+Dependency assembly - Microsoft.Web.Infrastructure.dll
+Dependency assembly - System.ServiceModel.NetTcp.dll
+Dependency assembly - Mono.Tasklets.dll
+Dependency assembly - System.Workflow.Runtime.dll
+Dependency assembly - System.Net.AuthenticationManager.dll
+Dependency assembly - System.Core.dll
+Dependency assembly - System.Diagnostics.Debug.dll
+Dependency assembly - cscompmgd.dll
+Dependency assembly - Mono.Security.Win32.dll
+Dependency assembly - Mono.Data.Sqlite.dll
+Dependency assembly - System.Data.DataSetExtensions.dll
+Dependency assembly - System.Net.NameResolution.dll
+Dependency assembly - Mono.WebBrowser.dll
+Dependency assembly - System.Drawing.Design.dll
+Dependency assembly - System.Net.Http.Formatting.dll
+Dependency assembly - System.IO.FileSystem.DriveInfo.dll
+Dependency assembly - System.Dynamic.Runtime.dll
+Dependency assembly - System.IO.Pipes.dll
+Dependency assembly - System.Web.DynamicData.dll
+Dependency assembly - System.Web.Mvc.dll
+Dependency assembly - System.Reflection.Extensions.dll
+Dependency assembly - System.Dynamic.dll
+Dependency assembly - System.Security.AccessControl.dll
+Dependency assembly - System.Threading.AccessControl.dll
+Dependency assembly - Microsoft.Extensions.Logging.Abstractions.dll
+Dependency assembly - I18N.Rare.dll
+Dependency assembly - System.Web.Extensions.dll
+Dependency assembly - System.ObjectModel.dll
+Dependency assembly - System.Transactions.dll
+Dependency assembly - Mono.Messaging.RabbitMQ.dll
+Dependency assembly - WebMatrix.Data.dll
+Dependency assembly - System.Reactive.Runtime.Remoting.dll
+Dependency assembly - System.Xml.Serialization.dll
+Dependency assembly - System.IO.FileSystem.Watcher.dll
+Dependency assembly - Microsoft.Win32.Registry.AccessControl.dll
+Dependency assembly - System.Reactive.Windows.Forms.dll
+Dependency assembly - System.IO.FileSystem.Primitives.dll
+Dependency assembly - System.IO.MemoryMappedFiles.dll
+Dependency assembly - System.IO.FileSystem.dll
+Dependency assembly - Assembly-CSharp.dll
+Dependency assembly - System.Data.Services.dll
+Dependency assembly - System.IO.FileSystem.AccessControl.dll
+Dependency assembly - System.Resources.ResourceManager.dll
+Dependency assembly - System.Text.Encoding.dll
+Dependency assembly - System.Security.Cryptography.Primitives.dll
+Dependency assembly - System.Web.Routing.dll
+Dependency assembly - System.Messaging.dll
+Dependency assembly - System.Reflection.Emit.Lightweight.dll
+Dependency assembly - System.ServiceModel.Discovery.dll
+Dependency assembly - System.Web.Abstractions.dll
+Dependency assembly - SystemWebTestShim.dll
+Dependency assembly - System.Reflection.Primitives.dll
+Dependency assembly - Mono.Data.Tds.dll
+Dependency assembly - Microsoft.Win32.Primitives.dll
+Dependency assembly - PEAPI.dll
+Dependency assembly - Mono.Messaging.dll
+Dependency assembly - System.Runtime.Serialization.Primitives.dll
+Dependency assembly - System.Xml.XPath.XDocument.dll
+Dependency assembly - System.Drawing.dll
+Dependency assembly - System.Security.Cryptography.Encryption.dll
+Dependency assembly - System.Resources.Reader.dll
+Dependency assembly - System.Runtime.DurableInstancing.dll
+Dependency assembly - System.ValueTuple.dll
+Dependency assembly - System.DirectoryServices.Protocols.dll
+Dependency assembly - Microsoft.Win32.Registry.dll
+Dependency assembly - System.Security.Cryptography.DeriveBytes.dll
+Dependency assembly - System.Security.Cryptography.Hashing.dll
+Dependency assembly - System.Security.Cryptography.X509Certificates.dll
+Dependency assembly - System.Security.dll
+Dependency assembly - System.Json.dll
+Dependency assembly - System.Reactive.Observable.Aliases.dll
+Dependency assembly - System.Diagnostics.Tracing.dll
+Dependency assembly - System.IO.Compression.dll
+Dependency assembly - System.Resources.Writer.dll
+Dependency assembly - System.Data.Common.dll
+Dependency assembly - System.Threading.Tasks.dll
+Dependency assembly - System.Security.Cryptography.Pkcs.dll
+Dependency assembly - System.Numerics.Vectors.dll
+Dependency assembly - System.Xml.XmlDocument.dll
+Dependency assembly - System.Console.dll
+Dependency assembly - System.Net.ServicePoint.dll
+Dependency assembly - Mono.XBuild.Tasks.dll
+Dependency assembly - I18N.West.dll
+Dependency assembly - System.Reactive.Debugger.dll
+Dependency assembly - System.ComponentModel.TypeConverter.dll
+Dependency assembly - System.ServiceModel.Primitives.dll
+Dependency assembly - System.Security.Cryptography.Encryption.Aes.dll
+Dependency assembly - System.Reactive.Interfaces.dll
+Dependency assembly - System.Runtime.Caching.dll
+Dependency assembly - System.IO.UnmanagedMemoryStream.dll
+Dependency assembly - System.Security.Cryptography.Csp.dll
+Dependency assembly - System.Web.dll
+Dependency assembly - System.Web.Mobile.dll
+Dependency assembly - System.Runtime.Serialization.Xml.dll
+Dependency assembly - System.Diagnostics.Contracts.dll
+Dependency assembly - System.Diagnostics.TextWriterTraceListener.dll
+Dependency assembly - System.Runtime.Numerics.dll
+Dependency assembly - Mono.C5.dll
+Dependency assembly - System.Xml.ReaderWriter.dll
+Dependency assembly - Microsoft.Build.Utilities.v4.0.dll
+Dependency assembly - Microsoft.Build.Tasks.v4.0.dll
+Dependency assembly - System.ServiceModel.Internals.dll
+Dependency assembly - System.ServiceProcess.ServiceController.dll
+Dependency assembly - System.Reactive.Experimental.dll
+Dependency assembly - Microsoft.Build.Engine.dll
+Dependency assembly - System.Linq.Expressions.dll
+Dependency assembly - System.Security.Cryptography.OpenSsl.dll
+Dependency assembly - System.Reactive.Core.dll
+Dependency assembly - System.Security.Principal.dll
+Dependency assembly - System.Security.Principal.Windows.dll
+Dependency assembly - System.Memory.dll
+Dependency assembly - System.Diagnostics.StackTrace.dll
+Dependency assembly - System.Design.dll
+Dependency assembly - ICSharpCode.SharpZipLib.dll
+Dependency assembly - System.Security.Cryptography.Cng.dll
+Dependency assembly - System.Collections.dll
+Dependency assembly - System.ServiceModel.Http.dll
+Dependency assembly - System.Security.Cryptography.ProtectedData.dll
+Dependency assembly - System.ComponentModel.Annotations.dll
+Dependency assembly - System.Net.Mail.dll
+Dependency assembly - Mono.Btls.Interface.dll
+Dependency assembly - System.Numerics.dll
+Dependency assembly - System.Data.OracleClient.dll
+Dependency assembly - I18N.MidEast.dll
+Dependency assembly - System.ServiceModel.Activation.dll
+Dependency assembly - System.Text.Json.dll
+Dependency assembly - System.ComponentModel.dll
+Dependency assembly - CustomMarshalers.dll
+Dependency assembly - System.Data.Entity.dll
+Dependency assembly - System.Diagnostics.Tools.dll
+Dependency assembly - System.Net.WebSockets.dll
+Dependency assembly - System.Runtime.dll
+Dependency assembly - System.ServiceModel.Web.dll
+Dependency assembly - System.Text.Encodings.Web.dll
+Dependency assembly - System.Runtime.InteropServices.WindowsRuntime.dll
+Dependency assembly - System.Net.Primitives.dll
+Dependency assembly - System.Reflection.TypeExtensions.dll
+Dependency assembly - System.Text.Encoding.CodePages.dll
+Dependency assembly - System.Collections.Immutable.dll
+Dependency assembly - Mono.Posix.dll
+Dependency assembly - Mono.Security.dll
+Dependency assembly - System.Web.Services.dll
+Dependency assembly - System.Net.Cache.dll
+Dependency assembly - System.Web.WebPages.dll
+Dependency assembly - System.Reactive.Linq.dll
+Dependency assembly - System.Net.NetworkInformation.dll
+Dependency assembly - System.Diagnostics.Process.dll
+Dependency assembly - System.Security.Cryptography.RSA.dll
+Dependency assembly - Microsoft.Extensions.DependencyInjection.Abstractions.dll
+Dependency assembly - System.Threading.ThreadPool.dll
+Dependency assembly - System.Drawing.Primitives.dll
+Dependency assembly - Accessibility.dll
+Dependency assembly - System.Data.Linq.dll
+Dependency assembly - System.Deployment.dll
+Dependency assembly - System.Reflection.Emit.dll
+Dependency assembly - System.Threading.Tasks.Extensions.dll
+Dependency assembly - System.Workflow.ComponentModel.dll
+Dependency assembly - System.Runtime.Extensions.dll
+Dependency assembly - System.Reactive.PlatformServices.dll
+Dependency assembly - Mono.Cairo.dll
+Dependency assembly - System.Linq.dll
+Dependency assembly - System.IO.IsolatedStorage.dll
+Dependency assembly - Mono.Management.dll
+Dependency assembly - System.Runtime.CompilerServices.Unsafe.dll
+Dependency assembly - System.Web.Http.dll
+Dependency assembly - System.Runtime.Loader.dll
+Dependency assembly - System.Text.Encoding.Extensions.dll
+Dependency assembly - Microsoft.Build.Framework.dll
+Dependency assembly - System.Net.Http.Rtc.dll
+Dependency assembly - System.Xml.Linq.dll
+Dependency assembly - Mono.Simd.dll
+Dependency assembly - System.Security.Cryptography.Encoding.dll
+Dependency assembly - System.Security.Cryptography.Encryption.ECDsa.dll
+Dependency assembly - System.IO.Compression.FileSystem.dll
+Dependency assembly - System.ServiceModel.Routing.dll
+Dependency assembly - System.Web.WebPages.Razor.dll
+Dependency assembly - System.Resources.ReaderWriter.dll
+Dependency assembly - System.Reflection.DispatchProxy.dll
+Dependency assembly - Mono.CompilerServices.SymbolWriter.dll
+Dependency assembly - System.ServiceModel.dll
+Dependency assembly - Mono.CSharp.dll
+Dependency assembly - System.Xml.XDocument.dll
+Dependency assembly - System.Windows.Forms.DataVisualization.dll
+Dependency assembly - System.Reflection.Metadata.dll
+Dependency assembly - System.ServiceProcess.dll
+Dependency assembly - I18N.dll
+Dependency assembly - System.Collections.Concurrent.dll
+Dependency assembly - System.Web.Extensions.Design.dll
+Dependency assembly - System.Runtime.InteropServices.RuntimeInformation.dll
+Dependency assembly - System.Threading.Tasks.Dataflow.dll
+Dependency assembly - Mono.Options.dll
+Dependency assembly - System.Web.ApplicationServices.dll
+Dependency assembly - System.Globalization.Calendars.dll
+Dependency assembly - System.Web.WebPages.Deployment.dll
+Dependency assembly - System.Diagnostics.FileVersionInfo.dll
+Dependency assembly - System.Xml.XPath.dll
+Dependency assembly - RabbitMQ.Client.dll
+Dependency assembly - Microsoft.Bcl.AsyncInterfaces.dll
+Dependency assembly - System.Net.Utilities.dll
+Dependency assembly - System.Collections.Specialized.dll
+Dependency assembly - System.Net.WebHeaderCollection.dll
+Dependency assembly - System.Security.SecureString.dll
+Dependency assembly - System.dll
+Dependency assembly - System.Xml.XPath.XmlDocument.dll
+Dependency assembly - System.Management.dll
+Dependency assembly - System.Runtime.Remoting.dll
+Dependency assembly - System.Configuration.dll
+Dependency assembly - System.Diagnostics.TraceEvent.dll
+Dependency assembly - System.Runtime.Serialization.Json.dll
+Dependency assembly - System.Reflection.Emit.ILGeneration.dll
+Dependency assembly - System.Xaml.dll
+Dependency assembly - System.Net.Http.dll
+Dependency assembly - System.Xml.Xsl.Primitives.dll
+Dependency assembly - System.Web.Http.SelfHost.dll
+Dependency assembly - System.Security.Claims.dll
+Dependency assembly - System.Security.Cryptography.Hashing.Algorithms.dll
+Dependency assembly - System.ComponentModel.Composition.dll
+Dependency assembly - System.ComponentModel.EventBasedAsync.dll
+Dependency assembly - System.Diagnostics.TraceSource.dll
+Dependency assembly - System.IO.Compression.ZipFile.dll
+Dependency assembly - System.Data.Services.Client.dll
+Dependency assembly - Mono.Http.dll
+Dependency assembly - System.Web.Http.WebHost.dll
+Dependency assembly - System.Threading.Overlapped.dll
+Dependency assembly - Mono.Profiler.Log.dll
+Dependency assembly - System.Reflection.dll
+Dependency assembly - Commons.Xml.Relaxng.dll
+Dependency assembly - System.Xml.dll
+Dependency assembly - System.Linq.Parallel.dll
+Dependency assembly - mscorlib.dll
+Dependency assembly - I18N.CJK.dll
+Dependency assembly - System.Threading.dll
+Dependency assembly - System.Runtime.Serialization.Formatters.Soap.dll
+Dependency assembly - System.Reactive.Windows.Threading.dll
+Dependency assembly - System.ServiceModel.Duplex.dll
+Dependency assembly - System.Data.dll
+Dependency assembly - System.Threading.Timer.dll
+Dependency assembly - System.AppContext.dll
+Dependency assembly - System.ServiceModel.Security.dll
+Dependency assembly - System.Globalization.Extensions.dll
+Dependency assembly - Microsoft.VisualC.dll
+Dependency assembly - System.Text.RegularExpressions.dll
+Dependency assembly - System.Runtime.InteropServices.dll
+Dependency assembly - System.Configuration.Install.dll
+Dependency assembly - monodoc.dll
+Dependency assembly - System.Security.Cryptography.Algorithms.dll
+Dependency assembly - Mono.Parallel.dll
+Dependency assembly - System.Threading.Thread.dll
+Dependency assembly - System.IdentityModel.dll
+Dependency assembly - Microsoft.Build.dll
+Dependency assembly - System.Windows.dll
+Dependency assembly - IBM.Data.DB2.dll
+Dependency assembly - System.Threading.Tasks.Parallel.dll
+Dependency assembly - System.Net.Http.WebRequest.dll
+Dependency assembly - System.IO.Hashing.dll
+Dependency assembly - System.Net.Sockets.dll
+Dependency assembly - System.Runtime.CompilerServices.VisualC.dll
+Dependency assembly - System.Data.SqlClient.dll
+Dependency assembly - System.Diagnostics.DiagnosticSource.dll
+Dependency assembly - System.Net.Security.dll
+Dependency assembly - System.Linq.Queryable.dll
+Dependency assembly - System.Security.Cryptography.Encryption.ECDiffieHellman.dll
+Dependency assembly - Microsoft.CSharp.dll
+Dependency assembly - System.EnterpriseServices.dll
+Dependency assembly - System.Web.RegularExpressions.dll
+Dependency assembly - System.ComponentModel.Primitives.dll
+Dependency assembly - netstandard.dll
+Dependency assembly - SMDiagnostics.dll
+Dependency assembly - System.Net.WebSockets.Client.dll
+Dependency assembly - System.IdentityModel.Selectors.dll
+Dependency assembly - System.ComponentModel.DataAnnotations.dll
+Dependency assembly - WindowsBase.dll
+Dependency assembly - System.Runtime.Serialization.dll
+Dependency assembly - System.Web.Razor.dll
+Dependency assembly - System.Json.Microsoft.dll
+Dependency assembly - System.Runtime.Handles.dll
+Dependency assembly - Novell.Directory.Ldap.dll
+Dependency assembly - System.Reflection.Context.dll
+Dependency assembly - System.Globalization.dll
+Dependency assembly - System.Runtime.Serialization.Formatters.dll
+Dependency assembly - System.Net.Requests.dll
+Dependency assembly - System.Security.Cryptography.RandomNumberGenerator.dll
+Dependency assembly - System.Xml.XmlSerializer.dll
+Dependency assembly - System.Reactive.Providers.dll
+Dependency assembly - System.DirectoryServices.dll
+
+Total cache size 259982876
+Total cache size after purge 259982876, took 00:00:00.2238673
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.0f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --dagfile="Library/Bee/Playerd06d2922.dag" --profile="Library/Bee/backend1.traceevents" Player
+WorkingDir: C:/Users/A/Documents/Codex/2026-10-15/new-chat
+DisplayProgressbar: Incremental Player Build
+ExitCode: 4 Duration: 0s744ms
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.0f1\Editor\Data\DotNetSdk\dotnet.exe "C:\Program Files\Unity\Hub\Editor\6000.6.0f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\WinPlayerBuildProgram.exe" "C:/Program Files/Unity/Hub/Editor/6000.6.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/Bee;C:/Program Files/Unity/Hub/Editor/6000.6.0f1/Editor/Data/Tools/BuildPipeline" "Library/Bee/Playerd06d2922.dag.json" "Library/Bee/Playerd06d2922-inputdata.json" "Library\Bee\buildprogram0.traceevents"
+WorkingDir: C:/Users/A/Documents/Codex/2026-10-15/new-chat
+ExitCode: 0 Duration: 0s321ms
+Starting: C:\Program Files\Unity\Hub\Editor\6000.6.0f1\Editor\Data\Tools\BuildPipeline\bee_backend.exe --ipc --dagfile="Library/Bee/Playerd06d2922.dag" --dagfilejson="Library\Bee\Playerd06d2922.dag.json" --profile="Library/Bee/backend2.traceevents" Player
+WorkingDir: C:/Users/A/Documents/Codex/2026-10-15/new-chat
+ExitCode: 0 Duration: 0s141ms
+
+-------------------------------------------------------------------------------
+Build Report
+Information on used Assets is not available, since player data was not rebuilt.
+Do a clean build to view the Asset build report information.
+-------------------------------------------------------------------------------
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (0.9 MB). Loaded Objects now: 1251.
+Memory consumption went from 235.4 MB to 234.5 MB.
+Total: 5.780300 ms (FindLiveObjects: 0.141800 ms CreateObjectMapping: 0.013000 ms MarkObjects: 5.118200 ms  DeleteObjects: 0.367200 ms)
+
+DisplayProgressNotification: Build Successful
+Build Finished, Result: Success.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Loaded scene 'Temp/__Backupscenes/0.backup'
+	Deserialize:            0.714 ms
+	Integration:            5.503 ms
+	Integration of assets:  0.002 ms
+	Thread Wait Time:       0.016 ms
+	Total Operation Time:   6.235 ms
+Unloading 0 unused Assets / (348 B). Loaded Objects now: 1250.
+Memory consumption went from 231.8 MB to 231.8 MB.
+Total: 5.109300 ms (FindLiveObjects: 0.142600 ms CreateObjectMapping: 0.014700 ms MarkObjects: 4.822500 ms  DeleteObjects: 0.008300 ms)
+
+##utp:{"success":true,"type":"PlayerBuildInfo","version":2,"phase":"Immediate","time":1792485959678,"processId":57516,"steps":[{"description":"Call PrepareForBuild callbacks","duration":0},{"description":"Call internal build started callbacks","duration":0},{"description":"Preprocess Player","duration":12},{"description":"Save scenes before build","duration":0},{"description":"Prepare For Build","duration":9},{"description":"ProducePlayerScriptAssemblies","duration":2524},{"description":"Verify Build setup","duration":52},{"description":"Prepare assets for target platform","duration":2},{"description":"Prepare splash screen","duration":1},{"description":"Run script only build","duration":14},{"description":"Build scripts DLLs","duration":43},{"description":"Postprocess built player","duration":1431},{"description":"Call Post-Process callbacks","duration":20}],"duration":4108}
+Total cache size 259982876
+Total cache size after purge 259982876, took 00:00:00.2666424
+DUEL_BUILD_OK 391063144
+UnityEngine.Debug:ExtractStackTraceNoAlloc (byte*,int,string)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:Log (object)
+DuelBuild:Build () (at Assets/Editor/DuelBuild.cs:814)
+
+(Filename: Assets/Editor/DuelBuild.cs Line: 814)
+
+Batchmode quit successfully invoked - shutting down!
+[Physics::Module] Cleanup current backend.
+[Physics::Module] Id: 0xf2b8ea05
+Input System module state changed to: ShutdownInProgress.
+Input Polling Thread exited.
+Input System module state changed to: Shutdown.
+[Licensing::IpcConnector] LicenseClient-A-notifications channel disconnected successfully.
+[Licensing::IpcConnector] LicenseClient-A channel disconnected successfully.
+Lingering sessions upon destruction of worker manager
+Unity Data Store service was successfully shut down
+UDS shutting down local client system
+AcceleratorClientConnectionCallback - disconnected - :0
+Cleanup mono
+CodeReloadManager destroyed
+Exiting batchmode successfully now!
+[ExitDontLaunchBugReporter] Exiting without the bug reporter. Application will exit with return code 0

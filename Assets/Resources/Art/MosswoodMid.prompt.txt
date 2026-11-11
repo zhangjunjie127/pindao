@@ -1,0 +1,7 @@
+Use case: stylized-concept
+Asset type: transparent 2D middle-ground scenery overlay for a Unity boss arena
+Primary request: Add medium-distance forest framing as a separate layer over the accepted far background.
+Input images: Image 1 is the accepted MosswoodFar background; use it as exact style, palette, scale, and camera reference.
+Composition: Match the fixed 16:9 frame. Two broad tree trunks and layered medium-distance foliage frame the far left and right thirds. A few warm lantern fungi sit near the outer edges. Leave the central 55% and lower central fight lane clear.
+Style: Painterly dark fairytale forest, teal/emerald shadow, subtle warm gold highlights, consistent with Image 1.
+Constraints: Real transparent background; only medium-distance painted forms. No opaque plate, floor, platform, water, close-up foreground leaves, characters, creatures, weapons, UI, border, labels, or watermark. Preserve framing and do not change camera or horizon.

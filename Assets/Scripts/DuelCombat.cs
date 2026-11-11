@@ -112,6 +112,7 @@ public sealed class DuelCombat
         if (won || lost) { player.time += dt; boss.time += dt; return; }
         if (enemyMode == EnemyMode.Phase)
         {
+            if (input.skip) { SetEnemy(EnemyMode.Approach, .45f); return; }
             boss.time += dt;
             EnemyStep(dt);
             return;

@@ -1,0 +1,26 @@
+{
+  "anchor": [
+    384,
+    486
+  ],
+  "frames": [
+    {
+      "duration": 0.0833,
+      "file": "leap-0.png"
+    },
+    {
+      "duration": 0.0833,
+      "file": "leap-1.png"
+    },
+    {
+      "duration": 0.0833,
+      "file": "leap-2.png"
+    },
+    {
+      "duration": 0.0833,
+      "file": "leap-3.png"
+    }
+  ],
+  "kind": "sprite-gen-asset",
+  "version": 1
+}

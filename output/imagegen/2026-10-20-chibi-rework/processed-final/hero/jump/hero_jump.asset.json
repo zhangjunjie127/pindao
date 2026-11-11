@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "frames": [
+    {
+      "duration": 0.0833,
+      "file": "jump-0.png"
+    },
+    {
+      "duration": 0.0833,
+      "file": "jump-1.png"
+    },
+    {
+      "duration": 0.0833,
+      "file": "jump-2.png"
+    },
+    {
+      "duration": 0.0833,
+      "file": "jump-3.png"
+    }
+  ],
+  "anchor": [
+    384,
+    486
+  ],
+  "kind": "sprite-gen-asset"
+}

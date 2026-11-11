@@ -1,0 +1,137 @@
+{
+  "kind": "sprite-gen-slice-sheet",
+  "version": 1,
+  "sheet": "boss-attack-source.png",
+  "grid": [
+    2,
+    2
+  ],
+  "canvas": {
+    "w": 768,
+    "h": 512
+  },
+  "baseline_y": 486.0,
+  "target_height": 400.0,
+  "scale": "sheet",
+  "fit": "contain",
+  "factor": 0.7092198581560284,
+  "factor_from": {
+    "rule": "target_height",
+    "cell": "attack-2"
+  },
+  "alpha_cleanup": "alpha-cleanup.json",
+  "cells": [
+    {
+      "name": "attack-0",
+      "file": "attack-0.png",
+      "factor": 0.7092198581560284,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 492,
+          "h": 505
+        },
+        "canvas": {
+          "w": 349,
+          "h": 358
+        }
+      },
+      "box": {
+        "x": 210,
+        "y": 128,
+        "w": 349,
+        "h": 358
+      },
+      "anchor": [
+        384.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "attack-1",
+      "file": "attack-1.png",
+      "factor": 0.7092198581560284,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 651,
+          "h": 303
+        },
+        "canvas": {
+          "w": 462,
+          "h": 215
+        }
+      },
+      "box": {
+        "x": 154,
+        "y": 271,
+        "w": 462,
+        "h": 215
+      },
+      "anchor": [
+        385.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "attack-2",
+      "file": "attack-2.png",
+      "factor": 0.7092198581560284,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 436,
+          "h": 564
+        },
+        "canvas": {
+          "w": 309,
+          "h": 400
+        }
+      },
+      "box": {
+        "x": 230,
+        "y": 86,
+        "w": 309,
+        "h": 400
+      },
+      "anchor": [
+        384.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "attack-3",
+      "file": "attack-3.png",
+      "factor": 0.7092198581560284,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 623,
+          "h": 297
+        },
+        "canvas": {
+          "w": 442,
+          "h": 211
+        }
+      },
+      "box": {
+        "x": 163,
+        "y": 275,
+        "w": 442,
+        "h": 211
+      },
+      "anchor": [
+        384.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    }
+  ]
+}

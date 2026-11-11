@@ -1,0 +1,137 @@
+{
+  "kind": "sprite-gen-slice-sheet",
+  "version": 1,
+  "sheet": "boss-leap-source.png",
+  "grid": [
+    2,
+    2
+  ],
+  "canvas": {
+    "w": 768,
+    "h": 512
+  },
+  "baseline_y": 486.0,
+  "target_height": 400.0,
+  "scale": "sheet",
+  "fit": "contain",
+  "factor": 0.78125,
+  "factor_from": {
+    "rule": "target_height",
+    "cell": "leap-1"
+  },
+  "alpha_cleanup": "alpha-cleanup.json",
+  "cells": [
+    {
+      "name": "leap-0",
+      "file": "leap-0.png",
+      "factor": 0.78125,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 649,
+          "h": 325
+        },
+        "canvas": {
+          "w": 507,
+          "h": 254
+        }
+      },
+      "box": {
+        "x": 131,
+        "y": 232,
+        "w": 507,
+        "h": 254
+      },
+      "anchor": [
+        384.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "leap-1",
+      "file": "leap-1.png",
+      "factor": 0.78125,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 481,
+          "h": 512
+        },
+        "canvas": {
+          "w": 376,
+          "h": 400
+        }
+      },
+      "box": {
+        "x": 196,
+        "y": 86,
+        "w": 376,
+        "h": 400
+      },
+      "anchor": [
+        384.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "leap-2",
+      "file": "leap-2.png",
+      "factor": 0.78125,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 660,
+          "h": 385
+        },
+        "canvas": {
+          "w": 516,
+          "h": 301
+        }
+      },
+      "box": {
+        "x": 127,
+        "y": 185,
+        "w": 516,
+        "h": 301
+      },
+      "anchor": [
+        385.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "leap-3",
+      "file": "leap-3.png",
+      "factor": 0.78125,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 512,
+          "h": 425
+        },
+        "canvas": {
+          "w": 400,
+          "h": 332
+        }
+      },
+      "box": {
+        "x": 184,
+        "y": 154,
+        "w": 400,
+        "h": 332
+      },
+      "anchor": [
+        384.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 4
+    }
+  ]
+}

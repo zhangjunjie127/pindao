@@ -1,0 +1,26 @@
+{
+  "anchor": [
+    384,
+    486
+  ],
+  "frames": [
+    {
+      "duration": 0.1667,
+      "file": "idle-0.png"
+    },
+    {
+      "duration": 0.1667,
+      "file": "idle-1.png"
+    },
+    {
+      "duration": 0.1667,
+      "file": "idle-2.png"
+    },
+    {
+      "duration": 0.1667,
+      "file": "idle-3.png"
+    }
+  ],
+  "kind": "sprite-gen-asset",
+  "version": 1
+}

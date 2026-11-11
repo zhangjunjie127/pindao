@@ -1,0 +1,137 @@
+{
+  "kind": "sprite-gen-slice-sheet",
+  "version": 1,
+  "sheet": "boss-rush-source.png",
+  "grid": [
+    2,
+    2
+  ],
+  "canvas": {
+    "w": 768,
+    "h": 512
+  },
+  "baseline_y": 486.0,
+  "target_height": 400.0,
+  "scale": "sheet",
+  "fit": "contain",
+  "factor": 0.8350730688935282,
+  "factor_from": {
+    "rule": "target_height",
+    "cell": "rush-0"
+  },
+  "alpha_cleanup": "alpha-cleanup.json",
+  "cells": [
+    {
+      "name": "rush-0",
+      "file": "rush-0.png",
+      "factor": 0.8350730688935282,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 547,
+          "h": 479
+        },
+        "canvas": {
+          "w": 457,
+          "h": 400
+        }
+      },
+      "box": {
+        "x": 156,
+        "y": 86,
+        "w": 457,
+        "h": 400
+      },
+      "anchor": [
+        384.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "rush-1",
+      "file": "rush-1.png",
+      "factor": 0.8350730688935282,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 570,
+          "h": 367
+        },
+        "canvas": {
+          "w": 476,
+          "h": 306
+        }
+      },
+      "box": {
+        "x": 146,
+        "y": 180,
+        "w": 476,
+        "h": 306
+      },
+      "anchor": [
+        384.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "rush-2",
+      "file": "rush-2.png",
+      "factor": 0.8350730688935282,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 628,
+          "h": 363
+        },
+        "canvas": {
+          "w": 524,
+          "h": 303
+        }
+      },
+      "box": {
+        "x": 122,
+        "y": 183,
+        "w": 524,
+        "h": 303
+      },
+      "anchor": [
+        384.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "rush-3",
+      "file": "rush-3.png",
+      "factor": 0.8350730688935282,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 577,
+          "h": 398
+        },
+        "canvas": {
+          "w": 482,
+          "h": 332
+        }
+      },
+      "box": {
+        "x": 143,
+        "y": 154,
+        "w": 482,
+        "h": 332
+      },
+      "anchor": [
+        384.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    }
+  ]
+}

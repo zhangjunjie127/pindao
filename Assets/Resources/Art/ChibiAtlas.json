@@ -1,0 +1,850 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "name": "ChibiAtlas0",
+      "height": 1939
+    },
+    {
+      "name": "ChibiAtlas1",
+      "height": 1939
+    },
+    {
+      "name": "ChibiAtlas2",
+      "height": 1108
+    }
+  ],
+  "clips": [
+    {
+      "holdLast": true,
+      "loop": false,
+      "size": [
+        413,
+        275
+      ],
+      "pivot": [
+        0.5,
+        0.05078125
+      ],
+      "frames": [
+        {
+          "width": 413,
+          "durationMs": 71.42857142857143,
+          "height": 275,
+          "x": 1,
+          "page": 0,
+          "y": 1
+        },
+        {
+          "width": 413,
+          "durationMs": 71.42857142857143,
+          "height": 275,
+          "x": 416,
+          "page": 0,
+          "y": 1
+        },
+        {
+          "width": 413,
+          "durationMs": 71.42857142857143,
+          "height": 275,
+          "x": 831,
+          "page": 0,
+          "y": 1
+        },
+        {
+          "width": 413,
+          "durationMs": 71.42857142857143,
+          "height": 275,
+          "x": 1246,
+          "page": 0,
+          "y": 1
+        }
+      ],
+      "name": "boss_attack"
+    },
+    {
+      "holdLast": true,
+      "loop": false,
+      "size": [
+        413,
+        275
+      ],
+      "pivot": [
+        0.5,
+        0.05078125
+      ],
+      "frames": [
+        {
+          "width": 413,
+          "durationMs": 111.1111111111111,
+          "height": 275,
+          "x": 1,
+          "page": 0,
+          "y": 278
+        },
+        {
+          "width": 413,
+          "durationMs": 111.1111111111111,
+          "height": 275,
+          "x": 416,
+          "page": 0,
+          "y": 278
+        },
+        {
+          "width": 413,
+          "durationMs": 111.1111111111111,
+          "height": 275,
+          "x": 831,
+          "page": 0,
+          "y": 278
+        },
+        {
+          "width": 413,
+          "durationMs": 111.1111111111111,
+          "height": 275,
+          "x": 1246,
+          "page": 0,
+          "y": 278
+        }
+      ],
+      "name": "boss_cast"
+    },
+    {
+      "holdLast": true,
+      "loop": false,
+      "size": [
+        413,
+        275
+      ],
+      "pivot": [
+        0.5,
+        0.05078125
+      ],
+      "frames": [
+        {
+          "width": 413,
+          "durationMs": 83.33333333333333,
+          "height": 275,
+          "x": 1,
+          "page": 0,
+          "y": 555
+        },
+        {
+          "width": 413,
+          "durationMs": 83.33333333333333,
+          "height": 275,
+          "x": 416,
+          "page": 0,
+          "y": 555
+        },
+        {
+          "width": 413,
+          "durationMs": 83.33333333333333,
+          "height": 275,
+          "x": 831,
+          "page": 0,
+          "y": 555
+        },
+        {
+          "width": 413,
+          "durationMs": 83.33333333333333,
+          "height": 275,
+          "x": 1246,
+          "page": 0,
+          "y": 555
+        }
+      ],
+      "name": "boss_hurt"
+    },
+    {
+      "holdLast": false,
+      "loop": true,
+      "size": [
+        413,
+        275
+      ],
+      "pivot": [
+        0.5,
+        0.05078125
+      ],
+      "frames": [
+        {
+          "width": 413,
+          "durationMs": 166.66666666666666,
+          "height": 275,
+          "x": 1,
+          "page": 0,
+          "y": 832
+        },
+        {
+          "width": 413,
+          "durationMs": 166.66666666666666,
+          "height": 275,
+          "x": 416,
+          "page": 0,
+          "y": 832
+        },
+        {
+          "width": 413,
+          "durationMs": 166.66666666666666,
+          "height": 275,
+          "x": 831,
+          "page": 0,
+          "y": 832
+        },
+        {
+          "width": 413,
+          "durationMs": 166.66666666666666,
+          "height": 275,
+          "x": 1246,
+          "page": 0,
+          "y": 832
+        }
+      ],
+      "name": "boss_idle"
+    },
+    {
+      "holdLast": true,
+      "loop": false,
+      "size": [
+        413,
+        275
+      ],
+      "pivot": [
+        0.5,
+        0.05078125
+      ],
+      "frames": [
+        {
+          "width": 413,
+          "durationMs": 83.33333333333333,
+          "height": 275,
+          "x": 1,
+          "page": 0,
+          "y": 1109
+        },
+        {
+          "width": 413,
+          "durationMs": 83.33333333333333,
+          "height": 275,
+          "x": 416,
+          "page": 0,
+          "y": 1109
+        },
+        {
+          "width": 413,
+          "durationMs": 83.33333333333333,
+          "height": 275,
+          "x": 831,
+          "page": 0,
+          "y": 1109
+        },
+        {
+          "width": 413,
+          "durationMs": 83.33333333333333,
+          "height": 275,
+          "x": 1246,
+          "page": 0,
+          "y": 1109
+        }
+      ],
+      "name": "boss_leap"
+    },
+    {
+      "holdLast": true,
+      "loop": false,
+      "size": [
+        413,
+        275
+      ],
+      "pivot": [
+        0.5,
+        0.05078125
+      ],
+      "frames": [
+        {
+          "width": 413,
+          "durationMs": 125.0,
+          "height": 275,
+          "x": 1,
+          "page": 0,
+          "y": 1386
+        },
+        {
+          "width": 413,
+          "durationMs": 125.0,
+          "height": 275,
+          "x": 416,
+          "page": 0,
+          "y": 1386
+        },
+        {
+          "width": 413,
+          "durationMs": 125.0,
+          "height": 275,
+          "x": 831,
+          "page": 0,
+          "y": 1386
+        },
+        {
+          "width": 413,
+          "durationMs": 125.0,
+          "height": 275,
+          "x": 1246,
+          "page": 0,
+          "y": 1386
+        }
+      ],
+      "name": "boss_rage"
+    },
+    {
+      "holdLast": false,
+      "loop": true,
+      "size": [
+        413,
+        275
+      ],
+      "pivot": [
+        0.5,
+        0.05078125
+      ],
+      "frames": [
+        {
+          "width": 413,
+          "durationMs": 125.0,
+          "height": 275,
+          "x": 1,
+          "page": 0,
+          "y": 1663
+        },
+        {
+          "width": 413,
+          "durationMs": 125.0,
+          "height": 275,
+          "x": 416,
+          "page": 0,
+          "y": 1663
+        },
+        {
+          "width": 413,
+          "durationMs": 125.0,
+          "height": 275,
+          "x": 831,
+          "page": 0,
+          "y": 1663
+        },
+        {
+          "width": 413,
+          "durationMs": 125.0,
+          "height": 275,
+          "x": 1246,
+          "page": 0,
+          "y": 1663
+        }
+      ],
+      "name": "boss_run"
+    },
+    {
+      "holdLast": true,
+      "loop": false,
+      "size": [
+        413,
+        275
+      ],
+      "pivot": [
+        0.5,
+        0.05078125
+      ],
+      "frames": [
+        {
+          "width": 413,
+          "durationMs": 62.5,
+          "height": 275,
+          "x": 1,
+          "page": 1,
+          "y": 1
+        },
+        {
+          "width": 413,
+          "durationMs": 62.5,
+          "height": 275,
+          "x": 416,
+          "page": 1,
+          "y": 1
+        },
+        {
+          "width": 413,
+          "durationMs": 62.5,
+          "height": 275,
+          "x": 831,
+          "page": 1,
+          "y": 1
+        },
+        {
+          "width": 413,
+          "durationMs": 62.5,
+          "height": 275,
+          "x": 1246,
+          "page": 1,
+          "y": 1
+        }
+      ],
+      "name": "boss_rush"
+    },
+    {
+      "holdLast": true,
+      "loop": false,
+      "size": [
+        413,
+        275
+      ],
+      "pivot": [
+        0.5,
+        0.05078125
+      ],
+      "frames": [
+        {
+          "width": 413,
+          "durationMs": 62.5,
+          "height": 275,
+          "x": 1,
+          "page": 1,
+          "y": 278
+        },
+        {
+          "width": 413,
+          "durationMs": 62.5,
+          "height": 275,
+          "x": 416,
+          "page": 1,
+          "y": 278
+        },
+        {
+          "width": 413,
+          "durationMs": 62.5,
+          "height": 275,
+          "x": 831,
+          "page": 1,
+          "y": 278
+        },
+        {
+          "width": 413,
+          "durationMs": 62.5,
+          "height": 275,
+          "x": 1246,
+          "page": 1,
+          "y": 278
+        }
+      ],
+      "name": "hero_airspin"
+    },
+    {
+      "holdLast": false,
+      "loop": true,
+      "size": [
+        413,
+        275
+      ],
+      "pivot": [
+        0.5,
+        0.05078125
+      ],
+      "frames": [
+        {
+          "width": 413,
+          "durationMs": 125.0,
+          "height": 275,
+          "x": 1,
+          "page": 1,
+          "y": 555
+        },
+        {
+          "width": 413,
+          "durationMs": 125.0,
+          "height": 275,
+          "x": 416,
+          "page": 1,
+          "y": 555
+        },
+        {
+          "width": 413,
+          "durationMs": 125.0,
+          "height": 275,
+          "x": 831,
+          "page": 1,
+          "y": 555
+        },
+        {
+          "width": 413,
+          "durationMs": 125.0,
+          "height": 275,
+          "x": 1246,
+          "page": 1,
+          "y": 555
+        }
+      ],
+      "name": "hero_charge"
+    },
+    {
+      "holdLast": true,
+      "loop": false,
+      "size": [
+        413,
+        275
+      ],
+      "pivot": [
+        0.5,
+        0.05078125
+      ],
+      "frames": [
+        {
+          "width": 413,
+          "durationMs": 55.55555555555555,
+          "height": 275,
+          "x": 1,
+          "page": 1,
+          "y": 832
+        },
+        {
+          "width": 413,
+          "durationMs": 55.55555555555555,
+          "height": 275,
+          "x": 416,
+          "page": 1,
+          "y": 832
+        },
+        {
+          "width": 413,
+          "durationMs": 55.55555555555555,
+          "height": 275,
+          "x": 831,
+          "page": 1,
+          "y": 832
+        },
+        {
+          "width": 413,
+          "durationMs": 55.55555555555555,
+          "height": 275,
+          "x": 1246,
+          "page": 1,
+          "y": 832
+        },
+        {
+          "width": 413,
+          "durationMs": 55.55555555555555,
+          "height": 275,
+          "x": 1,
+          "page": 1,
+          "y": 1109
+        },
+        {
+          "width": 413,
+          "durationMs": 55.55555555555555,
+          "height": 275,
+          "x": 416,
+          "page": 1,
+          "y": 1109
+        },
+        {
+          "width": 413,
+          "durationMs": 55.55555555555555,
+          "height": 275,
+          "x": 831,
+          "page": 1,
+          "y": 1109
+        },
+        {
+          "width": 413,
+          "durationMs": 55.55555555555555,
+          "height": 275,
+          "x": 1246,
+          "page": 1,
+          "y": 1109
+        }
+      ],
+      "name": "hero_combo"
+    },
+    {
+      "holdLast": true,
+      "loop": false,
+      "size": [
+        413,
+        275
+      ],
+      "pivot": [
+        0.5,
+        0.05078125
+      ],
+      "frames": [
+        {
+          "width": 413,
+          "durationMs": 62.5,
+          "height": 275,
+          "x": 1,
+          "page": 1,
+          "y": 1386
+        },
+        {
+          "width": 413,
+          "durationMs": 62.5,
+          "height": 275,
+          "x": 416,
+          "page": 1,
+          "y": 1386
+        },
+        {
+          "width": 413,
+          "durationMs": 62.5,
+          "height": 275,
+          "x": 831,
+          "page": 1,
+          "y": 1386
+        },
+        {
+          "width": 413,
+          "durationMs": 62.5,
+          "height": 275,
+          "x": 1246,
+          "page": 1,
+          "y": 1386
+        }
+      ],
+      "name": "hero_dodge"
+    },
+    {
+      "holdLast": true,
+      "loop": false,
+      "size": [
+        413,
+        275
+      ],
+      "pivot": [
+        0.5,
+        0.05078125
+      ],
+      "frames": [
+        {
+          "width": 413,
+          "durationMs": 71.42857142857143,
+          "height": 275,
+          "x": 1,
+          "page": 1,
+          "y": 1663
+        },
+        {
+          "width": 413,
+          "durationMs": 71.42857142857143,
+          "height": 275,
+          "x": 416,
+          "page": 1,
+          "y": 1663
+        },
+        {
+          "width": 413,
+          "durationMs": 71.42857142857143,
+          "height": 275,
+          "x": 831,
+          "page": 1,
+          "y": 1663
+        },
+        {
+          "width": 413,
+          "durationMs": 71.42857142857143,
+          "height": 275,
+          "x": 1246,
+          "page": 1,
+          "y": 1663
+        }
+      ],
+      "name": "hero_hurt"
+    },
+    {
+      "holdLast": false,
+      "loop": true,
+      "size": [
+        413,
+        275
+      ],
+      "pivot": [
+        0.5,
+        0.05078125
+      ],
+      "frames": [
+        {
+          "width": 413,
+          "durationMs": 166.66666666666666,
+          "height": 275,
+          "x": 1,
+          "page": 2,
+          "y": 1
+        },
+        {
+          "width": 413,
+          "durationMs": 166.66666666666666,
+          "height": 275,
+          "x": 416,
+          "page": 2,
+          "y": 1
+        },
+        {
+          "width": 413,
+          "durationMs": 166.66666666666666,
+          "height": 275,
+          "x": 831,
+          "page": 2,
+          "y": 1
+        },
+        {
+          "width": 413,
+          "durationMs": 166.66666666666666,
+          "height": 275,
+          "x": 1246,
+          "page": 2,
+          "y": 1
+        }
+      ],
+      "name": "hero_idle"
+    },
+    {
+      "holdLast": true,
+      "loop": false,
+      "size": [
+        413,
+        275
+      ],
+      "pivot": [
+        0.5,
+        0.05078125
+      ],
+      "frames": [
+        {
+          "width": 413,
+          "durationMs": 83.33333333333333,
+          "height": 275,
+          "x": 1,
+          "page": 2,
+          "y": 278
+        },
+        {
+          "width": 413,
+          "durationMs": 83.33333333333333,
+          "height": 275,
+          "x": 416,
+          "page": 2,
+          "y": 278
+        },
+        {
+          "width": 413,
+          "durationMs": 83.33333333333333,
+          "height": 275,
+          "x": 831,
+          "page": 2,
+          "y": 278
+        },
+        {
+          "width": 413,
+          "durationMs": 83.33333333333333,
+          "height": 275,
+          "x": 1246,
+          "page": 2,
+          "y": 278
+        }
+      ],
+      "name": "hero_jump"
+    },
+    {
+      "holdLast": false,
+      "loop": true,
+      "size": [
+        413,
+        275
+      ],
+      "pivot": [
+        0.5,
+        0.05078125
+      ],
+      "frames": [
+        {
+          "width": 413,
+          "durationMs": 83.33333333333333,
+          "height": 275,
+          "x": 1,
+          "page": 2,
+          "y": 555
+        },
+        {
+          "width": 413,
+          "durationMs": 83.33333333333333,
+          "height": 275,
+          "x": 416,
+          "page": 2,
+          "y": 555
+        },
+        {
+          "width": 413,
+          "durationMs": 83.33333333333333,
+          "height": 275,
+          "x": 831,
+          "page": 2,
+          "y": 555
+        },
+        {
+          "width": 413,
+          "durationMs": 83.33333333333333,
+          "height": 275,
+          "x": 1246,
+          "page": 2,
+          "y": 555
+        }
+      ],
+      "name": "hero_parry"
+    },
+    {
+      "holdLast": false,
+      "loop": true,
+      "size": [
+        413,
+        275
+      ],
+      "pivot": [
+        0.5,
+        0.05078125
+      ],
+      "frames": [
+        {
+          "width": 413,
+          "durationMs": 111.1111111111111,
+          "height": 275,
+          "x": 1,
+          "page": 2,
+          "y": 832
+        },
+        {
+          "width": 413,
+          "durationMs": 111.1111111111111,
+          "height": 275,
+          "x": 416,
+          "page": 2,
+          "y": 832
+        },
+        {
+          "width": 413,
+          "durationMs": 111.1111111111111,
+          "height": 275,
+          "x": 831,
+          "page": 2,
+          "y": 832
+        },
+        {
+          "width": 413,
+          "durationMs": 111.1111111111111,
+          "height": 275,
+          "x": 1246,
+          "page": 2,
+          "y": 832
+        }
+      ],
+      "name": "hero_run"
+    }
+  ]
+}

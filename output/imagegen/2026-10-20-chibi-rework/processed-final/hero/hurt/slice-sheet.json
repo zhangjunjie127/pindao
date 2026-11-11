@@ -1,0 +1,137 @@
+{
+  "kind": "sprite-gen-slice-sheet",
+  "version": 1,
+  "sheet": "hero-hurt-source.png",
+  "grid": [
+    2,
+    2
+  ],
+  "canvas": {
+    "w": 768,
+    "h": 512
+  },
+  "baseline_y": 486.0,
+  "target_height": 400.0,
+  "scale": "sheet",
+  "fit": "contain",
+  "factor": 0.7476635514018691,
+  "factor_from": {
+    "rule": "target_height",
+    "cell": "hurt-0"
+  },
+  "alpha_cleanup": "alpha-cleanup.json",
+  "cells": [
+    {
+      "name": "hurt-0",
+      "file": "hurt-0.png",
+      "factor": 0.7476635514018691,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 523,
+          "h": 535
+        },
+        "canvas": {
+          "w": 391,
+          "h": 400
+        }
+      },
+      "box": {
+        "x": 189,
+        "y": 86,
+        "w": 391,
+        "h": 400
+      },
+      "anchor": [
+        384.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "hurt-1",
+      "file": "hurt-1.png",
+      "factor": 0.7476635514018691,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 507,
+          "h": 518
+        },
+        "canvas": {
+          "w": 379,
+          "h": 387
+        }
+      },
+      "box": {
+        "x": 195,
+        "y": 99,
+        "w": 379,
+        "h": 387
+      },
+      "anchor": [
+        384.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "hurt-2",
+      "file": "hurt-2.png",
+      "factor": 0.7476635514018691,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 525,
+          "h": 383
+        },
+        "canvas": {
+          "w": 393,
+          "h": 286
+        }
+      },
+      "box": {
+        "x": 188,
+        "y": 200,
+        "w": 393,
+        "h": 286
+      },
+      "anchor": [
+        384.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "hurt-3",
+      "file": "hurt-3.png",
+      "factor": 0.7476635514018691,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 557,
+          "h": 264
+        },
+        "canvas": {
+          "w": 416,
+          "h": 197
+        }
+      },
+      "box": {
+        "x": 176,
+        "y": 289,
+        "w": 416,
+        "h": 197
+      },
+      "anchor": [
+        384.0,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    }
+  ]
+}

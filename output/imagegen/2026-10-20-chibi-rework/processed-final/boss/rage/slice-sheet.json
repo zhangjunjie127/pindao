@@ -1,0 +1,137 @@
+{
+  "kind": "sprite-gen-slice-sheet",
+  "version": 1,
+  "sheet": "boss-rage-source.png",
+  "grid": [
+    2,
+    2
+  ],
+  "canvas": {
+    "w": 768,
+    "h": 512
+  },
+  "baseline_y": 486.0,
+  "target_height": 400.0,
+  "scale": "sheet",
+  "fit": "contain",
+  "factor": 0.6861063464837049,
+  "factor_from": {
+    "rule": "target_height",
+    "cell": "rage-1"
+  },
+  "alpha_cleanup": "alpha-cleanup.json",
+  "cells": [
+    {
+      "name": "rage-0",
+      "file": "rage-0.png",
+      "factor": 0.6861063464837049,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 550,
+          "h": 354
+        },
+        "canvas": {
+          "w": 377,
+          "h": 243
+        }
+      },
+      "box": {
+        "x": 196,
+        "y": 243,
+        "w": 377,
+        "h": 243
+      },
+      "anchor": [
+        384.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "rage-1",
+      "file": "rage-1.png",
+      "factor": 0.6861063464837049,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 456,
+          "h": 583
+        },
+        "canvas": {
+          "w": 313,
+          "h": 400
+        }
+      },
+      "box": {
+        "x": 228,
+        "y": 86,
+        "w": 313,
+        "h": 400
+      },
+      "anchor": [
+        384.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "rage-2",
+      "file": "rage-2.png",
+      "factor": 0.6861063464837049,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 459,
+          "h": 527
+        },
+        "canvas": {
+          "w": 315,
+          "h": 362
+        }
+      },
+      "box": {
+        "x": 227,
+        "y": 124,
+        "w": 315,
+        "h": 362
+      },
+      "anchor": [
+        384.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    },
+    {
+      "name": "rage-3",
+      "file": "rage-3.png",
+      "factor": 0.6861063464837049,
+      "factor_from": "target_height",
+      "subject": {
+        "sheet": {
+          "w": 517,
+          "h": 384
+        },
+        "canvas": {
+          "w": 355,
+          "h": 263
+        }
+      },
+      "box": {
+        "x": 207,
+        "y": 223,
+        "w": 355,
+        "h": 263
+      },
+      "anchor": [
+        384.5,
+        486.0
+      ],
+      "clipped_px": 0,
+      "parts": 1
+    }
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "kind": "sprite-gen-motion-report",
+  "version": 1,
+  "status": "needs-review",
+  "frame_count": 4,
+  "duration_seconds": 0.25,
+  "size": [
+    512,
+    512
+  ],
+  "anchor_px": [
+    256.0,
+    486.0
+  ],
+  "facing": null,
+  "contacts": [],
+  "foot_box": null,
+  "duplicate_frames": {
+    "exact": 0,
+    "adjacent_exact": 0,
+    "exact_silhouette": 0,
+    "near_silhouette": 0
+  },
+  "motion": {
+    "present": true,
+    "changed_transitions": 3,
+    "silhouette_changed_transitions": 3,
+    "silhouette_change_per_second": 5.20812615617502
+  },
+  "frames": [
+    {
+      "frame": 0,
+      "time_seconds": 0.0,
+      "duration_seconds": 0.0625,
+      "bbox": [
+        14,
+        114,
+        500,
+        486
+      ],
+      "anchor_px": [
+        256.0,
+        486.0
+      ],
+      "bbox_from_anchor": [
+        -242.0,
+        -372.0,
+        244.0,
+        0.0
+      ],
+      "centroid_px": [
+        270.75395928125954,
+        315.91835401395593
+      ],
+      "opaque_pixels": 107911,
+      "edge_sides": []
+    },
+    {
+      "frame": 1,
+      "time_seconds": 0.0625,
+      "duration_seconds": 0.0625,
+      "bbox": [
+        57,
+        217,
+        456,
+        486
+      ],
+      "anchor_px": [
+        256.0,
+        486.0
+      ],
+      "bbox_from_anchor": [
+        -199.0,
+        -269.0,
+        200.0,
+        0.0
+      ],
+      "centroid_px": [
+        261.35555445740266,
+        348.95463530341965
+      ],
+      "opaque_pixels": 80944,
+      "edge_sides": []
+    },
+    {
+      "frame": 2,
+      "time_seconds": 0.125,
+      "duration_seconds": 0.0625,
+      "bbox": [
+        1,
+        169,
+        512,
+        486
+      ],
+      "anchor_px": [
+        256.0,
+        486.0
+      ],
+      "bbox_from_anchor": [
+        -255.0,
+        -317.0,
+        256.0,
+        0.0
+      ],
+      "centroid_px": [
+        268.77890701484,
+        340.73897176422696
+      ],
+      "opaque_pixels": 103167,
+      "edge_sides": [
+        "right"
+      ]
+    },
+    {
+      "frame": 3,
+      "time_seconds": 0.1875,
+      "duration_seconds": 0.0625,
+      "bbox": [
+        45,
+        69,
+        468,
+        486
+      ],
+      "anchor_px": [
+        256.0,
+        486.0
+      ],
+      "bbox_from_anchor": [
+        -211.0,
+        -417.0,
+        212.0,
+        0.0
+      ],
+      "centroid_px": [
+        275.24401006161685,
+        283.23629474618724
+      ],
+      "opaque_pixels": 94617,
+      "edge_sides": []
+    }
+  ],
+  "bbox_stats": {
+    "union": [
+      1,
+      69,
+      512,
+      486
+    ],
+    "width_range": [
+      399,
+      511
+    ],
+    "height_range": [
+      269,
+      417
+    ],
+    "bottom_range": [
+      486,
+      486
+    ]
+  },
+  "edge_contact": {
+    "frames": [
+      2
+    ],
+    "sides": {
+      "left": [],
+      "top": [],
+      "right": [
+        2
+      ],
+      "bottom": []
+    }
+  },
+  "contact_candidates": [],
+  "confidence": 0.0,
+  "sequence": {
+    "source": "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed\\hero\\dodge\\hero_dodge.asset.json",
+    "state": null,
+    "fps_override": null,
+    "frame_count": 4,
+    "size": [
+      512,
+      512
+    ],
+    "anchor_px": [
+      256.0,
+      486.0
+    ],
+    "durations_seconds": [
+      0.0625,
+      0.0625,
+      0.0625,
+      0.0625
+    ]
+  },
+  "source_fingerprints": {
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed\\hero\\dodge\\hero_dodge.asset.json": "0f57f40168eaf95e3af77255a057ce54de541fc4f76e9d484f760b95189e86ba",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed\\hero\\dodge\\dodge-0.png": "8c3c08d157295c22beffa2b559a088d47dcf4cb07ac1a82c4be904763fb45c87",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed\\hero\\dodge\\dodge-1.png": "c802af117a4286124fa300148e9e197f27ea6331768c6d88cccfde85c8846c45",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed\\hero\\dodge\\dodge-2.png": "9a4242c1f116fb6c62d188011a70b9f6bfd183b3a5738924087f80b73f6c5b1b",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed\\hero\\dodge\\dodge-3.png": "4bf284d2929f6c245365babdc981efc56fb45a410907b880b1d01fd54f8db55a"
+  },
+  "stride_verified": false,
+  "foot_velocity_px_per_second": null,
+  "stride_px_per_second": null,
+  "warnings": [
+    "Ground contact is unknown: provide both manual contacts and a single-foot ROI; silhouette bottoms do not identify a planted foot.",
+    "Visible pixels touch the canvas edge; clipping is possible."
+  ],
+  "method": {
+    "silhouette": "alpha > 0 in source canvas coordinates; bbox right/bottom are exclusive",
+    "near_silhouette_iou": 0.98,
+    "duplicates": "Counts frames matching an earlier frame; near excludes exact silhouette matches. No time or frames are removed.",
+    "motion": "Adjacent visible pixel changes; silhouette XOR/union summed over full duration. No loop-seam assumption.",
+    "contact": "User-declared same-foot stance spans plus isolated ROI alpha centroid; no automatic contact or facing inference.",
+    "timing": "Cumulative frame-start seconds; repeated tracked poses use their first onset with all intervening durations retained. Final hold is included in duration but has no displacement endpoint.",
+    "velocity": "Endpoint horizontal displacement / pose-onset elapsed seconds; positive = image right. Stride is absolute velocity under manual ground-contact assumptions.",
+    "confidence": "0.9 = at least 3 distinct poses, stable baseline/shape, monotonic near-linear motion and consistent spans. Heuristic conditional confidence, not a calibrated contact probability.",
+    "sequence": "Identity of the analysed sequence: source, atlas state, fps override, frame count, size, anchor and effective per-frame durations. A consumer applying the stride must match all of it and source_fingerprints; another state or frame rate of the same files is a different sequence."
+  },
+  "source_files": [
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed\\hero\\dodge\\hero_dodge.asset.json",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed\\hero\\dodge\\dodge-0.png",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed\\hero\\dodge\\dodge-1.png",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed\\hero\\dodge\\dodge-2.png",
+    "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed\\hero\\dodge\\dodge-3.png"
+  ],
+  "source": "C:\\Users\\A\\Documents\\Codex\\2026-10-15\\new-chat\\output\\imagegen\\2026-10-20-chibi-rework\\processed\\hero\\dodge\\hero_dodge.asset.json"
+}

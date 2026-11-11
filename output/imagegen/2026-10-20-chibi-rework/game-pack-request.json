@@ -1,0 +1,261 @@
+{
+  "assets": [
+    {
+      "resample": "lanczos",
+      "loop": true,
+      "anchor": [
+        384,
+        486
+      ],
+      "fps": 6,
+      "hold_last": false,
+      "id": "hero_idle",
+      "source": "processed-final/hero/idle/hero_idle.asset.json",
+      "display": {
+        "body_height": 215
+      },
+      "source_body_height": 400
+    },
+    {
+      "resample": "lanczos",
+      "loop": true,
+      "anchor": [
+        384,
+        486
+      ],
+      "fps": 9,
+      "hold_last": false,
+      "id": "hero_run",
+      "source": "processed-final/hero/run/hero_run.asset.json",
+      "display": {
+        "body_height": 215
+      },
+      "source_body_height": 400
+    },
+    {
+      "resample": "lanczos",
+      "loop": false,
+      "anchor": [
+        384,
+        486
+      ],
+      "fps": 18,
+      "hold_last": true,
+      "id": "hero_combo",
+      "source": "processed-final/hero/combo/hero_combo.asset.json",
+      "display": {
+        "body_height": 215
+      },
+      "source_body_height": 400
+    },
+    {
+      "resample": "lanczos",
+      "loop": false,
+      "anchor": [
+        384,
+        486
+      ],
+      "fps": 16,
+      "hold_last": true,
+      "id": "hero_airspin",
+      "source": "processed-final/hero/airspin/hero_airspin.asset.json",
+      "display": {
+        "body_height": 215
+      },
+      "source_body_height": 400
+    },
+    {
+      "resample": "lanczos",
+      "loop": false,
+      "anchor": [
+        384,
+        486
+      ],
+      "fps": 16,
+      "hold_last": true,
+      "id": "hero_dodge",
+      "source": "processed-final/hero/dodge/hero_dodge.asset.json",
+      "display": {
+        "body_height": 215
+      },
+      "source_body_height": 400
+    },
+    {
+      "resample": "lanczos",
+      "loop": true,
+      "anchor": [
+        384,
+        486
+      ],
+      "fps": 12,
+      "hold_last": false,
+      "id": "hero_parry",
+      "source": "processed-final/hero/parry/hero_parry.asset.json",
+      "display": {
+        "body_height": 215
+      },
+      "source_body_height": 400
+    },
+    {
+      "resample": "lanczos",
+      "loop": true,
+      "anchor": [
+        384,
+        486
+      ],
+      "fps": 8,
+      "hold_last": false,
+      "id": "hero_charge",
+      "source": "processed-final/hero/charge/hero_charge.asset.json",
+      "display": {
+        "body_height": 215
+      },
+      "source_body_height": 400
+    },
+    {
+      "resample": "lanczos",
+      "loop": false,
+      "anchor": [
+        384,
+        486
+      ],
+      "fps": 14,
+      "hold_last": true,
+      "id": "hero_hurt",
+      "source": "processed-final/hero/hurt/hero_hurt.asset.json",
+      "display": {
+        "body_height": 215
+      },
+      "source_body_height": 400
+    },
+    {
+      "resample": "lanczos",
+      "loop": true,
+      "anchor": [
+        384,
+        486
+      ],
+      "fps": 6,
+      "hold_last": false,
+      "id": "boss_idle",
+      "source": "processed-final/boss/idle/boss_idle.asset.json",
+      "display": {
+        "body_height": 215
+      },
+      "source_body_height": 400
+    },
+    {
+      "resample": "lanczos",
+      "loop": true,
+      "anchor": [
+        384,
+        486
+      ],
+      "fps": 8,
+      "hold_last": false,
+      "id": "boss_run",
+      "source": "processed-final/boss/run/boss_run.asset.json",
+      "display": {
+        "body_height": 215
+      },
+      "source_body_height": 400
+    },
+    {
+      "resample": "lanczos",
+      "loop": false,
+      "anchor": [
+        384,
+        486
+      ],
+      "fps": 16,
+      "hold_last": true,
+      "id": "boss_rush",
+      "source": "processed-final/boss/rush/boss_rush.asset.json",
+      "display": {
+        "body_height": 215
+      },
+      "source_body_height": 400
+    },
+    {
+      "resample": "lanczos",
+      "loop": false,
+      "anchor": [
+        384,
+        486
+      ],
+      "fps": 14,
+      "hold_last": true,
+      "id": "boss_attack",
+      "source": "processed-final/boss/attack/boss_attack.asset.json",
+      "display": {
+        "body_height": 215
+      },
+      "source_body_height": 400
+    },
+    {
+      "resample": "lanczos",
+      "loop": false,
+      "anchor": [
+        384,
+        486
+      ],
+      "fps": 12,
+      "hold_last": true,
+      "id": "boss_leap",
+      "source": "processed-final/boss/leap/boss_leap.asset.json",
+      "display": {
+        "body_height": 215
+      },
+      "source_body_height": 400
+    },
+    {
+      "resample": "lanczos",
+      "loop": false,
+      "anchor": [
+        384,
+        486
+      ],
+      "fps": 9,
+      "hold_last": true,
+      "id": "boss_cast",
+      "source": "processed-final/boss/cast/boss_cast.asset.json",
+      "display": {
+        "body_height": 215
+      },
+      "source_body_height": 400
+    },
+    {
+      "resample": "lanczos",
+      "loop": false,
+      "anchor": [
+        384,
+        486
+      ],
+      "fps": 8,
+      "hold_last": true,
+      "id": "boss_rage",
+      "source": "processed-final/boss/rage/boss_rage.asset.json",
+      "display": {
+        "body_height": 215
+      },
+      "source_body_height": 400
+    },
+    {
+      "resample": "lanczos",
+      "loop": false,
+      "anchor": [
+        384,
+        486
+      ],
+      "fps": 12,
+      "hold_last": true,
+      "id": "boss_hurt",
+      "source": "processed-final/boss/hurt/boss_hurt.asset.json",
+      "display": {
+        "body_height": 215
+      },
+      "source_body_height": 400
+    }
+  ],
+  "version": 1
+}

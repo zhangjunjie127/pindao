@@ -1,0 +1,26 @@
+{
+  "anchor": [
+    384,
+    486
+  ],
+  "frames": [
+    {
+      "duration": 0.1111,
+      "file": "cast-0.png"
+    },
+    {
+      "duration": 0.1111,
+      "file": "cast-1.png"
+    },
+    {
+      "duration": 0.1111,
+      "file": "cast-2.png"
+    },
+    {
+      "duration": 0.1111,
+      "file": "cast-3.png"
+    }
+  ],
+  "kind": "sprite-gen-asset",
+  "version": 1
+}

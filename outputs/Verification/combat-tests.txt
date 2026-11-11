@@ -1,5 +1,14 @@
 PASS: first jump is accepted during boss entrance
 PASS: first attack is accepted during boss entrance
+PASS: story dialogue stays hidden before the entrance close-up
+PASS: entrance dialogue opens with the Warden's portrait and line
+PASS: entrance dialogue hands off to the player's portrait and reply
+PASS: rage transition uses its own Warden dialogue
+PASS: Enter skips the rage dialogue and returns control to combat
+PASS: dialogue portraits fit on-screen at width 640
+PASS: dialogue portraits align flush with their speaker's screen edge at width 640
+PASS: dialogue portraits fit on-screen at width 1280
+PASS: dialogue portraits align flush with their speaker's screen edge at width 1280
 PASS: one light swing damages once
 PASS: forward swing cannot hit behind player
 PASS: out of range cannot hit
@@ -169,6 +178,257 @@ PASS: L dedicated dodge atlas contains twelve frames
 PASS: L dedicated air spin atlas contains twelve frames
 PASS: R dedicated dodge atlas contains twelve frames
 PASS: R dedicated air spin atlas contains twelve frames
+PASS: Q-character atlas manifest contains three texture pages and seventeen action clips
+PASS: hero_idle has its dedicated 4-frame animation
+PASS: hero_idle declares a shared canvas size and pivot
+PASS: hero_idle atlas frames have valid pages, rectangles and timing
+PASS: hero_idle keeps the shared character canvas size
+PASS: hero_idle keeps the shared foot anchor
+PASS: hero_idle atlas frames have valid pages, rectangles and timing
+PASS: hero_idle keeps the shared character canvas size
+PASS: hero_idle keeps the shared foot anchor
+PASS: hero_idle atlas frames have valid pages, rectangles and timing
+PASS: hero_idle keeps the shared character canvas size
+PASS: hero_idle keeps the shared foot anchor
+PASS: hero_idle atlas frames have valid pages, rectangles and timing
+PASS: hero_idle keeps the shared character canvas size
+PASS: hero_idle keeps the shared foot anchor
+PASS: hero_run has its dedicated 4-frame animation
+PASS: hero_run declares a shared canvas size and pivot
+PASS: hero_run atlas frames have valid pages, rectangles and timing
+PASS: hero_run keeps the shared character canvas size
+PASS: hero_run keeps the shared foot anchor
+PASS: hero_run atlas frames have valid pages, rectangles and timing
+PASS: hero_run keeps the shared character canvas size
+PASS: hero_run keeps the shared foot anchor
+PASS: hero_run atlas frames have valid pages, rectangles and timing
+PASS: hero_run keeps the shared character canvas size
+PASS: hero_run keeps the shared foot anchor
+PASS: hero_run atlas frames have valid pages, rectangles and timing
+PASS: hero_run keeps the shared character canvas size
+PASS: hero_run keeps the shared foot anchor
+PASS: hero_combo has its dedicated 8-frame animation
+PASS: hero_combo declares a shared canvas size and pivot
+PASS: hero_combo atlas frames have valid pages, rectangles and timing
+PASS: hero_combo keeps the shared character canvas size
+PASS: hero_combo keeps the shared foot anchor
+PASS: hero_combo atlas frames have valid pages, rectangles and timing
+PASS: hero_combo keeps the shared character canvas size
+PASS: hero_combo keeps the shared foot anchor
+PASS: hero_combo atlas frames have valid pages, rectangles and timing
+PASS: hero_combo keeps the shared character canvas size
+PASS: hero_combo keeps the shared foot anchor
+PASS: hero_combo atlas frames have valid pages, rectangles and timing
+PASS: hero_combo keeps the shared character canvas size
+PASS: hero_combo keeps the shared foot anchor
+PASS: hero_combo atlas frames have valid pages, rectangles and timing
+PASS: hero_combo keeps the shared character canvas size
+PASS: hero_combo keeps the shared foot anchor
+PASS: hero_combo atlas frames have valid pages, rectangles and timing
+PASS: hero_combo keeps the shared character canvas size
+PASS: hero_combo keeps the shared foot anchor
+PASS: hero_combo atlas frames have valid pages, rectangles and timing
+PASS: hero_combo keeps the shared character canvas size
+PASS: hero_combo keeps the shared foot anchor
+PASS: hero_combo atlas frames have valid pages, rectangles and timing
+PASS: hero_combo keeps the shared character canvas size
+PASS: hero_combo keeps the shared foot anchor
+PASS: hero_jump has its dedicated 4-frame animation
+PASS: hero_jump declares a shared canvas size and pivot
+PASS: hero_jump atlas frames have valid pages, rectangles and timing
+PASS: hero_jump keeps the shared character canvas size
+PASS: hero_jump keeps the shared foot anchor
+PASS: hero_jump atlas frames have valid pages, rectangles and timing
+PASS: hero_jump keeps the shared character canvas size
+PASS: hero_jump keeps the shared foot anchor
+PASS: hero_jump atlas frames have valid pages, rectangles and timing
+PASS: hero_jump keeps the shared character canvas size
+PASS: hero_jump keeps the shared foot anchor
+PASS: hero_jump atlas frames have valid pages, rectangles and timing
+PASS: hero_jump keeps the shared character canvas size
+PASS: hero_jump keeps the shared foot anchor
+PASS: hero_airspin has its dedicated 4-frame animation
+PASS: hero_airspin declares a shared canvas size and pivot
+PASS: hero_airspin atlas frames have valid pages, rectangles and timing
+PASS: hero_airspin keeps the shared character canvas size
+PASS: hero_airspin keeps the shared foot anchor
+PASS: hero_airspin atlas frames have valid pages, rectangles and timing
+PASS: hero_airspin keeps the shared character canvas size
+PASS: hero_airspin keeps the shared foot anchor
+PASS: hero_airspin atlas frames have valid pages, rectangles and timing
+PASS: hero_airspin keeps the shared character canvas size
+PASS: hero_airspin keeps the shared foot anchor
+PASS: hero_airspin atlas frames have valid pages, rectangles and timing
+PASS: hero_airspin keeps the shared character canvas size
+PASS: hero_airspin keeps the shared foot anchor
+PASS: hero_dodge has its dedicated 4-frame animation
+PASS: hero_dodge declares a shared canvas size and pivot
+PASS: hero_dodge atlas frames have valid pages, rectangles and timing
+PASS: hero_dodge keeps the shared character canvas size
+PASS: hero_dodge keeps the shared foot anchor
+PASS: hero_dodge atlas frames have valid pages, rectangles and timing
+PASS: hero_dodge keeps the shared character canvas size
+PASS: hero_dodge keeps the shared foot anchor
+PASS: hero_dodge atlas frames have valid pages, rectangles and timing
+PASS: hero_dodge keeps the shared character canvas size
+PASS: hero_dodge keeps the shared foot anchor
+PASS: hero_dodge atlas frames have valid pages, rectangles and timing
+PASS: hero_dodge keeps the shared character canvas size
+PASS: hero_dodge keeps the shared foot anchor
+PASS: hero_parry has its dedicated 4-frame animation
+PASS: hero_parry declares a shared canvas size and pivot
+PASS: hero_parry atlas frames have valid pages, rectangles and timing
+PASS: hero_parry keeps the shared character canvas size
+PASS: hero_parry keeps the shared foot anchor
+PASS: hero_parry atlas frames have valid pages, rectangles and timing
+PASS: hero_parry keeps the shared character canvas size
+PASS: hero_parry keeps the shared foot anchor
+PASS: hero_parry atlas frames have valid pages, rectangles and timing
+PASS: hero_parry keeps the shared character canvas size
+PASS: hero_parry keeps the shared foot anchor
+PASS: hero_parry atlas frames have valid pages, rectangles and timing
+PASS: hero_parry keeps the shared character canvas size
+PASS: hero_parry keeps the shared foot anchor
+PASS: hero_charge has its dedicated 4-frame animation
+PASS: hero_charge declares a shared canvas size and pivot
+PASS: hero_charge atlas frames have valid pages, rectangles and timing
+PASS: hero_charge keeps the shared character canvas size
+PASS: hero_charge keeps the shared foot anchor
+PASS: hero_charge atlas frames have valid pages, rectangles and timing
+PASS: hero_charge keeps the shared character canvas size
+PASS: hero_charge keeps the shared foot anchor
+PASS: hero_charge atlas frames have valid pages, rectangles and timing
+PASS: hero_charge keeps the shared character canvas size
+PASS: hero_charge keeps the shared foot anchor
+PASS: hero_charge atlas frames have valid pages, rectangles and timing
+PASS: hero_charge keeps the shared character canvas size
+PASS: hero_charge keeps the shared foot anchor
+PASS: hero_hurt has its dedicated 4-frame animation
+PASS: hero_hurt declares a shared canvas size and pivot
+PASS: hero_hurt atlas frames have valid pages, rectangles and timing
+PASS: hero_hurt keeps the shared character canvas size
+PASS: hero_hurt keeps the shared foot anchor
+PASS: hero_hurt atlas frames have valid pages, rectangles and timing
+PASS: hero_hurt keeps the shared character canvas size
+PASS: hero_hurt keeps the shared foot anchor
+PASS: hero_hurt atlas frames have valid pages, rectangles and timing
+PASS: hero_hurt keeps the shared character canvas size
+PASS: hero_hurt keeps the shared foot anchor
+PASS: hero_hurt atlas frames have valid pages, rectangles and timing
+PASS: hero_hurt keeps the shared character canvas size
+PASS: hero_hurt keeps the shared foot anchor
+PASS: boss_idle has its dedicated 4-frame animation
+PASS: boss_idle declares a shared canvas size and pivot
+PASS: boss_idle atlas frames have valid pages, rectangles and timing
+PASS: boss_idle keeps the shared character canvas size
+PASS: boss_idle keeps the shared foot anchor
+PASS: boss_idle atlas frames have valid pages, rectangles and timing
+PASS: boss_idle keeps the shared character canvas size
+PASS: boss_idle keeps the shared foot anchor
+PASS: boss_idle atlas frames have valid pages, rectangles and timing
+PASS: boss_idle keeps the shared character canvas size
+PASS: boss_idle keeps the shared foot anchor
+PASS: boss_idle atlas frames have valid pages, rectangles and timing
+PASS: boss_idle keeps the shared character canvas size
+PASS: boss_idle keeps the shared foot anchor
+PASS: boss_run has its dedicated 4-frame animation
+PASS: boss_run declares a shared canvas size and pivot
+PASS: boss_run atlas frames have valid pages, rectangles and timing
+PASS: boss_run keeps the shared character canvas size
+PASS: boss_run keeps the shared foot anchor
+PASS: boss_run atlas frames have valid pages, rectangles and timing
+PASS: boss_run keeps the shared character canvas size
+PASS: boss_run keeps the shared foot anchor
+PASS: boss_run atlas frames have valid pages, rectangles and timing
+PASS: boss_run keeps the shared character canvas size
+PASS: boss_run keeps the shared foot anchor
+PASS: boss_run atlas frames have valid pages, rectangles and timing
+PASS: boss_run keeps the shared character canvas size
+PASS: boss_run keeps the shared foot anchor
+PASS: boss_rush has its dedicated 4-frame animation
+PASS: boss_rush declares a shared canvas size and pivot
+PASS: boss_rush atlas frames have valid pages, rectangles and timing
+PASS: boss_rush keeps the shared character canvas size
+PASS: boss_rush keeps the shared foot anchor
+PASS: boss_rush atlas frames have valid pages, rectangles and timing
+PASS: boss_rush keeps the shared character canvas size
+PASS: boss_rush keeps the shared foot anchor
+PASS: boss_rush atlas frames have valid pages, rectangles and timing
+PASS: boss_rush keeps the shared character canvas size
+PASS: boss_rush keeps the shared foot anchor
+PASS: boss_rush atlas frames have valid pages, rectangles and timing
+PASS: boss_rush keeps the shared character canvas size
+PASS: boss_rush keeps the shared foot anchor
+PASS: boss_attack has its dedicated 4-frame animation
+PASS: boss_attack declares a shared canvas size and pivot
+PASS: boss_attack atlas frames have valid pages, rectangles and timing
+PASS: boss_attack keeps the shared character canvas size
+PASS: boss_attack keeps the shared foot anchor
+PASS: boss_attack atlas frames have valid pages, rectangles and timing
+PASS: boss_attack keeps the shared character canvas size
+PASS: boss_attack keeps the shared foot anchor
+PASS: boss_attack atlas frames have valid pages, rectangles and timing
+PASS: boss_attack keeps the shared character canvas size
+PASS: boss_attack keeps the shared foot anchor
+PASS: boss_attack atlas frames have valid pages, rectangles and timing
+PASS: boss_attack keeps the shared character canvas size
+PASS: boss_attack keeps the shared foot anchor
+PASS: boss_leap has its dedicated 4-frame animation
+PASS: boss_leap declares a shared canvas size and pivot
+PASS: boss_leap atlas frames have valid pages, rectangles and timing
+PASS: boss_leap keeps the shared character canvas size
+PASS: boss_leap keeps the shared foot anchor
+PASS: boss_leap atlas frames have valid pages, rectangles and timing
+PASS: boss_leap keeps the shared character canvas size
+PASS: boss_leap keeps the shared foot anchor
+PASS: boss_leap atlas frames have valid pages, rectangles and timing
+PASS: boss_leap keeps the shared character canvas size
+PASS: boss_leap keeps the shared foot anchor
+PASS: boss_leap atlas frames have valid pages, rectangles and timing
+PASS: boss_leap keeps the shared character canvas size
+PASS: boss_leap keeps the shared foot anchor
+PASS: boss_cast has its dedicated 4-frame animation
+PASS: boss_cast declares a shared canvas size and pivot
+PASS: boss_cast atlas frames have valid pages, rectangles and timing
+PASS: boss_cast keeps the shared character canvas size
+PASS: boss_cast keeps the shared foot anchor
+PASS: boss_cast atlas frames have valid pages, rectangles and timing
+PASS: boss_cast keeps the shared character canvas size
+PASS: boss_cast keeps the shared foot anchor
+PASS: boss_cast atlas frames have valid pages, rectangles and timing
+PASS: boss_cast keeps the shared character canvas size
+PASS: boss_cast keeps the shared foot anchor
+PASS: boss_cast atlas frames have valid pages, rectangles and timing
+PASS: boss_cast keeps the shared character canvas size
+PASS: boss_cast keeps the shared foot anchor
+PASS: boss_rage has its dedicated 4-frame animation
+PASS: boss_rage declares a shared canvas size and pivot
+PASS: boss_rage atlas frames have valid pages, rectangles and timing
+PASS: boss_rage keeps the shared character canvas size
+PASS: boss_rage keeps the shared foot anchor
+PASS: boss_rage atlas frames have valid pages, rectangles and timing
+PASS: boss_rage keeps the shared character canvas size
+PASS: boss_rage keeps the shared foot anchor
+PASS: boss_rage atlas frames have valid pages, rectangles and timing
+PASS: boss_rage keeps the shared character canvas size
+PASS: boss_rage keeps the shared foot anchor
+PASS: boss_rage atlas frames have valid pages, rectangles and timing
+PASS: boss_rage keeps the shared character canvas size
+PASS: boss_rage keeps the shared foot anchor
+PASS: boss_hurt has its dedicated 4-frame animation
+PASS: boss_hurt declares a shared canvas size and pivot
+PASS: boss_hurt atlas frames have valid pages, rectangles and timing
+PASS: boss_hurt keeps the shared character canvas size
+PASS: boss_hurt keeps the shared foot anchor
+PASS: boss_hurt atlas frames have valid pages, rectangles and timing
+PASS: boss_hurt keeps the shared character canvas size
+PASS: boss_hurt keeps the shared foot anchor
+PASS: boss_hurt atlas frames have valid pages, rectangles and timing
+PASS: boss_hurt keeps the shared character canvas size
+PASS: boss_hurt keeps the shared foot anchor
+PASS: boss_hurt atlas frames have valid pages, rectangles and timing
+PASS: boss_hurt keeps the shared character canvas size
+PASS: boss_hurt keeps the shared foot anchor
 PASS: top-right controls fit without covering health HUD at width 640
 PASS: top-right controls fit without covering health HUD at width 960
 PASS: top-right controls fit without covering health HUD at width 1280
